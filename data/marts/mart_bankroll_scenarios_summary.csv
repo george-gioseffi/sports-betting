@@ -1,0 +1,4 @@
+method,final_bankroll,net_profit,roi,max_drawdown,executed_bets,skipped_bets
+fixed,3321.0,-6679.0,-0.6679,0.6741,384,1
+percentage,3522.78,-6477.22,-0.6477,0.6515,385,0
+kelly,1980.12,-8019.88,-0.802,0.8005,207,178

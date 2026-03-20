@@ -1,0 +1,41 @@
+match_id,season,league,home_team,away_team,kickoff_ts,home_goals,away_goals
+M00003,2025/2026,Brasileirao,Fluminense,Sao Paulo,2025-01-01 17:00:00,1,0
+M00001,2025/2026,Serie A,Juventus,Napoli,2025-01-01 19:00:00,0,0
+M00002,2025/2026,La Liga,Atletico Madrid,Sevilla,2025-01-01 19:00:00,0,0
+M00005,2025/2026,La Liga,Real Sociedad,Real Madrid,2025-01-02 19:00:00,0,2
+M00004,2025/2026,Serie A,Napoli,Milan,2025-01-02 20:00:00,0,0
+M00007,2025/2026,Serie A,Milan,Napoli,2025-01-02 20:00:00,2,0
+M00006,2025/2026,Premier League,Aston Villa,Tottenham,2025-01-02 22:00:00,1,1
+M00008,2025/2026,La Liga,Sevilla,Atletico Madrid,2025-01-03 15:00:00,3,1
+M00009,2025/2026,Premier League,Tottenham,Aston Villa,2025-01-03 17:00:00,0,0
+M00011,2025/2026,Serie A,Atalanta,Juventus,2025-01-03 19:00:00,0,0
+M00010,2025/2026,Brasileirao,Flamengo,Fluminense,2025-01-03 23:00:00,2,2
+M00014,2025/2026,Premier League,Tottenham,Chelsea,2025-01-04 16:00:00,2,1
+M00015,2025/2026,Brasileirao,Flamengo,Sao Paulo,2025-01-04 16:00:00,1,1
+M00012,2025/2026,La Liga,Real Madrid,Atletico Madrid,2025-01-04 20:00:00,3,1
+M00013,2025/2026,Premier League,Liverpool,Tottenham,2025-01-04 20:00:00,2,1
+M00016,2025/2026,Serie A,Napoli,Roma,2025-01-05 16:00:00,1,2
+M00018,2025/2026,Premier League,Chelsea,Aston Villa,2025-01-05 16:00:00,6,0
+M00017,2025/2026,Brasileirao,Fluminense,Sao Paulo,2025-01-05 17:00:00,4,1
+M00019,2025/2026,Brasileirao,Internacional,Sao Paulo,2025-01-05 20:00:00,1,0
+M00023,2025/2026,Serie A,Inter,Roma,2025-01-06 15:00:00,0,2
+M00020,2025/2026,Premier League,Tottenham,Chelsea,2025-01-06 17:00:00,0,0
+M00021,2025/2026,La Liga,Valencia,Real Sociedad,2025-01-06 21:00:00,1,2
+M00022,2025/2026,La Liga,Atletico Madrid,Valencia,2025-01-06 22:00:00,0,2
+M00025,2025/2026,Premier League,Tottenham,Arsenal,2025-01-07 15:00:00,2,0
+M00026,2025/2026,Premier League,Chelsea,Tottenham,2025-01-07 18:00:00,1,0
+M00027,2025/2026,Premier League,Tottenham,Arsenal,2025-01-07 20:00:00,3,2
+M00024,2025/2026,Brasileirao,Sao Paulo,Flamengo,2025-01-07 21:00:00,0,0
+M00028,2025/2026,Brasileirao,Palmeiras,Internacional,2025-01-08 22:00:00,1,0
+M00031,2025/2026,Premier League,Liverpool,Aston Villa,2025-01-08 22:00:00,3,0
+M00029,2025/2026,Premier League,Chelsea,Aston Villa,2025-01-08 23:00:00,4,0
+M00030,2025/2026,La Liga,Barcelona,Valencia,2025-01-08 23:00:00,0,1
+M00034,2025/2026,La Liga,Valencia,Barcelona,2025-01-09 18:00:00,1,1
+M00032,2025/2026,La Liga,Sevilla,Valencia,2025-01-09 20:00:00,0,0
+M00035,2025/2026,Serie A,Inter,Atalanta,2025-01-09 21:00:00,1,0
+M00033,2025/2026,Brasileirao,Flamengo,Internacional,2025-01-09 21:00:00,2,2
+M00038,2025/2026,Serie A,Milan,Napoli,2025-01-10 17:00:00,2,1
+M00039,2025/2026,Premier League,Liverpool,Newcastle,2025-01-10 17:00:00,0,1
+M00037,2025/2026,Brasileirao,Atletico MG,Palmeiras,2025-01-10 18:00:00,0,3
+M00036,2025/2026,Serie A,Atalanta,Juventus,2025-01-10 22:00:00,0,2
+M00043,2025/2026,Premier League,Newcastle,Liverpool,2025-01-11 15:00:00,0,1

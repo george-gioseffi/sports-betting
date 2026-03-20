@@ -1,0 +1,6 @@
+strategy,alert_type,severity
+Aggressive_Momentum,drawdown_limit_breach,high
+Aggressive_Momentum,elevated_volatility,high
+League_Specialist,drawdown_limit_breach,high
+Quant_Value,no_critical_alerts,info
+League_Specialist,long_loss_streak,medium

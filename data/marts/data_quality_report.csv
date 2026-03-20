@@ -1,0 +1,15 @@
+check_name,status,severity,failed_rows,details
+match_id_not_null,passed,error,0,match_id must be present in all match records
+bet_id_not_null,passed,error,0,bet_id must be present in all betting records
+match_id_unique,passed,error,0,match_id must be unique in matches layer
+bet_id_unique,passed,error,0,bet_id must be unique in bets layer
+captured_odds_gt_1,failed,error,1,captured_odds must be strictly greater than 1
+closing_odds_gt_1,passed,error,0,closing_odds must be strictly greater than 1
+stake_non_negative,passed,error,0,stake must be non-negative
+result_domain_valid,passed,error,0,result must be one of: win/loss/push
+market_domain_valid,passed,error,0,market must be standardized to the allowed domain
+placed_before_settled,passed,error,0,bet placed timestamp cannot be later than settled timestamp
+placed_before_kickoff,passed,error,0,bets should be pre-match in this MVP dataset
+settled_after_kickoff,passed,error,0,settlement timestamp must occur after kickoff
+team_name_normalized,passed,warning,0,team names should be normalized and free of repeated spaces
+stake_reasonable_upper_bound,passed,warning,0,stakes above 500 units are flagged as unusual
