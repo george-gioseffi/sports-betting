@@ -7,6 +7,7 @@ from app.common import (
     apply_chart_style,
     apply_global_filters,
     build_global_filters,
+    compact_table,
     inject_styles,
     load_mart,
     render_page_header,
@@ -16,8 +17,8 @@ from app.common import (
 
 inject_styles()
 filters = build_global_filters()
-render_page_header("Data Quality Dashboard", "Validation contract status across critical and warning checks.")
-render_section_note("Reliable analytics requires trusted data contracts before KPI interpretation.")
+render_page_header("Data Quality Dashboard", "Validation status across critical and warning checks.")
+render_section_note("Quality gates protect metric credibility before interpretation.")
 
 dq = apply_global_filters(load_mart("data_quality_report"), filters)
 if dq.empty:
@@ -41,5 +42,19 @@ fig = px.bar(
 )
 st.plotly_chart(apply_chart_style(fig), width="stretch")
 
-st.dataframe(dq.sort_values(["status", "severity", "failed_rows"]), width="stretch")
+dq_table = compact_table(
+    dq,
+    columns=["check_name", "status", "severity", "failed_rows", "details"],
+    rename={
+        "check_name": "Check",
+        "status": "Status",
+        "severity": "Severity",
+        "failed_rows": "Failed Rows",
+        "details": "Details",
+    },
+    sort_by="failed_rows",
+    ascending=False,
+    top_n=12,
+)
+st.dataframe(dq_table, width="stretch", hide_index=True)
 

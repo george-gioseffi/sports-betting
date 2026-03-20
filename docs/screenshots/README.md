@@ -1,14 +1,6 @@
-﻿# Screenshot Capture Guide
+﻿# Final Screenshot Playbook
 
-Use this checklist to capture portfolio-quality dashboard images after running:
-
-```bash
-make seed
-make pipeline
-make app
-```
-
-Windows alternative:
+Use this guide after running:
 
 ```powershell
 .\run.ps1 seed -Matches 280 -Seed 42
@@ -16,83 +8,105 @@ Windows alternative:
 .\run.ps1 app
 ```
 
-## General Capture Standards
-- Use desktop width (recommended: 1440px+).
-- Keep sidebar visible when filters add context.
-- Prefer light theme for GitHub readability.
-- Avoid personal bookmarks or browser clutter in screenshots.
-- Export PNG format.
+## Global Capture Setup
+- Resolution: 1440p or higher.
+- Theme: light.
+- Browser zoom: 100%.
+- Keep sidebar visible when filter context adds value.
+- Use PNG.
 
-## Required Screenshots
+## Recommended Filter States
 
-### 1) Overview Dashboard
-- **File name:** `overview_dashboard.png`
-- **Page:** `Overview`
-- **Capture includes:** top KPI strip + monthly net profit chart + league/market comparison.
-- **Purpose:** shows portfolio-level health at first glance.
+### State A (Executive)
+- Strategies: all
+- Leagues: all
+- Markets: all
+- Simulation Methods: all
+- Date Range: full
 
-### 2) Strategies Analysis
-- **File name:** `strategies_analysis.png`
-- **Page:** `Strategy Analysis`
-- **Capture includes:** net profit by strategy + CLV vs yield scatter + risk profile table.
-- **Purpose:** highlights return quality versus risk posture.
+### State B (Focused)
+- Strategy: `Quant_Value`
+- League: `Premier League`
+- Market: `Home Win`
+- Simulation Methods: all
+- Date Range: full
 
-### 3) CLV Analysis
-- **File name:** `clv_analysis.png`
-- **Page:** `CLV Analysis`
-- **Capture includes:** strategy CLV vs yield chart + CLV by market + bookmaker table.
-- **Purpose:** demonstrates execution quality diagnostics.
+## Page-by-Page Screenshots
 
-### 4) Bankroll Simulation
-- **File name:** `bankroll_simulation.png`
-- **Page:** `Bankroll Simulation`
-- **Capture includes:** bankroll evolution line chart + drawdown chart + scenario summary.
-- **Purpose:** proves scenario analysis and capital trajectory comparison.
+### 1) Home
+- **Screenshot name:** `home-hero.png`
+- **Why it matters:** introduces product purpose and top risk context.
+- **Best filter state:** State A.
+- **Best crop:** page header + KPI strip + workflow block.
+- **Recommended use:** LinkedIn + README.
 
-### 5) Risk Dashboard
-- **File name:** `risk_dashboard.png`
-- **Page:** `Risk Governance Panel`
-- **Capture includes:** risk score by strategy + drawdown vs stake intensity + alerts table.
-- **Purpose:** evidences governance and capital preservation focus.
+### 2) Overview
+- **Screenshot name:** `overview-dashboard.png`
+- **Why it matters:** shows portfolio health and ranking at a glance.
+- **Best filter state:** State A.
+- **Best crop:** KPI strip + monthly chart + league/market ranking tables.
+- **Recommended use:** README + LinkedIn.
 
-### 6) Data Quality Dashboard
-- **File name:** `data_quality_dashboard.png`
-- **Page:** `Data Quality Dashboard`
-- **Capture includes:** validation status chart + detailed checks table.
-- **Purpose:** reinforces trust in data contracts and pipeline reliability.
+### 3) Strategies
+- **Screenshot name:** `strategy-performance.png`
+- **Why it matters:** strongest page to show return-quality vs risk trade-off.
+- **Best filter state:** State A.
+- **Best crop:** net profit bar + CLV vs yield scatter + scorecard table.
+- **Recommended use:** both.
 
-## Recommended Capture Order
-1. Home
-2. Overview
-3. Strategy Analysis
-4. Market Analysis
-5. CLV Analysis
-6. Bankroll Simulation
-7. Risk Governance Panel
-8. Data Quality Dashboard
+### 4) Markets
+- **Screenshot name:** `market-performance.png`
+- **Why it matters:** proves segmentation logic by market family.
+- **Best filter state:** State A.
+- **Best crop:** net profit by market chart + compact table.
+- **Recommended use:** README.
 
-## Recommended Filter State for Better Prints
-- Keep all leagues and markets selected.
-- Keep all strategies selected.
-- Keep all simulation methods selected.
-- Use full date range on first pass.
-- For one detail screenshot, apply:
-  - Strategy: `Quant_Value`
-  - League: `Premier League`
-  - Market: `MONEYLINE_HOME`
+### 5) CLV
+- **Screenshot name:** `clv-analysis.png`
+- **Why it matters:** evidences execution-quality diagnostics.
+- **Best filter state:** State A first, State B as optional extra.
+- **Best crop:** strategy CLV vs yield scatter + bookmaker summary table.
+- **Recommended use:** both.
 
-## Optional Enhancements
-- Add `home_snapshot.png` from `Home` page.
-- Add one filtered view example with a note like "Premier League + Quant_Value filter".
+### 6) Bankroll
+- **Screenshot name:** `bankroll-scenarios.png`
+- **Why it matters:** shows scenario analysis and survivability impact.
+- **Best filter state:** State A.
+- **Best crop:** bankroll curve + drawdown curve + scenario table.
+- **Recommended use:** both.
 
-## README Embedding
-After saving images, embed in `README.md`:
+### 7) Risk
+- **Screenshot name:** `risk-governance.png`
+- **Why it matters:** governance focus and risk discipline signal.
+- **Best filter state:** State A.
+- **Best crop:** risk score bar + alerts table.
+- **Recommended use:** both.
 
+### 8) Data Quality
+- **Screenshot name:** `data-quality.png`
+- **Why it matters:** reinforces trust and analytics reliability.
+- **Best filter state:** State A.
+- **Best crop:** validation status chart + top checks table.
+- **Recommended use:** README.
+
+## Narrative Capture Order
+1. `home-hero.png`
+2. `overview-dashboard.png`
+3. `strategy-performance.png`
+4. `clv-analysis.png`
+5. `risk-governance.png`
+6. `bankroll-scenarios.png`
+7. `market-performance.png`
+8. `data-quality.png`
+
+## README Embedding Snippet
 ```markdown
-![Overview](docs/screenshots/overview_dashboard.png)
-![Strategies](docs/screenshots/strategies_analysis.png)
-![CLV](docs/screenshots/clv_analysis.png)
-![Bankroll](docs/screenshots/bankroll_simulation.png)
-![Risk](docs/screenshots/risk_dashboard.png)
-![Data Quality](docs/screenshots/data_quality_dashboard.png)
+![Home](docs/screenshots/home-hero.png)
+![Overview](docs/screenshots/overview-dashboard.png)
+![Strategies](docs/screenshots/strategy-performance.png)
+![CLV](docs/screenshots/clv-analysis.png)
+![Risk](docs/screenshots/risk-governance.png)
+![Bankroll](docs/screenshots/bankroll-scenarios.png)
+![Markets](docs/screenshots/market-performance.png)
+![Data Quality](docs/screenshots/data-quality.png)
 ```

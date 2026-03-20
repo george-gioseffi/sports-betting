@@ -4,9 +4,12 @@ import plotly.express as px
 import streamlit as st
 
 from app.common import (
+    ALERT_LABELS,
+    SEVERITY_ORDER,
     apply_chart_style,
     apply_global_filters,
     build_global_filters,
+    compact_table,
     inject_styles,
     load_mart,
     render_page_header,
@@ -16,7 +19,7 @@ from app.common import (
 
 inject_styles()
 filters = build_global_filters()
-render_page_header("Risk Governance Panel", "Risk scoring, governance posture, and concentration alert monitoring.")
+render_page_header("Risk Governance Panel", "Risk score, concentration, and governance signals.")
 render_section_note("This layer exists to prioritize capital preservation and decision discipline.")
 
 risk_scores = apply_global_filters(load_mart("mart_risk_scores"), filters)
@@ -52,22 +55,49 @@ fig_components = px.scatter(
 st.plotly_chart(apply_chart_style(fig_components), width="stretch")
 
 st.subheader("Risk Scores")
-st.dataframe(
-    risk_scores[
-        [
-            "strategy",
-            "risk_score",
-            "risk_profile",
-            "max_drawdown",
-            "avg_stake_pct_bankroll",
-            "league_concentration",
-            "max_red_streak",
-        ]
+risk_table = compact_table(
+    risk_scores,
+    columns=[
+        "strategy",
+        "risk_score",
+        "risk_profile",
+        "max_drawdown",
+        "avg_stake_pct_bankroll",
+        "league_concentration",
+        "max_red_streak",
     ],
-    width="stretch",
+    rename={
+        "strategy": "Strategy",
+        "risk_score": "Risk Score",
+        "risk_profile": "Profile",
+        "max_drawdown": "Max Drawdown",
+        "avg_stake_pct_bankroll": "Avg Stake %",
+        "league_concentration": "League Concentration",
+        "max_red_streak": "Max Red Streak",
+    },
+    sort_by="risk_score",
+    ascending=False,
+    round_map={"risk_score": 1},
+    pct_cols=["max_drawdown", "avg_stake_pct_bankroll", "league_concentration"],
 )
+st.dataframe(risk_table, width="stretch", hide_index=True)
 
 if not alerts.empty:
     st.subheader("Risk Alerts")
-    st.dataframe(alerts, width="stretch")
+    alerts_table = alerts.copy()
+    alerts_table["alert_type"] = alerts_table["alert_type"].map(
+        lambda x: ALERT_LABELS.get(str(x), str(x))
+    )
+    alerts_table["severity_order"] = alerts_table["severity"].map(SEVERITY_ORDER).fillna(99)
+    alerts_table = alerts_table.sort_values(["severity_order", "strategy", "alert_type"]).drop(
+        columns=["severity_order"]
+    )
+    alerts_table = alerts_table.rename(
+        columns={
+            "strategy": "Strategy",
+            "alert_type": "Alert",
+            "severity": "Severity",
+        }
+    )
+    st.dataframe(alerts_table, width="stretch", hide_index=True)
 

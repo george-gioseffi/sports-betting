@@ -8,6 +8,7 @@ This repo shows end-to-end delivery of an analytics product: ingestion, data qua
 - SQL modeling and analytical query design
 - Layered data architecture (`raw`, `staging`, `marts`)
 - KPI design and metric governance (ROI, yield, CLV, drawdown, expectancy)
+- Hybrid data design (real match outcomes + simulated pricing/picks)
 - Data quality validation and testing discipline
 - Scenario simulation and risk scoring logic
 - Streamlit dashboard productization

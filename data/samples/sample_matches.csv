@@ -1,41 +1,41 @@
 match_id,season,league,home_team,away_team,kickoff_ts,home_goals,away_goals
-M00003,2025/2026,Brasileirao,Fluminense,Sao Paulo,2025-01-01 17:00:00,1,0
-M00001,2025/2026,Serie A,Juventus,Napoli,2025-01-01 19:00:00,0,0
-M00002,2025/2026,La Liga,Atletico Madrid,Sevilla,2025-01-01 19:00:00,0,0
-M00005,2025/2026,La Liga,Real Sociedad,Real Madrid,2025-01-02 19:00:00,0,2
-M00004,2025/2026,Serie A,Napoli,Milan,2025-01-02 20:00:00,0,0
-M00007,2025/2026,Serie A,Milan,Napoli,2025-01-02 20:00:00,2,0
-M00006,2025/2026,Premier League,Aston Villa,Tottenham,2025-01-02 22:00:00,1,1
-M00008,2025/2026,La Liga,Sevilla,Atletico Madrid,2025-01-03 15:00:00,3,1
-M00009,2025/2026,Premier League,Tottenham,Aston Villa,2025-01-03 17:00:00,0,0
-M00011,2025/2026,Serie A,Atalanta,Juventus,2025-01-03 19:00:00,0,0
-M00010,2025/2026,Brasileirao,Flamengo,Fluminense,2025-01-03 23:00:00,2,2
-M00014,2025/2026,Premier League,Tottenham,Chelsea,2025-01-04 16:00:00,2,1
-M00015,2025/2026,Brasileirao,Flamengo,Sao Paulo,2025-01-04 16:00:00,1,1
-M00012,2025/2026,La Liga,Real Madrid,Atletico Madrid,2025-01-04 20:00:00,3,1
-M00013,2025/2026,Premier League,Liverpool,Tottenham,2025-01-04 20:00:00,2,1
-M00016,2025/2026,Serie A,Napoli,Roma,2025-01-05 16:00:00,1,2
-M00018,2025/2026,Premier League,Chelsea,Aston Villa,2025-01-05 16:00:00,6,0
-M00017,2025/2026,Brasileirao,Fluminense,Sao Paulo,2025-01-05 17:00:00,4,1
-M00019,2025/2026,Brasileirao,Internacional,Sao Paulo,2025-01-05 20:00:00,1,0
-M00023,2025/2026,Serie A,Inter,Roma,2025-01-06 15:00:00,0,2
-M00020,2025/2026,Premier League,Tottenham,Chelsea,2025-01-06 17:00:00,0,0
-M00021,2025/2026,La Liga,Valencia,Real Sociedad,2025-01-06 21:00:00,1,2
-M00022,2025/2026,La Liga,Atletico Madrid,Valencia,2025-01-06 22:00:00,0,2
-M00025,2025/2026,Premier League,Tottenham,Arsenal,2025-01-07 15:00:00,2,0
-M00026,2025/2026,Premier League,Chelsea,Tottenham,2025-01-07 18:00:00,1,0
-M00027,2025/2026,Premier League,Tottenham,Arsenal,2025-01-07 20:00:00,3,2
-M00024,2025/2026,Brasileirao,Sao Paulo,Flamengo,2025-01-07 21:00:00,0,0
-M00028,2025/2026,Brasileirao,Palmeiras,Internacional,2025-01-08 22:00:00,1,0
-M00031,2025/2026,Premier League,Liverpool,Aston Villa,2025-01-08 22:00:00,3,0
-M00029,2025/2026,Premier League,Chelsea,Aston Villa,2025-01-08 23:00:00,4,0
-M00030,2025/2026,La Liga,Barcelona,Valencia,2025-01-08 23:00:00,0,1
-M00034,2025/2026,La Liga,Valencia,Barcelona,2025-01-09 18:00:00,1,1
-M00032,2025/2026,La Liga,Sevilla,Valencia,2025-01-09 20:00:00,0,0
-M00035,2025/2026,Serie A,Inter,Atalanta,2025-01-09 21:00:00,1,0
-M00033,2025/2026,Brasileirao,Flamengo,Internacional,2025-01-09 21:00:00,2,2
-M00038,2025/2026,Serie A,Milan,Napoli,2025-01-10 17:00:00,2,1
-M00039,2025/2026,Premier League,Liverpool,Newcastle,2025-01-10 17:00:00,0,1
-M00037,2025/2026,Brasileirao,Atletico MG,Palmeiras,2025-01-10 18:00:00,0,3
-M00036,2025/2026,Serie A,Atalanta,Juventus,2025-01-10 22:00:00,0,2
-M00043,2025/2026,Premier League,Newcastle,Liverpool,2025-01-11 15:00:00,0,1
+M00001,2024/2025,La Liga,Ath Bilbao,Getafe,2024-08-15 18:00:00,1,1
+M00002,2024/2025,La Liga,Celta,Alaves,2024-08-16 18:00:00,2,1
+M00003,2024/2025,Premier League,Man United,Fulham,2024-08-16 20:00:00,1,0
+M00004,2024/2025,Premier League,Ipswich,Liverpool,2024-08-17 12:30:00,0,2
+M00005,2024/2025,Premier League,Arsenal,Wolves,2024-08-17 15:00:00,2,0
+M00006,2024/2025,Premier League,Nott'm Forest,Bournemouth,2024-08-17 15:00:00,1,1
+M00007,2024/2025,Premier League,Everton,Brighton,2024-08-17 15:00:00,0,3
+M00008,2024/2025,Premier League,West Ham,Aston Villa,2024-08-17 17:30:00,1,2
+M00009,2024/2025,Serie A,Genoa,Inter,2024-08-17 17:30:00,2,2
+M00010,2024/2025,Serie A,Milan,Torino,2024-08-17 19:45:00,2,2
+M00011,2024/2025,La Liga,Valencia,Barcelona,2024-08-17 20:30:00,1,2
+M00012,2024/2025,Premier League,Brentford,Crystal Palace,2024-08-18 14:00:00,2,1
+M00013,2024/2025,Premier League,Chelsea,Man City,2024-08-18 16:30:00,0,2
+M00014,2024/2025,Serie A,Bologna,Udinese,2024-08-18 17:30:00,1,1
+M00015,2024/2025,Serie A,Cagliari,Roma,2024-08-18 19:45:00,0,0
+M00016,2024/2025,Serie A,Lazio,Venezia,2024-08-18 19:45:00,3,1
+M00017,2024/2025,La Liga,Mallorca,Real Madrid,2024-08-18 20:30:00,1,1
+M00018,2024/2025,Serie A,Lecce,Atalanta,2024-08-19 17:30:00,0,4
+M00019,2024/2025,La Liga,Valladolid,Espanol,2024-08-19 18:00:00,1,0
+M00020,2024/2025,La Liga,Villarreal,Ath Madrid,2024-08-19 20:30:00,2,2
+M00021,2024/2025,La Liga,Celta,Valencia,2024-08-23 18:00:00,3,1
+M00022,2024/2025,Bundesliga,M'gladbach,Leverkusen,2024-08-23 19:30:00,2,3
+M00023,2024/2025,Premier League,Brighton,Man United,2024-08-24 12:30:00,2,1
+M00025,2024/2025,Bundesliga,Hoffenheim,Holstein Kiel,2024-08-24 14:30:00,3,2
+M00026,2024/2025,Bundesliga,RB Leipzig,Bochum,2024-08-24 14:30:00,1,0
+M00024,2024/2025,Bundesliga,Mainz,Union Berlin,2024-08-24 14:30:00,1,1
+M00027,2024/2025,Premier League,Tottenham,Everton,2024-08-24 15:00:00,4,0
+M00028,2024/2025,Premier League,Fulham,Leicester,2024-08-24 15:00:00,2,1
+M00029,2024/2025,Premier League,Aston Villa,Arsenal,2024-08-24 17:30:00,0,2
+M00030,2024/2025,Bundesliga,Dortmund,Ein Frankfurt,2024-08-24 17:30:00,2,0
+M00031,2024/2025,Premier League,Wolves,Chelsea,2024-08-25 14:00:00,2,6
+M00032,2024/2025,Bundesliga,Wolfsburg,Bayern Munich,2024-08-25 14:30:00,2,3
+M00033,2024/2025,La Liga,Real Madrid,Valladolid,2024-08-25 16:00:00,3,0
+M00034,2024/2025,Bundesliga,St Pauli,Heidenheim,2024-08-25 16:30:00,0,2
+M00035,2024/2025,Serie A,Fiorentina,Venezia,2024-08-25 17:30:00,0,0
+M00036,2024/2025,La Liga,Alaves,Betis,2024-08-25 18:15:00,0,0
+M00037,2024/2025,La Liga,Ath Madrid,Girona,2024-08-25 20:30:00,3,0
+M00038,2024/2025,Serie A,Cagliari,Como,2024-08-26 17:30:00,1,1
+M00039,2024/2025,Serie A,Verona,Juventus,2024-08-26 19:45:00,0,3
+M00040,2024/2025,La Liga,Villarreal,Celta,2024-08-26 20:30:00,4,3

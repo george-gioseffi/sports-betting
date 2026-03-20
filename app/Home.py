@@ -7,6 +7,7 @@ from app.common import (
     apply_chart_style,
     apply_global_filters,
     build_global_filters,
+    compact_table,
     inject_styles,
     load_mart,
     render_kpi_strip,
@@ -25,14 +26,14 @@ inject_styles()
 filters = build_global_filters()
 render_page_header(
     "Sports Betting Intelligence Engine",
-    "End-to-end analytics platform for strategy performance, risk governance, and capital preservation.",
+    "Analytics platform for performance quality, risk governance, and capital preservation.",
 )
 render_section_note(
-    "Portfolio case focused on analytical decision quality, volatility control, and transparent risk monitoring."
+    "Portfolio case focused on decision quality, volatility control, and transparent risk monitoring."
 )
 
 st.info(
-    "This project is for analytical, educational, and portfolio purposes only. It is not financial or betting advice."
+    "Analytical and educational project. Not financial or betting advice."
 )
 
 overall = load_mart("kpi_overall")
@@ -82,7 +83,21 @@ with right:
 """
     )
     if not risk.empty:
-        top_risk = risk.sort_values("risk_score", ascending=False).head(3)
-        st.markdown("**Top Risk Exposure (Filtered)**")
-        st.dataframe(top_risk[["strategy", "risk_score", "risk_profile"]], width="stretch")
+        st.markdown("**Highest Risk Exposure (Filtered)**")
+        top_risk = compact_table(
+            risk,
+            columns=["strategy", "risk_score", "risk_profile", "max_drawdown"],
+            rename={
+                "strategy": "Strategy",
+                "risk_score": "Risk Score",
+                "risk_profile": "Profile",
+                "max_drawdown": "Max Drawdown",
+            },
+            sort_by="risk_score",
+            ascending=False,
+            top_n=4,
+            round_map={"risk_score": 1},
+            pct_cols=["max_drawdown"],
+        )
+        st.dataframe(top_risk, width="stretch", hide_index=True)
 

@@ -1,0 +1,481 @@
+season,league,home_team,away_team,kickoff_ts,home_goals,away_goals,data_origin
+2024/2025,La Liga,Ath Bilbao,Getafe,2024-08-15 18:00:00,1,1,football-data.co.uk
+2024/2025,La Liga,Betis,Girona,2024-08-15 20:30:00,1,1,football-data.co.uk
+2024/2025,La Liga,Celta,Alaves,2024-08-16 18:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,Man United,Fulham,2024-08-16 20:00:00,1,0,football-data.co.uk
+2024/2025,La Liga,Las Palmas,Sevilla,2024-08-16 20:30:00,2,2,football-data.co.uk
+2024/2025,Premier League,Ipswich,Liverpool,2024-08-17 12:30:00,0,2,football-data.co.uk
+2024/2025,Premier League,Arsenal,Wolves,2024-08-17 15:00:00,2,0,football-data.co.uk
+2024/2025,Premier League,Everton,Brighton,2024-08-17 15:00:00,0,3,football-data.co.uk
+2024/2025,Premier League,Newcastle,Southampton,2024-08-17 15:00:00,1,0,football-data.co.uk
+2024/2025,Premier League,Nott'm Forest,Bournemouth,2024-08-17 15:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,West Ham,Aston Villa,2024-08-17 17:30:00,1,2,football-data.co.uk
+2024/2025,Serie A,Genoa,Inter,2024-08-17 17:30:00,2,2,football-data.co.uk
+2024/2025,Serie A,Parma,Fiorentina,2024-08-17 17:30:00,1,1,football-data.co.uk
+2024/2025,La Liga,Osasuna,Leganes,2024-08-17 18:00:00,1,1,football-data.co.uk
+2024/2025,Serie A,Empoli,Monza,2024-08-17 19:45:00,0,0,football-data.co.uk
+2024/2025,Serie A,Milan,Torino,2024-08-17 19:45:00,2,2,football-data.co.uk
+2024/2025,La Liga,Valencia,Barcelona,2024-08-17 20:30:00,1,2,football-data.co.uk
+2024/2025,Premier League,Brentford,Crystal Palace,2024-08-18 14:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,Chelsea,Man City,2024-08-18 16:30:00,0,2,football-data.co.uk
+2024/2025,Serie A,Bologna,Udinese,2024-08-18 17:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Verona,Napoli,2024-08-18 17:30:00,3,0,football-data.co.uk
+2024/2025,La Liga,Sociedad,Vallecano,2024-08-18 18:00:00,1,2,football-data.co.uk
+2024/2025,Serie A,Cagliari,Roma,2024-08-18 19:45:00,0,0,football-data.co.uk
+2024/2025,Serie A,Lazio,Venezia,2024-08-18 19:45:00,3,1,football-data.co.uk
+2024/2025,La Liga,Mallorca,Real Madrid,2024-08-18 20:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Lecce,Atalanta,2024-08-19 17:30:00,0,4,football-data.co.uk
+2024/2025,La Liga,Valladolid,Espanol,2024-08-19 18:00:00,1,0,football-data.co.uk
+2024/2025,Serie A,Juventus,Como,2024-08-19 19:45:00,3,0,football-data.co.uk
+2024/2025,Premier League,Leicester,Tottenham,2024-08-19 20:00:00,1,1,football-data.co.uk
+2024/2025,La Liga,Villarreal,Ath Madrid,2024-08-19 20:30:00,2,2,football-data.co.uk
+2024/2025,La Liga,Celta,Valencia,2024-08-23 18:00:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,M'gladbach,Leverkusen,2024-08-23 19:30:00,2,3,football-data.co.uk
+2024/2025,La Liga,Sevilla,Villarreal,2024-08-23 20:30:00,1,2,football-data.co.uk
+2024/2025,Premier League,Brighton,Man United,2024-08-24 12:30:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,Augsburg,Werder Bremen,2024-08-24 14:30:00,2,2,football-data.co.uk
+2024/2025,Bundesliga,Freiburg,Stuttgart,2024-08-24 14:30:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,Hoffenheim,Holstein Kiel,2024-08-24 14:30:00,3,2,football-data.co.uk
+2024/2025,Bundesliga,Mainz,Union Berlin,2024-08-24 14:30:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,RB Leipzig,Bochum,2024-08-24 14:30:00,1,0,football-data.co.uk
+2024/2025,Premier League,Tottenham,Everton,2024-08-24 15:00:00,4,0,football-data.co.uk
+2024/2025,Premier League,Southampton,Nott'm Forest,2024-08-24 15:00:00,0,1,football-data.co.uk
+2024/2025,Premier League,Crystal Palace,West Ham,2024-08-24 15:00:00,0,2,football-data.co.uk
+2024/2025,Premier League,Fulham,Leicester,2024-08-24 15:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,Man City,Ipswich,2024-08-24 15:00:00,4,1,football-data.co.uk
+2024/2025,La Liga,Osasuna,Mallorca,2024-08-24 16:00:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Dortmund,Ein Frankfurt,2024-08-24 17:30:00,2,0,football-data.co.uk
+2024/2025,Premier League,Aston Villa,Arsenal,2024-08-24 17:30:00,0,2,football-data.co.uk
+2024/2025,Serie A,Udinese,Lazio,2024-08-24 17:30:00,2,1,football-data.co.uk
+2024/2025,Serie A,Parma,Milan,2024-08-24 17:30:00,2,1,football-data.co.uk
+2024/2025,La Liga,Barcelona,Ath Bilbao,2024-08-24 18:00:00,2,1,football-data.co.uk
+2024/2025,Serie A,Inter,Lecce,2024-08-24 19:45:00,2,0,football-data.co.uk
+2024/2025,Serie A,Monza,Genoa,2024-08-24 19:45:00,0,1,football-data.co.uk
+2024/2025,La Liga,Espanol,Sociedad,2024-08-24 20:30:00,0,1,football-data.co.uk
+2024/2025,La Liga,Getafe,Vallecano,2024-08-24 20:30:00,0,0,football-data.co.uk
+2024/2025,Premier League,Bournemouth,Newcastle,2024-08-25 14:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,Wolves,Chelsea,2024-08-25 14:00:00,2,6,football-data.co.uk
+2024/2025,Bundesliga,Wolfsburg,Bayern Munich,2024-08-25 14:30:00,2,3,football-data.co.uk
+2024/2025,La Liga,Real Madrid,Valladolid,2024-08-25 16:00:00,3,0,football-data.co.uk
+2024/2025,Bundesliga,St Pauli,Heidenheim,2024-08-25 16:30:00,0,2,football-data.co.uk
+2024/2025,Premier League,Liverpool,Brentford,2024-08-25 16:30:00,2,0,football-data.co.uk
+2024/2025,Serie A,Fiorentina,Venezia,2024-08-25 17:30:00,0,0,football-data.co.uk
+2024/2025,Serie A,Torino,Atalanta,2024-08-25 17:30:00,2,1,football-data.co.uk
+2024/2025,La Liga,Leganes,Las Palmas,2024-08-25 18:00:00,2,1,football-data.co.uk
+2024/2025,La Liga,Alaves,Betis,2024-08-25 18:15:00,0,0,football-data.co.uk
+2024/2025,Serie A,Napoli,Bologna,2024-08-25 19:45:00,3,0,football-data.co.uk
+2024/2025,Serie A,Roma,Empoli,2024-08-25 19:45:00,1,2,football-data.co.uk
+2024/2025,La Liga,Ath Madrid,Girona,2024-08-25 20:30:00,3,0,football-data.co.uk
+2024/2025,Serie A,Cagliari,Como,2024-08-26 17:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Verona,Juventus,2024-08-26 19:45:00,0,3,football-data.co.uk
+2024/2025,La Liga,Villarreal,Celta,2024-08-26 20:30:00,4,3,football-data.co.uk
+2024/2025,La Liga,Mallorca,Sevilla,2024-08-27 18:00:00,0,0,football-data.co.uk
+2024/2025,La Liga,Vallecano,Barcelona,2024-08-27 20:30:00,1,2,football-data.co.uk
+2024/2025,La Liga,Ath Bilbao,Valencia,2024-08-28 18:00:00,1,0,football-data.co.uk
+2024/2025,La Liga,Valladolid,Leganes,2024-08-28 18:00:00,0,0,football-data.co.uk
+2024/2025,La Liga,Ath Madrid,Espanol,2024-08-28 20:30:00,0,0,football-data.co.uk
+2024/2025,La Liga,Sociedad,Alaves,2024-08-28 20:30:00,1,2,football-data.co.uk
+2024/2025,La Liga,Girona,Osasuna,2024-08-29 18:00:00,4,0,football-data.co.uk
+2024/2025,La Liga,Las Palmas,Real Madrid,2024-08-29 20:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Venezia,Torino,2024-08-30 17:30:00,0,1,football-data.co.uk
+2024/2025,Bundesliga,Union Berlin,St Pauli,2024-08-30 19:30:00,1,0,football-data.co.uk
+2024/2025,Serie A,Inter,Atalanta,2024-08-30 19:45:00,4,0,football-data.co.uk
+2024/2025,Premier League,Arsenal,Brighton,2024-08-31 12:30:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Werder Bremen,Dortmund,2024-08-31 14:30:00,0,0,football-data.co.uk
+2024/2025,Bundesliga,Stuttgart,Mainz,2024-08-31 14:30:00,3,3,football-data.co.uk
+2024/2025,Bundesliga,Bochum,M'gladbach,2024-08-31 14:30:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,Ein Frankfurt,Hoffenheim,2024-08-31 14:30:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,Holstein Kiel,Wolfsburg,2024-08-31 14:30:00,0,2,football-data.co.uk
+2024/2025,Premier League,Nott'm Forest,Wolves,2024-08-31 15:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,Leicester,Aston Villa,2024-08-31 15:00:00,1,2,football-data.co.uk
+2024/2025,Premier League,Brentford,Southampton,2024-08-31 15:00:00,3,1,football-data.co.uk
+2024/2025,Premier League,Everton,Bournemouth,2024-08-31 15:00:00,2,3,football-data.co.uk
+2024/2025,Premier League,Ipswich,Fulham,2024-08-31 15:00:00,1,1,football-data.co.uk
+2024/2025,La Liga,Barcelona,Valladolid,2024-08-31 16:00:00,7,0,football-data.co.uk
+2024/2025,Bundesliga,Leverkusen,RB Leipzig,2024-08-31 17:30:00,2,3,football-data.co.uk
+2024/2025,Premier League,West Ham,Man City,2024-08-31 17:30:00,1,3,football-data.co.uk
+2024/2025,Serie A,Lecce,Cagliari,2024-08-31 17:30:00,1,0,football-data.co.uk
+2024/2025,Serie A,Bologna,Empoli,2024-08-31 17:30:00,1,1,football-data.co.uk
+2024/2025,La Liga,Ath Bilbao,Ath Madrid,2024-08-31 18:00:00,0,1,football-data.co.uk
+2024/2025,La Liga,Espanol,Vallecano,2024-08-31 18:15:00,2,1,football-data.co.uk
+2024/2025,Serie A,Lazio,Milan,2024-08-31 19:45:00,2,2,football-data.co.uk
+2024/2025,Serie A,Napoli,Parma,2024-08-31 19:45:00,2,1,football-data.co.uk
+2024/2025,La Liga,Leganes,Mallorca,2024-08-31 20:30:00,0,1,football-data.co.uk
+2024/2025,La Liga,Valencia,Villarreal,2024-08-31 20:30:00,1,1,football-data.co.uk
+2024/2025,Premier League,Chelsea,Crystal Palace,2024-09-01 13:30:00,1,1,football-data.co.uk
+2024/2025,Premier League,Newcastle,Tottenham,2024-09-01 13:30:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,Heidenheim,Augsburg,2024-09-01 14:30:00,4,0,football-data.co.uk
+2024/2025,La Liga,Osasuna,Celta,2024-09-01 16:00:00,3,2,football-data.co.uk
+2024/2025,La Liga,Alaves,Las Palmas,2024-09-01 16:00:00,2,0,football-data.co.uk
+2024/2025,Premier League,Man United,Liverpool,2024-09-01 16:00:00,0,3,football-data.co.uk
+2024/2025,Bundesliga,Bayern Munich,Freiburg,2024-09-01 16:30:00,2,0,football-data.co.uk
+2024/2025,Serie A,Fiorentina,Monza,2024-09-01 17:30:00,2,2,football-data.co.uk
+2024/2025,Serie A,Genoa,Verona,2024-09-01 17:30:00,0,2,football-data.co.uk
+2024/2025,La Liga,Sevilla,Girona,2024-09-01 18:00:00,0,2,football-data.co.uk
+2024/2025,La Liga,Getafe,Sociedad,2024-09-01 18:15:00,0,0,football-data.co.uk
+2024/2025,Serie A,Juventus,Roma,2024-09-01 19:45:00,0,0,football-data.co.uk
+2024/2025,Serie A,Udinese,Como,2024-09-01 19:45:00,1,0,football-data.co.uk
+2024/2025,La Liga,Real Madrid,Betis,2024-09-01 20:30:00,2,0,football-data.co.uk
+2024/2025,Bundesliga,Dortmund,Heidenheim,2024-09-13 19:30:00,4,2,football-data.co.uk
+2024/2025,La Liga,Betis,Leganes,2024-09-13 20:00:00,2,0,football-data.co.uk
+2024/2025,Premier League,Southampton,Man United,2024-09-14 12:30:00,0,3,football-data.co.uk
+2024/2025,La Liga,Mallorca,Villarreal,2024-09-14 13:00:00,1,2,football-data.co.uk
+2024/2025,Serie A,Como,Bologna,2024-09-14 14:00:00,2,2,football-data.co.uk
+2024/2025,Bundesliga,Wolfsburg,Ein Frankfurt,2024-09-14 14:30:00,1,2,football-data.co.uk
+2024/2025,Bundesliga,RB Leipzig,Union Berlin,2024-09-14 14:30:00,0,0,football-data.co.uk
+2024/2025,Bundesliga,Freiburg,Bochum,2024-09-14 14:30:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,Hoffenheim,Leverkusen,2024-09-14 14:30:00,1,4,football-data.co.uk
+2024/2025,Bundesliga,M'gladbach,Stuttgart,2024-09-14 14:30:00,1,3,football-data.co.uk
+2024/2025,Premier League,Man City,Brentford,2024-09-14 15:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,Liverpool,Nott'm Forest,2024-09-14 15:00:00,0,1,football-data.co.uk
+2024/2025,Premier League,Fulham,West Ham,2024-09-14 15:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,Brighton,Ipswich,2024-09-14 15:00:00,0,0,football-data.co.uk
+2024/2025,Premier League,Crystal Palace,Leicester,2024-09-14 15:00:00,2,2,football-data.co.uk
+2024/2025,La Liga,Espanol,Alaves,2024-09-14 15:15:00,3,2,football-data.co.uk
+2024/2025,Serie A,Empoli,Juventus,2024-09-14 17:00:00,0,0,football-data.co.uk
+2024/2025,Bundesliga,Holstein Kiel,Bayern Munich,2024-09-14 17:30:00,1,6,football-data.co.uk
+2024/2025,La Liga,Sevilla,Getafe,2024-09-14 17:30:00,1,0,football-data.co.uk
+2024/2025,Premier League,Aston Villa,Everton,2024-09-14 17:30:00,3,2,football-data.co.uk
+2024/2025,Serie A,Milan,Venezia,2024-09-14 19:45:00,4,0,football-data.co.uk
+2024/2025,La Liga,Sociedad,Real Madrid,2024-09-14 20:00:00,0,2,football-data.co.uk
+2024/2025,Premier League,Bournemouth,Chelsea,2024-09-14 20:00:00,0,1,football-data.co.uk
+2024/2025,Serie A,Genoa,Roma,2024-09-15 11:30:00,1,1,football-data.co.uk
+2024/2025,La Liga,Celta,Valladolid,2024-09-15 13:00:00,3,1,football-data.co.uk
+2024/2025,Premier League,Tottenham,Arsenal,2024-09-15 14:00:00,0,1,football-data.co.uk
+2024/2025,Serie A,Torino,Lecce,2024-09-15 14:00:00,0,0,football-data.co.uk
+2024/2025,Serie A,Atalanta,Fiorentina,2024-09-15 14:00:00,3,2,football-data.co.uk
+2024/2025,Bundesliga,Augsburg,St Pauli,2024-09-15 14:30:00,3,1,football-data.co.uk
+2024/2025,La Liga,Girona,Barcelona,2024-09-15 15:15:00,1,4,football-data.co.uk
+2024/2025,Bundesliga,Mainz,Werder Bremen,2024-09-15 16:30:00,1,2,football-data.co.uk
+2024/2025,Premier League,Wolves,Newcastle,2024-09-15 16:30:00,1,2,football-data.co.uk
+2024/2025,Serie A,Cagliari,Napoli,2024-09-15 17:00:00,0,4,football-data.co.uk
+2024/2025,La Liga,Las Palmas,Ath Bilbao,2024-09-15 17:30:00,2,3,football-data.co.uk
+2024/2025,Serie A,Monza,Inter,2024-09-15 19:45:00,1,1,football-data.co.uk
+2024/2025,La Liga,Ath Madrid,Valencia,2024-09-15 20:00:00,3,0,football-data.co.uk
+2024/2025,Serie A,Parma,Udinese,2024-09-16 17:30:00,2,3,football-data.co.uk
+2024/2025,Serie A,Lazio,Verona,2024-09-16 19:45:00,2,1,football-data.co.uk
+2024/2025,La Liga,Vallecano,Osasuna,2024-09-16 20:00:00,3,1,football-data.co.uk
+2024/2025,La Liga,Mallorca,Sociedad,2024-09-17 18:00:00,1,0,football-data.co.uk
+2024/2025,La Liga,Betis,Getafe,2024-09-18 18:00:00,2,1,football-data.co.uk
+2024/2025,La Liga,Leganes,Ath Bilbao,2024-09-19 18:00:00,0,2,football-data.co.uk
+2024/2025,Serie A,Cagliari,Empoli,2024-09-20 17:30:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,Augsburg,Mainz,2024-09-20 19:30:00,2,3,football-data.co.uk
+2024/2025,Serie A,Verona,Torino,2024-09-20 19:45:00,2,3,football-data.co.uk
+2024/2025,La Liga,Alaves,Sevilla,2024-09-20 20:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,West Ham,Chelsea,2024-09-21 12:30:00,0,3,football-data.co.uk
+2024/2025,La Liga,Valladolid,Sociedad,2024-09-21 13:00:00,0,0,football-data.co.uk
+2024/2025,Serie A,Venezia,Genoa,2024-09-21 14:00:00,2,0,football-data.co.uk
+2024/2025,Bundesliga,Werder Bremen,Bayern Munich,2024-09-21 14:30:00,0,5,football-data.co.uk
+2024/2025,Bundesliga,Union Berlin,Hoffenheim,2024-09-21 14:30:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,Bochum,Holstein Kiel,2024-09-21 14:30:00,2,2,football-data.co.uk
+2024/2025,Bundesliga,Heidenheim,Freiburg,2024-09-21 14:30:00,0,3,football-data.co.uk
+2024/2025,Premier League,Southampton,Ipswich,2024-09-21 15:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,Liverpool,Bournemouth,2024-09-21 15:00:00,3,0,football-data.co.uk
+2024/2025,Premier League,Tottenham,Brentford,2024-09-21 15:00:00,3,1,football-data.co.uk
+2024/2025,Premier League,Fulham,Newcastle,2024-09-21 15:00:00,3,1,football-data.co.uk
+2024/2025,Premier League,Aston Villa,Wolves,2024-09-21 15:00:00,3,1,football-data.co.uk
+2024/2025,Premier League,Leicester,Everton,2024-09-21 15:00:00,1,1,football-data.co.uk
+2024/2025,La Liga,Osasuna,Las Palmas,2024-09-21 15:15:00,2,1,football-data.co.uk
+2024/2025,Serie A,Juventus,Napoli,2024-09-21 17:00:00,0,0,football-data.co.uk
+2024/2025,Bundesliga,Ein Frankfurt,M'gladbach,2024-09-21 17:30:00,2,0,football-data.co.uk
+2024/2025,La Liga,Valencia,Girona,2024-09-21 17:30:00,2,0,football-data.co.uk
+2024/2025,Premier League,Crystal Palace,Man United,2024-09-21 17:30:00,0,0,football-data.co.uk
+2024/2025,Serie A,Lecce,Parma,2024-09-21 19:45:00,2,2,football-data.co.uk
+2024/2025,La Liga,Real Madrid,Espanol,2024-09-21 20:00:00,4,1,football-data.co.uk
+2024/2025,Serie A,Fiorentina,Lazio,2024-09-22 11:30:00,2,1,football-data.co.uk
+2024/2025,La Liga,Getafe,Leganes,2024-09-22 13:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,Brighton,Nott'm Forest,2024-09-22 14:00:00,2,2,football-data.co.uk
+2024/2025,Serie A,Monza,Bologna,2024-09-22 14:00:00,1,2,football-data.co.uk
+2024/2025,Bundesliga,Leverkusen,Wolfsburg,2024-09-22 14:30:00,4,3,football-data.co.uk
+2024/2025,La Liga,Ath Bilbao,Celta,2024-09-22 15:15:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,Stuttgart,Dortmund,2024-09-22 16:30:00,5,1,football-data.co.uk
+2024/2025,Premier League,Man City,Arsenal,2024-09-22 16:30:00,2,2,football-data.co.uk
+2024/2025,Serie A,Roma,Udinese,2024-09-22 17:00:00,3,0,football-data.co.uk
+2024/2025,La Liga,Villarreal,Barcelona,2024-09-22 17:30:00,1,5,football-data.co.uk
+2024/2025,Bundesliga,St Pauli,RB Leipzig,2024-09-22 18:30:00,0,0,football-data.co.uk
+2024/2025,Serie A,Inter,Milan,2024-09-22 19:45:00,1,2,football-data.co.uk
+2024/2025,La Liga,Vallecano,Ath Madrid,2024-09-22 20:00:00,1,1,football-data.co.uk
+2024/2025,La Liga,Betis,Mallorca,2024-09-23 20:00:00,1,2,football-data.co.uk
+2024/2025,La Liga,Sevilla,Valladolid,2024-09-24 18:00:00,2,1,football-data.co.uk
+2024/2025,La Liga,Valencia,Osasuna,2024-09-24 18:00:00,0,0,football-data.co.uk
+2024/2025,Serie A,Atalanta,Como,2024-09-24 19:45:00,2,3,football-data.co.uk
+2024/2025,La Liga,Real Madrid,Alaves,2024-09-24 20:00:00,3,2,football-data.co.uk
+2024/2025,La Liga,Girona,Vallecano,2024-09-25 18:00:00,0,0,football-data.co.uk
+2024/2025,La Liga,Barcelona,Getafe,2024-09-25 20:00:00,1,0,football-data.co.uk
+2024/2025,La Liga,Espanol,Villarreal,2024-09-26 18:00:00,1,2,football-data.co.uk
+2024/2025,La Liga,Las Palmas,Betis,2024-09-26 18:00:00,1,1,football-data.co.uk
+2024/2025,La Liga,Celta,Ath Madrid,2024-09-26 20:00:00,0,1,football-data.co.uk
+2024/2025,Bundesliga,Dortmund,Bochum,2024-09-27 19:30:00,4,2,football-data.co.uk
+2024/2025,Serie A,Milan,Lecce,2024-09-27 19:45:00,3,0,football-data.co.uk
+2024/2025,La Liga,Valladolid,Mallorca,2024-09-27 20:00:00,1,2,football-data.co.uk
+2024/2025,Premier League,Newcastle,Man City,2024-09-28 12:30:00,1,1,football-data.co.uk
+2024/2025,La Liga,Getafe,Alaves,2024-09-28 13:00:00,2,0,football-data.co.uk
+2024/2025,Serie A,Udinese,Inter,2024-09-28 14:00:00,2,3,football-data.co.uk
+2024/2025,Bundesliga,Wolfsburg,Stuttgart,2024-09-28 14:30:00,2,2,football-data.co.uk
+2024/2025,Bundesliga,RB Leipzig,Augsburg,2024-09-28 14:30:00,4,0,football-data.co.uk
+2024/2025,Bundesliga,Freiburg,St Pauli,2024-09-28 14:30:00,0,3,football-data.co.uk
+2024/2025,Bundesliga,Mainz,Heidenheim,2024-09-28 14:30:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,M'gladbach,Union Berlin,2024-09-28 14:30:00,1,0,football-data.co.uk
+2024/2025,Premier League,Everton,Crystal Palace,2024-09-28 15:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,Chelsea,Brighton,2024-09-28 15:00:00,4,2,football-data.co.uk
+2024/2025,Premier League,Nott'm Forest,Fulham,2024-09-28 15:00:00,0,1,football-data.co.uk
+2024/2025,Premier League,Arsenal,Leicester,2024-09-28 15:00:00,4,2,football-data.co.uk
+2024/2025,Premier League,Brentford,West Ham,2024-09-28 15:00:00,1,1,football-data.co.uk
+2024/2025,La Liga,Vallecano,Leganes,2024-09-28 15:15:00,1,1,football-data.co.uk
+2024/2025,Serie A,Genoa,Juventus,2024-09-28 17:00:00,0,3,football-data.co.uk
+2024/2025,Bundesliga,Bayern Munich,Leverkusen,2024-09-28 17:30:00,1,1,football-data.co.uk
+2024/2025,La Liga,Sociedad,Valencia,2024-09-28 17:30:00,3,0,football-data.co.uk
+2024/2025,Premier League,Wolves,Liverpool,2024-09-28 17:30:00,1,2,football-data.co.uk
+2024/2025,Serie A,Bologna,Atalanta,2024-09-28 19:45:00,1,1,football-data.co.uk
+2024/2025,La Liga,Osasuna,Barcelona,2024-09-28 20:00:00,4,2,football-data.co.uk
+2024/2025,Serie A,Torino,Lazio,2024-09-29 11:30:00,2,3,football-data.co.uk
+2024/2025,La Liga,Celta,Girona,2024-09-29 13:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,Ipswich,Aston Villa,2024-09-29 14:00:00,2,2,football-data.co.uk
+2024/2025,Serie A,Como,Verona,2024-09-29 14:00:00,3,2,football-data.co.uk
+2024/2025,Serie A,Roma,Venezia,2024-09-29 14:00:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,Holstein Kiel,Ein Frankfurt,2024-09-29 14:30:00,2,4,football-data.co.uk
+2024/2025,La Liga,Ath Bilbao,Sevilla,2024-09-29 15:15:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Hoffenheim,Werder Bremen,2024-09-29 16:30:00,3,4,football-data.co.uk
+2024/2025,Premier League,Man United,Tottenham,2024-09-29 16:30:00,0,3,football-data.co.uk
+2024/2025,Serie A,Empoli,Fiorentina,2024-09-29 17:00:00,0,0,football-data.co.uk
+2024/2025,La Liga,Betis,Espanol,2024-09-29 17:30:00,1,0,football-data.co.uk
+2024/2025,Serie A,Napoli,Monza,2024-09-29 19:45:00,2,0,football-data.co.uk
+2024/2025,La Liga,Ath Madrid,Real Madrid,2024-09-29 20:00:00,1,1,football-data.co.uk
+2024/2025,Serie A,Parma,Cagliari,2024-09-30 19:45:00,2,3,football-data.co.uk
+2024/2025,La Liga,Villarreal,Las Palmas,2024-09-30 20:00:00,3,1,football-data.co.uk
+2024/2025,Premier League,Bournemouth,Southampton,2024-09-30 20:00:00,3,1,football-data.co.uk
+2024/2025,Serie A,Napoli,Como,2024-10-04 17:30:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,Augsburg,M'gladbach,2024-10-04 19:30:00,2,1,football-data.co.uk
+2024/2025,Serie A,Verona,Venezia,2024-10-04 19:45:00,2,1,football-data.co.uk
+2024/2025,La Liga,Leganes,Valencia,2024-10-04 20:00:00,0,0,football-data.co.uk
+2024/2025,Premier League,Crystal Palace,Liverpool,2024-10-05 12:30:00,0,1,football-data.co.uk
+2024/2025,La Liga,Espanol,Mallorca,2024-10-05 13:00:00,2,1,football-data.co.uk
+2024/2025,Serie A,Udinese,Lecce,2024-10-05 14:00:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Bochum,Wolfsburg,2024-10-05 14:30:00,1,3,football-data.co.uk
+2024/2025,Bundesliga,Leverkusen,Holstein Kiel,2024-10-05 14:30:00,2,2,football-data.co.uk
+2024/2025,Bundesliga,Werder Bremen,Freiburg,2024-10-05 14:30:00,0,1,football-data.co.uk
+2024/2025,Bundesliga,Union Berlin,Dortmund,2024-10-05 14:30:00,2,1,football-data.co.uk
+2024/2025,Premier League,West Ham,Ipswich,2024-10-05 15:00:00,4,1,football-data.co.uk
+2024/2025,Premier League,Arsenal,Southampton,2024-10-05 15:00:00,3,1,football-data.co.uk
+2024/2025,Premier League,Brentford,Wolves,2024-10-05 15:00:00,5,3,football-data.co.uk
+2024/2025,Premier League,Leicester,Bournemouth,2024-10-05 15:00:00,1,0,football-data.co.uk
+2024/2025,Premier League,Man City,Fulham,2024-10-05 15:00:00,3,2,football-data.co.uk
+2024/2025,La Liga,Getafe,Osasuna,2024-10-05 15:15:00,1,1,football-data.co.uk
+2024/2025,Serie A,Atalanta,Genoa,2024-10-05 17:00:00,5,1,football-data.co.uk
+2024/2025,Bundesliga,St Pauli,Mainz,2024-10-05 17:30:00,0,3,football-data.co.uk
+2024/2025,La Liga,Las Palmas,Celta,2024-10-05 17:30:00,0,1,football-data.co.uk
+2024/2025,La Liga,Valladolid,Vallecano,2024-10-05 17:30:00,1,2,football-data.co.uk
+2024/2025,Premier League,Everton,Newcastle,2024-10-05 17:30:00,0,0,football-data.co.uk
+2024/2025,Serie A,Inter,Torino,2024-10-05 19:45:00,3,2,football-data.co.uk
+2024/2025,La Liga,Real Madrid,Villarreal,2024-10-05 20:00:00,2,0,football-data.co.uk
+2024/2025,Serie A,Juventus,Cagliari,2024-10-06 11:30:00,1,1,football-data.co.uk
+2024/2025,La Liga,Girona,Ath Bilbao,2024-10-06 13:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,Chelsea,Nott'm Forest,2024-10-06 14:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,Aston Villa,Man United,2024-10-06 14:00:00,0,0,football-data.co.uk
+2024/2025,Serie A,Bologna,Parma,2024-10-06 14:00:00,0,0,football-data.co.uk
+2024/2025,Serie A,Lazio,Empoli,2024-10-06 14:00:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,Heidenheim,RB Leipzig,2024-10-06 14:30:00,0,1,football-data.co.uk
+2024/2025,La Liga,Alaves,Barcelona,2024-10-06 15:15:00,0,3,football-data.co.uk
+2024/2025,Bundesliga,Ein Frankfurt,Bayern Munich,2024-10-06 16:30:00,3,3,football-data.co.uk
+2024/2025,Premier League,Brighton,Tottenham,2024-10-06 16:30:00,3,2,football-data.co.uk
+2024/2025,Serie A,Monza,Roma,2024-10-06 17:00:00,1,1,football-data.co.uk
+2024/2025,La Liga,Sevilla,Betis,2024-10-06 17:30:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Stuttgart,Hoffenheim,2024-10-06 18:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Fiorentina,Milan,2024-10-06 19:45:00,2,1,football-data.co.uk
+2024/2025,La Liga,Sociedad,Ath Madrid,2024-10-06 20:00:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Dortmund,St Pauli,2024-10-18 19:30:00,2,1,football-data.co.uk
+2024/2025,La Liga,Alaves,Valladolid,2024-10-18 20:00:00,2,3,football-data.co.uk
+2024/2025,Premier League,Tottenham,West Ham,2024-10-19 12:30:00,4,1,football-data.co.uk
+2024/2025,La Liga,Ath Bilbao,Espanol,2024-10-19 13:00:00,4,1,football-data.co.uk
+2024/2025,Serie A,Genoa,Bologna,2024-10-19 14:00:00,2,2,football-data.co.uk
+2024/2025,Serie A,Como,Parma,2024-10-19 14:00:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Mainz,RB Leipzig,2024-10-19 14:30:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,M'gladbach,Heidenheim,2024-10-19 14:30:00,3,2,football-data.co.uk
+2024/2025,Bundesliga,Leverkusen,Ein Frankfurt,2024-10-19 14:30:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,Freiburg,Augsburg,2024-10-19 14:30:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,Hoffenheim,Bochum,2024-10-19 14:30:00,3,1,football-data.co.uk
+2024/2025,Premier League,Fulham,Aston Villa,2024-10-19 15:00:00,1,3,football-data.co.uk
+2024/2025,Premier League,Ipswich,Everton,2024-10-19 15:00:00,0,2,football-data.co.uk
+2024/2025,Premier League,Man United,Brentford,2024-10-19 15:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,Newcastle,Brighton,2024-10-19 15:00:00,0,1,football-data.co.uk
+2024/2025,Premier League,Southampton,Leicester,2024-10-19 15:00:00,2,3,football-data.co.uk
+2024/2025,La Liga,Osasuna,Betis,2024-10-19 15:15:00,1,2,football-data.co.uk
+2024/2025,Serie A,Milan,Udinese,2024-10-19 17:00:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Bayern Munich,Stuttgart,2024-10-19 17:30:00,4,0,football-data.co.uk
+2024/2025,La Liga,Girona,Sociedad,2024-10-19 17:30:00,0,1,football-data.co.uk
+2024/2025,Premier League,Bournemouth,Arsenal,2024-10-19 17:30:00,2,0,football-data.co.uk
+2024/2025,Serie A,Juventus,Lazio,2024-10-19 19:45:00,1,0,football-data.co.uk
+2024/2025,La Liga,Celta,Real Madrid,2024-10-19 20:00:00,1,2,football-data.co.uk
+2024/2025,Serie A,Empoli,Napoli,2024-10-20 11:30:00,0,1,football-data.co.uk
+2024/2025,La Liga,Mallorca,Vallecano,2024-10-20 13:00:00,1,0,football-data.co.uk
+2024/2025,Premier League,Wolves,Man City,2024-10-20 14:00:00,1,2,football-data.co.uk
+2024/2025,Serie A,Lecce,Fiorentina,2024-10-20 14:00:00,0,6,football-data.co.uk
+2024/2025,Serie A,Venezia,Atalanta,2024-10-20 14:00:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,Holstein Kiel,Union Berlin,2024-10-20 14:30:00,0,2,football-data.co.uk
+2024/2025,La Liga,Ath Madrid,Leganes,2024-10-20 15:15:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,Wolfsburg,Werder Bremen,2024-10-20 16:30:00,2,4,football-data.co.uk
+2024/2025,Premier League,Liverpool,Chelsea,2024-10-20 16:30:00,2,1,football-data.co.uk
+2024/2025,Serie A,Cagliari,Torino,2024-10-20 17:00:00,3,2,football-data.co.uk
+2024/2025,La Liga,Villarreal,Getafe,2024-10-20 17:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Roma,Inter,2024-10-20 19:45:00,0,1,football-data.co.uk
+2024/2025,La Liga,Barcelona,Sevilla,2024-10-20 20:00:00,5,1,football-data.co.uk
+2024/2025,Serie A,Verona,Monza,2024-10-21 19:45:00,0,3,football-data.co.uk
+2024/2025,La Liga,Valencia,Las Palmas,2024-10-21 20:00:00,2,3,football-data.co.uk
+2024/2025,Premier League,Nott'm Forest,Crystal Palace,2024-10-21 20:00:00,1,0,football-data.co.uk
+2024/2025,Serie A,Udinese,Cagliari,2024-10-25 17:30:00,2,0,football-data.co.uk
+2024/2025,Bundesliga,Mainz,M'gladbach,2024-10-25 19:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Torino,Como,2024-10-25 19:45:00,1,0,football-data.co.uk
+2024/2025,La Liga,Espanol,Sevilla,2024-10-25 20:00:00,0,2,football-data.co.uk
+2024/2025,Premier League,Leicester,Nott'm Forest,2024-10-25 20:00:00,1,3,football-data.co.uk
+2024/2025,La Liga,Valladolid,Villarreal,2024-10-26 13:00:00,1,2,football-data.co.uk
+2024/2025,Serie A,Napoli,Lecce,2024-10-26 14:00:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Stuttgart,Holstein Kiel,2024-10-26 14:30:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,St Pauli,Wolfsburg,2024-10-26 14:30:00,0,0,football-data.co.uk
+2024/2025,Bundesliga,Augsburg,Dortmund,2024-10-26 14:30:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,RB Leipzig,Freiburg,2024-10-26 14:30:00,3,1,football-data.co.uk
+2024/2025,Premier League,Aston Villa,Bournemouth,2024-10-26 15:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,Brentford,Ipswich,2024-10-26 15:00:00,4,3,football-data.co.uk
+2024/2025,Premier League,Brighton,Wolves,2024-10-26 15:00:00,2,2,football-data.co.uk
+2024/2025,Premier League,Man City,Southampton,2024-10-26 15:00:00,1,0,football-data.co.uk
+2024/2025,La Liga,Vallecano,Alaves,2024-10-26 15:15:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Werder Bremen,Leverkusen,2024-10-26 17:30:00,2,2,football-data.co.uk
+2024/2025,La Liga,Las Palmas,Girona,2024-10-26 17:30:00,1,0,football-data.co.uk
+2024/2025,Premier League,Everton,Fulham,2024-10-26 17:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Atalanta,Verona,2024-10-26 19:45:00,6,1,football-data.co.uk
+2024/2025,La Liga,Real Madrid,Barcelona,2024-10-26 20:00:00,0,4,football-data.co.uk
+2024/2025,Serie A,Parma,Empoli,2024-10-27 11:30:00,1,1,football-data.co.uk
+2024/2025,La Liga,Leganes,Celta,2024-10-27 13:00:00,3,0,football-data.co.uk
+2024/2025,Premier League,Chelsea,Newcastle,2024-10-27 14:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,Crystal Palace,Tottenham,2024-10-27 14:00:00,1,0,football-data.co.uk
+2024/2025,Premier League,West Ham,Man United,2024-10-27 14:00:00,2,1,football-data.co.uk
+2024/2025,Serie A,Lazio,Genoa,2024-10-27 14:00:00,3,0,football-data.co.uk
+2024/2025,Serie A,Monza,Venezia,2024-10-27 14:00:00,2,2,football-data.co.uk
+2024/2025,Bundesliga,Bochum,Bayern Munich,2024-10-27 14:30:00,0,5,football-data.co.uk
+2024/2025,La Liga,Getafe,Valencia,2024-10-27 15:15:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Union Berlin,Ein Frankfurt,2024-10-27 16:30:00,1,1,football-data.co.uk
+2024/2025,Premier League,Arsenal,Liverpool,2024-10-27 16:30:00,2,2,football-data.co.uk
+2024/2025,Serie A,Inter,Juventus,2024-10-27 17:00:00,4,4,football-data.co.uk
+2024/2025,La Liga,Betis,Ath Madrid,2024-10-27 17:30:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Heidenheim,Hoffenheim,2024-10-27 18:30:00,0,0,football-data.co.uk
+2024/2025,Serie A,Fiorentina,Roma,2024-10-27 19:45:00,5,1,football-data.co.uk
+2024/2025,La Liga,Sociedad,Osasuna,2024-10-27 20:00:00,0,2,football-data.co.uk
+2024/2025,La Liga,Mallorca,Ath Bilbao,2024-10-28 20:00:00,0,0,football-data.co.uk
+2024/2025,Serie A,Cagliari,Bologna,2024-10-29 17:30:00,0,2,football-data.co.uk
+2024/2025,Serie A,Lecce,Verona,2024-10-29 17:30:00,1,0,football-data.co.uk
+2024/2025,Serie A,Milan,Napoli,2024-10-29 19:45:00,0,2,football-data.co.uk
+2024/2025,Serie A,Venezia,Udinese,2024-10-30 17:30:00,3,2,football-data.co.uk
+2024/2025,Serie A,Empoli,Inter,2024-10-30 17:30:00,0,3,football-data.co.uk
+2024/2025,Serie A,Juventus,Parma,2024-10-30 19:45:00,2,2,football-data.co.uk
+2024/2025,Serie A,Atalanta,Monza,2024-10-30 19:45:00,2,0,football-data.co.uk
+2024/2025,Serie A,Genoa,Fiorentina,2024-10-31 17:30:00,0,1,football-data.co.uk
+2024/2025,Serie A,Como,Lazio,2024-10-31 19:45:00,1,5,football-data.co.uk
+2024/2025,Serie A,Roma,Torino,2024-10-31 19:45:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Leverkusen,Stuttgart,2024-11-01 19:30:00,0,0,football-data.co.uk
+2024/2025,La Liga,Alaves,Mallorca,2024-11-01 20:00:00,1,0,football-data.co.uk
+2024/2025,Premier League,Newcastle,Arsenal,2024-11-02 12:30:00,1,0,football-data.co.uk
+2024/2025,La Liga,Osasuna,Valladolid,2024-11-02 13:00:00,1,0,football-data.co.uk
+2024/2025,Serie A,Bologna,Lecce,2024-11-02 14:00:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Wolfsburg,Augsburg,2024-11-02 14:30:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Holstein Kiel,Heidenheim,2024-11-02 14:30:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Ein Frankfurt,Bochum,2024-11-02 14:30:00,7,2,football-data.co.uk
+2024/2025,Bundesliga,Hoffenheim,St Pauli,2024-11-02 14:30:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,Bayern Munich,Union Berlin,2024-11-02 14:30:00,3,0,football-data.co.uk
+2024/2025,Premier League,Southampton,Everton,2024-11-02 15:00:00,1,0,football-data.co.uk
+2024/2025,Premier League,Liverpool,Brighton,2024-11-02 15:00:00,2,1,football-data.co.uk
+2024/2025,Premier League,Nott'm Forest,West Ham,2024-11-02 15:00:00,3,0,football-data.co.uk
+2024/2025,Premier League,Ipswich,Leicester,2024-11-02 15:00:00,1,1,football-data.co.uk
+2024/2025,Premier League,Bournemouth,Man City,2024-11-02 15:00:00,2,1,football-data.co.uk
+2024/2025,La Liga,Girona,Leganes,2024-11-02 15:15:00,4,3,football-data.co.uk
+2024/2025,Serie A,Udinese,Juventus,2024-11-02 17:00:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,Dortmund,RB Leipzig,2024-11-02 17:30:00,2,1,football-data.co.uk
+2024/2025,Premier League,Wolves,Crystal Palace,2024-11-02 17:30:00,2,2,football-data.co.uk
+2024/2025,Serie A,Monza,Milan,2024-11-02 19:45:00,0,1,football-data.co.uk
+2024/2025,Serie A,Napoli,Atalanta,2024-11-03 11:30:00,0,3,football-data.co.uk
+2024/2025,La Liga,Ath Madrid,Las Palmas,2024-11-03 13:00:00,2,0,football-data.co.uk
+2024/2025,Premier League,Tottenham,Aston Villa,2024-11-03 14:00:00,4,1,football-data.co.uk
+2024/2025,Serie A,Torino,Fiorentina,2024-11-03 14:00:00,0,1,football-data.co.uk
+2024/2025,Bundesliga,Freiburg,Mainz,2024-11-03 14:30:00,0,0,football-data.co.uk
+2024/2025,La Liga,Barcelona,Espanol,2024-11-03 15:15:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,M'gladbach,Werder Bremen,2024-11-03 16:30:00,4,1,football-data.co.uk
+2024/2025,Premier League,Man United,Chelsea,2024-11-03 16:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Verona,Roma,2024-11-03 17:00:00,3,2,football-data.co.uk
+2024/2025,La Liga,Sevilla,Sociedad,2024-11-03 17:30:00,0,2,football-data.co.uk
+2024/2025,Serie A,Inter,Venezia,2024-11-03 19:45:00,1,0,football-data.co.uk
+2024/2025,La Liga,Ath Bilbao,Betis,2024-11-03 20:00:00,1,1,football-data.co.uk
+2024/2025,Serie A,Parma,Genoa,2024-11-04 17:30:00,0,1,football-data.co.uk
+2024/2025,Serie A,Empoli,Como,2024-11-04 17:30:00,1,0,football-data.co.uk
+2024/2025,Serie A,Lazio,Cagliari,2024-11-04 19:45:00,2,1,football-data.co.uk
+2024/2025,La Liga,Celta,Getafe,2024-11-04 20:00:00,1,0,football-data.co.uk
+2024/2025,Premier League,Fulham,Brentford,2024-11-04 20:00:00,2,1,football-data.co.uk
+2024/2025,Serie A,Genoa,Como,2024-11-07 19:45:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Union Berlin,Freiburg,2024-11-08 19:30:00,0,0,football-data.co.uk
+2024/2025,Serie A,Lecce,Empoli,2024-11-08 19:45:00,1,1,football-data.co.uk
+2024/2025,La Liga,Vallecano,Las Palmas,2024-11-08 20:00:00,1,3,football-data.co.uk
+2024/2025,La Liga,Real Madrid,Osasuna,2024-11-09 13:00:00,4,0,football-data.co.uk
+2024/2025,Serie A,Venezia,Parma,2024-11-09 14:00:00,1,2,football-data.co.uk
+2024/2025,Bundesliga,Werder Bremen,Holstein Kiel,2024-11-09 14:30:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,St Pauli,Bayern Munich,2024-11-09 14:30:00,0,1,football-data.co.uk
+2024/2025,Bundesliga,Bochum,Leverkusen,2024-11-09 14:30:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Mainz,Dortmund,2024-11-09 14:30:00,3,1,football-data.co.uk
+2024/2025,Premier League,Brentford,Bournemouth,2024-11-09 15:00:00,3,2,football-data.co.uk
+2024/2025,Premier League,Crystal Palace,Fulham,2024-11-09 15:00:00,0,2,football-data.co.uk
+2024/2025,Premier League,West Ham,Everton,2024-11-09 15:00:00,0,0,football-data.co.uk
+2024/2025,Premier League,Wolves,Southampton,2024-11-09 15:00:00,2,0,football-data.co.uk
+2024/2025,Serie A,Cagliari,Milan,2024-11-09 17:00:00,3,3,football-data.co.uk
+2024/2025,Bundesliga,RB Leipzig,M'gladbach,2024-11-09 17:30:00,0,0,football-data.co.uk
+2024/2025,Premier League,Brighton,Man City,2024-11-09 17:30:00,2,1,football-data.co.uk
+2024/2025,Serie A,Juventus,Torino,2024-11-09 19:45:00,2,0,football-data.co.uk
+2024/2025,Premier League,Liverpool,Aston Villa,2024-11-09 20:00:00,2,0,football-data.co.uk
+2024/2025,Serie A,Atalanta,Udinese,2024-11-10 11:30:00,2,1,football-data.co.uk
+2024/2025,Premier League,Man United,Leicester,2024-11-10 14:00:00,3,0,football-data.co.uk
+2024/2025,Premier League,Nott'm Forest,Newcastle,2024-11-10 14:00:00,1,3,football-data.co.uk
+2024/2025,Premier League,Tottenham,Ipswich,2024-11-10 14:00:00,1,2,football-data.co.uk
+2024/2025,Serie A,Fiorentina,Verona,2024-11-10 14:00:00,3,1,football-data.co.uk
+2024/2025,Serie A,Roma,Bologna,2024-11-10 14:00:00,2,3,football-data.co.uk
+2024/2025,Bundesliga,Augsburg,Hoffenheim,2024-11-10 14:30:00,0,0,football-data.co.uk
+2024/2025,Bundesliga,Stuttgart,Ein Frankfurt,2024-11-10 16:30:00,2,3,football-data.co.uk
+2024/2025,Premier League,Chelsea,Arsenal,2024-11-10 16:30:00,1,1,football-data.co.uk
+2024/2025,Serie A,Monza,Lazio,2024-11-10 17:00:00,0,1,football-data.co.uk
+2024/2025,Bundesliga,Heidenheim,Wolfsburg,2024-11-10 18:30:00,1,3,football-data.co.uk
+2024/2025,Serie A,Inter,Napoli,2024-11-10 19:45:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Bayern Munich,Augsburg,2024-11-22 19:30:00,3,0,football-data.co.uk
+2024/2025,Premier League,Leicester,Chelsea,2024-11-23 12:30:00,1,2,football-data.co.uk
+2024/2025,Serie A,Verona,Inter,2024-11-23 14:00:00,0,5,football-data.co.uk
+2024/2025,Bundesliga,Wolfsburg,Union Berlin,2024-11-23 14:30:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Stuttgart,Bochum,2024-11-23 14:30:00,2,0,football-data.co.uk
+2024/2025,Bundesliga,Leverkusen,Heidenheim,2024-11-23 14:30:00,5,2,football-data.co.uk
+2024/2025,Bundesliga,Hoffenheim,RB Leipzig,2024-11-23 14:30:00,4,3,football-data.co.uk
+2024/2025,Bundesliga,Dortmund,Freiburg,2024-11-23 14:30:00,4,0,football-data.co.uk
+2024/2025,Premier League,Arsenal,Nott'm Forest,2024-11-23 15:00:00,3,0,football-data.co.uk
+2024/2025,Premier League,Aston Villa,Crystal Palace,2024-11-23 15:00:00,2,2,football-data.co.uk
+2024/2025,Premier League,Bournemouth,Brighton,2024-11-23 15:00:00,1,2,football-data.co.uk
+2024/2025,Premier League,Everton,Brentford,2024-11-23 15:00:00,0,0,football-data.co.uk
+2024/2025,Premier League,Fulham,Wolves,2024-11-23 15:00:00,1,4,football-data.co.uk
+2024/2025,Bundesliga,Ein Frankfurt,Werder Bremen,2024-11-23 17:30:00,1,0,football-data.co.uk
+2024/2025,Premier League,Man City,Tottenham,2024-11-23 17:30:00,0,4,football-data.co.uk
+2024/2025,Premier League,Southampton,Liverpool,2024-11-24 14:00:00,2,3,football-data.co.uk
+2024/2025,Bundesliga,Holstein Kiel,Mainz,2024-11-24 14:30:00,0,3,football-data.co.uk
+2024/2025,Bundesliga,M'gladbach,St Pauli,2024-11-24 16:30:00,2,0,football-data.co.uk
+2024/2025,Premier League,Ipswich,Man United,2024-11-24 16:30:00,1,1,football-data.co.uk
+2024/2025,Premier League,Newcastle,West Ham,2024-11-25 20:00:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,St Pauli,Holstein Kiel,2024-11-29 19:30:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,Werder Bremen,Stuttgart,2024-11-30 14:30:00,2,2,football-data.co.uk
+2024/2025,Bundesliga,Union Berlin,Leverkusen,2024-11-30 14:30:00,1,2,football-data.co.uk
+2024/2025,Bundesliga,RB Leipzig,Wolfsburg,2024-11-30 14:30:00,1,5,football-data.co.uk
+2024/2025,Bundesliga,Freiburg,M'gladbach,2024-11-30 14:30:00,3,1,football-data.co.uk
+2024/2025,Bundesliga,Augsburg,Bochum,2024-11-30 14:30:00,1,0,football-data.co.uk
+2024/2025,Bundesliga,Dortmund,Bayern Munich,2024-11-30 17:30:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Mainz,Hoffenheim,2024-12-01 14:30:00,2,0,football-data.co.uk
+2024/2025,Bundesliga,Heidenheim,Ein Frankfurt,2024-12-01 16:30:00,0,4,football-data.co.uk
+2024/2025,Bundesliga,Stuttgart,Union Berlin,2024-12-06 19:30:00,3,2,football-data.co.uk
+2024/2025,Bundesliga,Leverkusen,St Pauli,2024-12-07 14:30:00,2,1,football-data.co.uk
+2024/2025,Bundesliga,Holstein Kiel,RB Leipzig,2024-12-07 14:30:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,Ein Frankfurt,Augsburg,2024-12-07 14:30:00,2,2,football-data.co.uk
+2024/2025,Bundesliga,Bochum,Werder Bremen,2024-12-07 14:30:00,0,1,football-data.co.uk
+2024/2025,Bundesliga,Bayern Munich,Heidenheim,2024-12-07 14:30:00,4,2,football-data.co.uk
+2024/2025,Bundesliga,M'gladbach,Dortmund,2024-12-07 17:30:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Wolfsburg,Mainz,2024-12-08 14:30:00,4,3,football-data.co.uk
+2024/2025,Bundesliga,Hoffenheim,Freiburg,2024-12-08 16:30:00,1,1,football-data.co.uk
+2024/2025,Bundesliga,Freiburg,Wolfsburg,2024-12-13 19:30:00,3,2,football-data.co.uk
+2024/2025,Bundesliga,Union Berlin,Bochum,2024-12-14 14:30:00,0,2,football-data.co.uk
+2024/2025,Bundesliga,M'gladbach,Holstein Kiel,2024-12-14 14:30:00,4,1,football-data.co.uk

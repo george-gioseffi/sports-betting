@@ -7,6 +7,7 @@ from app.common import (
     apply_chart_style,
     apply_global_filters,
     build_global_filters,
+    compact_table,
     inject_styles,
     load_mart,
     render_page_header,
@@ -16,8 +17,8 @@ from app.common import (
 
 inject_styles()
 filters = build_global_filters()
-render_page_header("Strategy Analysis", "Return quality, execution quality, and risk profile by strategy.")
-render_section_note("Strong strategies are not only profitable: they also sustain manageable drawdown and volatility.")
+render_page_header("Strategy Analysis", "Return quality and risk posture by strategy.")
+render_section_note("A strong strategy combines edge, discipline, and stable drawdown.")
 
 strategy_perf = apply_global_filters(load_mart("mart_strategy_performance"), filters)
 risk_scores = apply_global_filters(load_mart("mart_risk_scores"), filters)
@@ -68,19 +69,32 @@ scatter = px.scatter(
 )
 st.plotly_chart(apply_chart_style(scatter), width="stretch")
 
-st.dataframe(
-    joined[
-        [
-            "strategy",
-            "total_bets",
-            "net_profit",
-            "yield_pct",
-            "avg_clv",
-            "max_drawdown",
-            "risk_score",
-            "risk_profile",
-        ]
-    ].sort_values("risk_score", ascending=False),
-    width="stretch",
+scorecard = compact_table(
+    joined,
+    columns=[
+        "strategy",
+        "total_bets",
+        "net_profit",
+        "yield_pct",
+        "avg_clv",
+        "max_drawdown",
+        "risk_score",
+        "risk_profile",
+    ],
+    rename={
+        "strategy": "Strategy",
+        "total_bets": "Bets",
+        "net_profit": "Net P&L",
+        "yield_pct": "Yield",
+        "avg_clv": "Avg CLV",
+        "max_drawdown": "Max Drawdown",
+        "risk_score": "Risk Score",
+        "risk_profile": "Profile",
+    },
+    sort_by="risk_score",
+    ascending=False,
+    round_map={"net_profit": 2, "risk_score": 1},
+    pct_cols=["yield_pct", "avg_clv", "max_drawdown"],
 )
+st.dataframe(scorecard, width="stretch", hide_index=True)
 

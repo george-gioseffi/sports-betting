@@ -1,4 +1,4 @@
 strategy,risk_score,risk_profile,avg_stake_pct_bankroll,max_drawdown,max_red_streak,avg_clv,league_concentration,volatility_score,drawdown_score,stake_score,concentration_score,clv_score,streak_score
-Aggressive_Momentum,68.67,Aggressive,0.0131,0.3108,5,-0.0108,0.2803,0.7244,1.0,0.6553,0.5096,0.54,0.4167
-League_Specialist,55.38,Moderate,0.009,0.2306,11,0.0097,0.3333,0.375,0.9224,0.4513,0.6061,0.0,0.9167
-Quant_Value,44.11,Moderate,0.0075,0.1938,6,0.02,0.3,0.3067,0.7752,0.373,0.5455,0.0,0.5
+Aggressive_Momentum,60.0,Moderate,0.0099,0.2596,10,-0.0071,0.319,0.3413,1.0,0.4961,0.5799,0.355,0.8333
+League_Specialist,41.41,Moderate,0.0084,0.1786,5,0.0271,0.2762,0.2816,0.7144,0.421,0.5022,0.0,0.4167
+Quant_Value,39.69,Moderate,0.0064,0.1641,8,0.0404,0.292,0.2069,0.6564,0.3199,0.531,0.0,0.6667

@@ -2,16 +2,16 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import datetime, timedelta
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
-
 
 LEAGUE_TEAMS: dict[str, list[str]] = {
     "Premier League": ["Arsenal", "Liverpool", "Chelsea", "Tottenham", "Newcastle", "Aston Villa"],
     "La Liga": ["Real Madrid", "Barcelona", "Atletico Madrid", "Real Sociedad", "Sevilla", "Valencia"],
     "Serie A": ["Inter", "Juventus", "Milan", "Napoli", "Roma", "Atalanta"],
-    "Brasileirao": ["Flamengo", "Palmeiras", "Sao Paulo", "Atletico MG", "Fluminense", "Internacional"],
+    "Bundesliga": ["Bayern Munich", "Dortmund", "Leverkusen", "Leipzig", "Frankfurt", "Stuttgart"],
 }
 
 BOOKMAKERS = ["Pinnacle", "Bet365", "Betano", "1xBet", "Stake"]
@@ -31,29 +31,33 @@ class StrategyConfig:
 STRATEGIES = [
     StrategyConfig(
         name="Quant_Value",
-        bet_probability=0.44,
-        clv_bias=0.018,
-        stake_mean=75.0,
-        stake_std=18.0,
-        market_weights=(0.35, 0.30, 0.20, 0.15),
+        bet_probability=0.40,
+        clv_bias=0.040,
+        stake_mean=65.0,
+        stake_std=16.0,
+        market_weights=(0.42, 0.24, 0.18, 0.16),
     ),
     StrategyConfig(
         name="League_Specialist",
-        bet_probability=0.38,
-        clv_bias=0.010,
-        stake_mean=90.0,
-        stake_std=25.0,
-        market_weights=(0.40, 0.20, 0.18, 0.22),
+        bet_probability=0.34,
+        clv_bias=0.030,
+        stake_mean=80.0,
+        stake_std=22.0,
+        market_weights=(0.45, 0.18, 0.15, 0.22),
     ),
     StrategyConfig(
         name="Aggressive_Momentum",
-        bet_probability=0.52,
-        clv_bias=-0.009,
-        stake_mean=130.0,
-        stake_std=35.0,
-        market_weights=(0.28, 0.34, 0.26, 0.12),
+        bet_probability=0.45,
+        clv_bias=-0.010,
+        stake_mean=100.0,
+        stake_std=28.0,
+        market_weights=(0.34, 0.28, 0.24, 0.14),
     ),
 ]
+
+REAL_MATCHES_REFERENCE_PATH = (
+    Path(__file__).resolve().parents[2] / "data" / "samples" / "real_matches_reference.csv"
+)
 
 
 def _sigmoid(x: float) -> float:
@@ -90,6 +94,50 @@ def _settle_bet(result: str, stake: float, odds: float) -> float:
     return round(-stake, 2)
 
 
+def _load_real_match_reference() -> pd.DataFrame:
+    if not REAL_MATCHES_REFERENCE_PATH.exists():
+        return pd.DataFrame()
+
+    df = pd.read_csv(REAL_MATCHES_REFERENCE_PATH)
+    required = {"league", "home_team", "away_team", "kickoff_ts", "home_goals", "away_goals"}
+    if not required.issubset(df.columns):
+        return pd.DataFrame()
+
+    reference = df.copy()
+    reference["kickoff_ts"] = pd.to_datetime(reference["kickoff_ts"], errors="coerce")
+    reference["home_goals"] = pd.to_numeric(reference["home_goals"], errors="coerce")
+    reference["away_goals"] = pd.to_numeric(reference["away_goals"], errors="coerce")
+    reference = reference.dropna(subset=list(required)).copy()
+    reference["home_goals"] = reference["home_goals"].astype(int)
+    reference["away_goals"] = reference["away_goals"].astype(int)
+    if "season" not in reference.columns:
+        reference["season"] = "2024/2025"
+    return reference.sort_values("kickoff_ts").reset_index(drop=True)
+
+
+def _team_strength_from_reference(reference: pd.DataFrame, rng: np.random.Generator) -> dict[str, float]:
+    home = reference[["home_team", "home_goals", "away_goals"]].rename(
+        columns={"home_team": "team", "home_goals": "goals_for", "away_goals": "goals_against"}
+    )
+    away = reference[["away_team", "away_goals", "home_goals"]].rename(
+        columns={"away_team": "team", "away_goals": "goals_for", "home_goals": "goals_against"}
+    )
+    long_df = pd.concat([home, away], ignore_index=True)
+    grouped = long_df.groupby("team", as_index=False).agg(
+        goals_for=("goals_for", "mean"),
+        goals_against=("goals_against", "mean"),
+    )
+    grouped["goal_diff"] = grouped["goals_for"] - grouped["goals_against"]
+    std = float(grouped["goal_diff"].std(ddof=0))
+    denom = std if std > 0 else 1.0
+
+    strength: dict[str, float] = {}
+    for row in grouped.itertuples(index=False):
+        baseline = (float(row.goal_diff) / denom) * 0.35
+        strength[str(row.team)] = float(np.clip(baseline + rng.normal(0, 0.12), -1.2, 1.2))
+    return strength
+
+
 def _probabilities(diff: float, lambda_home: float, lambda_away: float) -> dict[str, float]:
     base_home = _sigmoid((diff + 0.18) / 0.45)
     draw_prob = float(np.clip(0.25 - abs(diff) * 0.08, 0.12, 0.29))
@@ -109,26 +157,52 @@ def _probabilities(diff: float, lambda_home: float, lambda_away: float) -> dict[
 def generate_synthetic_data(num_matches: int = 280, seed: int = 42) -> tuple[pd.DataFrame, pd.DataFrame]:
     rng = np.random.default_rng(seed)
     start_date = datetime(2025, 1, 1, 15, 0, 0)
+    reference_matches = _load_real_match_reference()
 
-    all_teams = [team for teams in LEAGUE_TEAMS.values() for team in teams]
-    team_strength = {team: rng.normal(0, 0.55) for team in all_teams}
+    if reference_matches.empty:
+        all_teams = [team for teams in LEAGUE_TEAMS.values() for team in teams]
+        team_strength = {team: rng.normal(0, 0.55) for team in all_teams}
+        selected_reference = pd.DataFrame()
+    else:
+        replace = len(reference_matches) < num_matches
+        selected_reference = (
+            reference_matches.sample(n=num_matches, replace=replace, random_state=seed)
+            .sort_values("kickoff_ts")
+            .reset_index(drop=True)
+        )
+        team_strength = _team_strength_from_reference(reference_matches, rng)
 
     match_rows = []
     bet_rows = []
     bet_id = 1
 
     for idx in range(1, num_matches + 1):
-        league = rng.choice(list(LEAGUE_TEAMS.keys()), p=[0.30, 0.26, 0.22, 0.22])
-        home_team, away_team = rng.choice(LEAGUE_TEAMS[league], size=2, replace=False)
-        kickoff_ts = start_date + timedelta(days=idx // 4, hours=int(rng.integers(0, 9)))
-
-        home_rating = team_strength[home_team] + 0.18
-        away_rating = team_strength[away_team]
-        diff = home_rating - away_rating
-        lambda_home = float(np.clip(1.35 + diff * 0.55, 0.35, 3.2))
-        lambda_away = float(np.clip(1.10 - diff * 0.45, 0.30, 3.0))
-        home_goals = int(rng.poisson(lambda_home))
-        away_goals = int(rng.poisson(lambda_away))
+        if selected_reference.empty:
+            league = str(rng.choice(list(LEAGUE_TEAMS.keys()), p=[0.30, 0.26, 0.22, 0.22]))
+            home_team, away_team = rng.choice(LEAGUE_TEAMS[league], size=2, replace=False)
+            kickoff_ts = start_date + timedelta(days=idx // 4, hours=int(rng.integers(0, 9)))
+            season = "2025/2026"
+            home_rating = team_strength[home_team] + 0.18
+            away_rating = team_strength[away_team]
+            diff = home_rating - away_rating
+            lambda_home = float(np.clip(1.35 + diff * 0.55, 0.35, 3.2))
+            lambda_away = float(np.clip(1.10 - diff * 0.45, 0.30, 3.0))
+            home_goals = int(rng.poisson(lambda_home))
+            away_goals = int(rng.poisson(lambda_away))
+        else:
+            ref = selected_reference.iloc[idx - 1]
+            league = str(ref["league"])
+            home_team = str(ref["home_team"])
+            away_team = str(ref["away_team"])
+            kickoff_ts = pd.to_datetime(ref["kickoff_ts"]).to_pydatetime()
+            season = str(ref.get("season", "2024/2025"))
+            home_rating = team_strength.get(home_team, 0.0) + 0.18
+            away_rating = team_strength.get(away_team, 0.0)
+            diff = home_rating - away_rating
+            lambda_home = float(np.clip(1.35 + diff * 0.55, 0.35, 3.2))
+            lambda_away = float(np.clip(1.10 - diff * 0.45, 0.30, 3.0))
+            home_goals = int(ref["home_goals"])
+            away_goals = int(ref["away_goals"])
 
         probs = _probabilities(diff, lambda_home, lambda_away)
         match_id = f"M{idx:05d}"
@@ -136,7 +210,7 @@ def generate_synthetic_data(num_matches: int = 280, seed: int = 42) -> tuple[pd.
         match_rows.append(
             {
                 "match_id": match_id,
-                "season": "2025/2026",
+                "season": season,
                 "league": league,
                 "home_team": home_team,
                 "away_team": away_team,

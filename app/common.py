@@ -4,12 +4,26 @@ from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 
-import plotly.graph_objects as go
 import pandas as pd
+import plotly.graph_objects as go
 import streamlit as st
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 MARTS_DIR = BASE_DIR / "data" / "marts"
+MARKET_LABELS = {
+    "MONEYLINE_HOME": "Home Win",
+    "OVER_2_5": "Over 2.5",
+    "BTTS_YES": "BTTS Yes",
+    "DNB_HOME": "Home DNB",
+}
+ALERT_LABELS = {
+    "drawdown_limit_breach": "Drawdown Limit Breach",
+    "elevated_volatility": "Elevated Volatility",
+    "league_concentration": "League Concentration",
+    "long_loss_streak": "Long Loss Streak",
+    "no_critical_alerts": "No Critical Alerts",
+}
+SEVERITY_ORDER = {"high": 0, "medium": 1, "info": 2}
 
 
 @st.cache_data(show_spinner=False)
@@ -132,6 +146,8 @@ def build_global_filters() -> GlobalFilters:
     league_options = _options(league_df, "league")
     market_options = _options(market_df, "market")
     method_options = _options(scenario_df, "method")
+    market_label_to_code = {to_market_label(code): code for code in market_options}
+    market_label_options = list(market_label_to_code.keys())
 
     st.sidebar.markdown("## Global Filters")
     strategies = st.sidebar.multiselect(
@@ -146,12 +162,13 @@ def build_global_filters() -> GlobalFilters:
         default=league_options,
         key="global_leagues",
     )
-    markets = st.sidebar.multiselect(
+    selected_market_labels = st.sidebar.multiselect(
         "Markets",
-        options=market_options,
-        default=market_options,
+        options=market_label_options,
+        default=market_label_options,
         key="global_markets",
     )
+    markets = [market_label_to_code[label] for label in selected_market_labels]
     methods = st.sidebar.multiselect(
         "Simulation Methods",
         options=method_options,
@@ -218,4 +235,55 @@ def apply_global_filters(df: pd.DataFrame, filters: GlobalFilters) -> pd.DataFra
     if "method" in out.columns and filters.methods:
         out = out[out["method"].astype(str).isin(filters.methods)]
     out = _filter_by_date(out, filters)
+    return out.reset_index(drop=True)
+
+
+def to_market_label(value: str) -> str:
+    return MARKET_LABELS.get(str(value), str(value))
+
+
+def apply_market_labels(df: pd.DataFrame, column: str = "market") -> pd.DataFrame:
+    if df.empty or column not in df.columns:
+        return df
+    out = df.copy()
+    out[column] = out[column].map(to_market_label)
+    return out
+
+
+def compact_table(
+    df: pd.DataFrame,
+    columns: list[str],
+    *,
+    rename: dict[str, str] | None = None,
+    sort_by: str | None = None,
+    ascending: bool = False,
+    top_n: int | None = None,
+    round_map: dict[str, int] | None = None,
+    pct_cols: list[str] | None = None,
+) -> pd.DataFrame:
+    if df.empty:
+        return df
+
+    out = df.copy()
+    if sort_by and sort_by in out.columns:
+        out = out.sort_values(sort_by, ascending=ascending, na_position="last")
+    if top_n:
+        out = out.head(top_n)
+
+    selected = [col for col in columns if col in out.columns]
+    out = out[selected].copy()
+
+    if round_map:
+        for col, digits in round_map.items():
+            if col in out.columns:
+                out[col] = pd.to_numeric(out[col], errors="coerce").round(digits)
+
+    for col in pct_cols or []:
+        if col in out.columns:
+            values = pd.to_numeric(out[col], errors="coerce") * 100
+            out[col] = values.round(2).map(lambda v: f"{v:.2f}%" if pd.notna(v) else "-")
+
+    if rename:
+        out = out.rename(columns=rename)
+
     return out.reset_index(drop=True)

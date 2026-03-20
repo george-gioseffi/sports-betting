@@ -26,10 +26,16 @@ Without a trusted analytics layer, decisions become noisy and reactive.
 - Emphasizes interpretation and uncertainty instead of hype.
 - Runs locally with sample data, so reviewers can test it quickly.
 
+## Data Credibility (Hybrid Demo Dataset)
+- Uses a local snapshot of real football match results in `data/samples/real_matches_reference.csv`.
+- Keeps odds, stake sizing, and picks generated in a controlled way for repeatable analytics tests.
+- Preserves offline execution while making match context more realistic for portfolio review.
+- Source details: [`docs/data_sources.md`](docs/data_sources.md)
+
 ## Architecture
 ```mermaid
 flowchart LR
-    A["Synthetic/Public Data Sources"] --> B["Ingestion Layer (raw)"]
+    A["Hybrid Sources (Real Results + Simulated Pricing)"] --> B["Ingestion Layer (raw)"]
     B --> C["Cleaning + Standardization (staging)"]
     C --> D["Data Quality Contracts"]
     D --> E["Analytics Engine (facts, dims, marts)"]
@@ -92,6 +98,7 @@ Formula details: [`docs/metrics.md`](docs/metrics.md)
 
 ## Documentation Index
 - Architecture: [`docs/architecture.md`](docs/architecture.md)
+- Data sources: [`docs/data_sources.md`](docs/data_sources.md)
 - Metrics and formulas: [`docs/metrics.md`](docs/metrics.md)
 - Risk governance policy: [`docs/risk_governance.md`](docs/risk_governance.md)
 - Data dictionary: [`docs/data_dictionary.md`](docs/data_dictionary.md)
@@ -101,13 +108,27 @@ Formula details: [`docs/metrics.md`](docs/metrics.md)
 - Publishing and release plan: [`docs/publishing_and_releases.md`](docs/publishing_and_releases.md)
 
 ## Screenshots
-Add screenshots to `docs/screenshots/` and update these links:
-- `docs/screenshots/overview_dashboard.png`
-- `docs/screenshots/strategies_analysis.png`
-- `docs/screenshots/clv_analysis.png`
-- `docs/screenshots/bankroll_simulation.png`
-- `docs/screenshots/risk_dashboard.png`
-- `docs/screenshots/data_quality_dashboard.png`
+### Home hero
+![Home Hero](docs/screenshots/home-hero.png)
+
+### Overview dashboard
+![Overview Dashboard](docs/screenshots/overview-dashboard.png)
+
+### Strategy performance
+![Strategy Performance](docs/screenshots/strategy-performance.png)
+
+### CLV analysis
+![CLV Analysis](docs/screenshots/clv-analysis.png)
+
+### Risk governance
+![Risk Governance](docs/screenshots/risk-governance.png)
+
+### Bankroll scenarios
+![Bankroll Scenarios](docs/screenshots/bankroll-scenarios.png)
+
+### Additional views
+![Market Performance](docs/screenshots/market-performance.png)
+![Data Quality](docs/screenshots/data-quality.png)
 
 Capture guide: [`docs/screenshots/README.md`](docs/screenshots/README.md)
 

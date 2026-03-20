@@ -13,7 +13,7 @@ The organization needs a system that can:
 
 ## Approach
 I built an end-to-end analytics platform with a layered architecture:
-1. Ingestion (synthetic plus future API-ready hooks)
+1. Ingestion (hybrid demo dataset with real match outcomes + simulated pricing)
 2. Cleaning and standardization
 3. Data quality contracts
 4. Analytics marts and KPI engine
@@ -29,7 +29,7 @@ I built an end-to-end analytics platform with a layered architecture:
 - `app`: multipage Streamlit interface with global filters
 
 ## Methodology
-- Generate deterministic synthetic data with plausible market behavior.
+- Use a hybrid dataset: real match outcomes + simulated odds and picks.
 - Normalize markets and entities for semantic consistency.
 - Enforce quality constraints (domain, temporal, structural).
 - Compute KPIs (ROI, yield, CLV, expectancy, drawdown, volatility).
@@ -44,7 +44,7 @@ I built an end-to-end analytics platform with a layered architecture:
 - Simulation highlights that sizing method selection materially impacts survivability.
 
 ## Limitations
-- MVP synthetic baseline, not a live production feed.
+- MVP offline dataset, not a live production feed.
 - No explicit cross-strategy covariance modeling in current version.
 - No intraday odds ladder or microstructure data.
 - Risk score is a governance aid, not a guaranteed ruin-probability model.

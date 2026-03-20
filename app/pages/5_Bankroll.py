@@ -7,6 +7,7 @@ from app.common import (
     apply_chart_style,
     apply_global_filters,
     build_global_filters,
+    compact_table,
     inject_styles,
     load_mart,
     render_page_header,
@@ -18,9 +19,9 @@ inject_styles()
 filters = build_global_filters()
 render_page_header(
     "Bankroll Simulation",
-    "Compare capital trajectories across fixed stake, percentage stake, and fractional Kelly.",
+    "Capital trajectory under fixed, percentage, and fractional Kelly sizing.",
 )
-render_section_note("Scenario analysis focuses on return versus drawdown trade-offs under risk constraints.")
+render_section_note("Use this view to compare return and drawdown trade-offs by sizing rule.")
 
 scenario_runs = apply_global_filters(load_mart("fact_bankroll_scenarios"), filters)
 scenario_summary = apply_global_filters(load_mart("mart_bankroll_scenarios_summary"), filters)
@@ -53,10 +54,22 @@ fig_drawdown = px.line(
 )
 st.plotly_chart(apply_chart_style(fig_drawdown), width="stretch")
 
-st.dataframe(
-    scenario_summary[
-        ["method", "final_bankroll", "net_profit", "roi", "max_drawdown", "executed_bets", "skipped_bets"]
-    ].sort_values("roi", ascending=False),
-    width="stretch",
+scenario_table = compact_table(
+    scenario_summary,
+    columns=["method", "final_bankroll", "net_profit", "roi", "max_drawdown", "executed_bets", "skipped_bets"],
+    rename={
+        "method": "Method",
+        "final_bankroll": "Final Bankroll",
+        "net_profit": "Net P&L",
+        "roi": "ROI",
+        "max_drawdown": "Max Drawdown",
+        "executed_bets": "Executed Bets",
+        "skipped_bets": "Skipped Bets",
+    },
+    sort_by="roi",
+    ascending=False,
+    round_map={"final_bankroll": 2, "net_profit": 2},
+    pct_cols=["roi", "max_drawdown"],
 )
+st.dataframe(scenario_table, width="stretch", hide_index=True)
 
