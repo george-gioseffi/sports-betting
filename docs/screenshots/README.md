@@ -14,6 +14,17 @@ Use this guide after running:
 - Browser zoom: 100%.
 - Keep sidebar visible when filter context adds value.
 - Use PNG.
+- For bilingual demos, set `Language / Idioma` to `Português` before each capture.
+
+## Current Portfolio Images (Committed)
+- `home-hero.png`
+- `overview-dashboard.png`
+- `strategy-performance.png`
+- `clv-analysis.png`
+- `risk-governance.png`
+- `bankroll-scenarios.png`
+- `market-performance.png`
+- `data-quality.png`
 
 ## Recommended Filter States
 

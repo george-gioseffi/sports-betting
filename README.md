@@ -6,9 +6,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Opening Hook
-Most sports strategy discussions focus on profit. Good analytics teams focus on **profit quality**: edge sustainability, execution quality (CLV), risk concentration, and drawdown behavior.
-
-This project turns fragmented match, odds, and pick records into a clean analytics product for performance review and risk control.
+Most discussions around sports strategies stop at profit. In practice, profit alone is noisy.
+This project focuses on **profit quality**: edge sustainability, CLV discipline, concentration risk, and drawdown behavior.
+The goal is simple: turn fragmented match/odds/pick records into a reliable analytics layer for better decisions.
 
 ## Business Problem
 Organizations that analyze sports markets need to answer:
@@ -21,10 +21,10 @@ Without a trusted analytics layer, decisions become noisy and reactive.
 
 ## Why This Project Matters
 - Covers the full lifecycle: ingestion, modeling, validation, simulation, and dashboarding.
-- Keeps performance metrics tied to explicit governance rules.
+- Connects performance metrics to explicit governance rules.
 - Uses practical analytics engineering patterns (`raw -> staging -> marts`).
-- Emphasizes interpretation and uncertainty instead of hype.
-- Runs locally with sample data, so reviewers can test it quickly.
+- Keeps the narrative grounded in uncertainty and capital preservation.
+- Runs locally with sample data, so anyone can evaluate it quickly.
 
 ## Data Credibility (Hybrid Demo Dataset)
 - Uses a local snapshot of real football match results in `data/samples/real_matches_reference.csv`.
@@ -96,6 +96,11 @@ Formula details: [`docs/metrics.md`](docs/metrics.md)
 - Data quality checks and automated tests
 - CI workflows for lint and tests
 
+## Language Support
+- The Streamlit app supports **English** and **Português** with a sidebar selector.
+- Page titles, filter labels, KPI cards, chart titles, and main table headers adapt to the selected language.
+- Numeric formatting also follows locale style (`English`: `1,234.56` | `Português`: `1.234,56`).
+
 ## Documentation Index
 - Architecture: [`docs/architecture.md`](docs/architecture.md)
 - Data sources: [`docs/data_sources.md`](docs/data_sources.md)
@@ -108,6 +113,8 @@ Formula details: [`docs/metrics.md`](docs/metrics.md)
 - Publishing and release plan: [`docs/publishing_and_releases.md`](docs/publishing_and_releases.md)
 
 ## Screenshots
+The screenshots below were captured using the **Português** interface mode.
+
 ### Home hero
 ![Home Hero](docs/screenshots/home-hero.png)
 
