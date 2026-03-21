@@ -1,5 +1,6 @@
 strategy,alert_type,severity
-Aggressive_Momentum,drawdown_limit_breach,high
-League_Specialist,no_critical_alerts,info
-Aggressive_Momentum,long_loss_streak,medium
-Quant_Value,long_loss_streak,medium
+btts_hunter,drawdown_limit_breach,high
+high_volume,drawdown_limit_breach,high
+league_expert,no_critical_alerts,info
+sharp_value,no_critical_alerts,info
+momentum,long_loss_streak,medium

@@ -48,7 +48,7 @@ exclude = ["notebooks"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "W", "B", "UP"]
-ignore = ["E203"]
+ignore = ["E203", "E501"]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]

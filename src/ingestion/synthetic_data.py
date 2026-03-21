@@ -9,7 +9,14 @@ import pandas as pd
 
 LEAGUE_TEAMS: dict[str, list[str]] = {
     "Premier League": ["Arsenal", "Liverpool", "Chelsea", "Tottenham", "Newcastle", "Aston Villa"],
-    "La Liga": ["Real Madrid", "Barcelona", "Atletico Madrid", "Real Sociedad", "Sevilla", "Valencia"],
+    "La Liga": [
+        "Real Madrid",
+        "Barcelona",
+        "Atletico Madrid",
+        "Real Sociedad",
+        "Sevilla",
+        "Valencia",
+    ],
     "Serie A": ["Inter", "Juventus", "Milan", "Napoli", "Roma", "Atalanta"],
     "Bundesliga": ["Bayern Munich", "Dortmund", "Leverkusen", "Leipzig", "Frankfurt", "Stuttgart"],
 }
@@ -23,6 +30,7 @@ class StrategyConfig:
     name: str
     bet_probability: float
     clv_bias: float
+    clv_noise: float
     stake_mean: float
     stake_std: float
     market_weights: tuple[float, float, float, float]
@@ -30,28 +38,49 @@ class StrategyConfig:
 
 STRATEGIES = [
     StrategyConfig(
-        name="Quant_Value",
-        bet_probability=0.40,
-        clv_bias=0.040,
-        stake_mean=65.0,
-        stake_std=16.0,
-        market_weights=(0.42, 0.24, 0.18, 0.16),
+        name="sharp_value",
+        bet_probability=0.30,
+        clv_bias=0.11,
+        clv_noise=0.018,
+        stake_mean=55.0,
+        stake_std=10.0,
+        market_weights=(0.42, 0.20, 0.14, 0.24),
     ),
     StrategyConfig(
-        name="League_Specialist",
+        name="momentum",
         bet_probability=0.34,
+        clv_bias=0.070,
+        clv_noise=0.025,
+        stake_mean=60.0,
+        stake_std=14.0,
+        market_weights=(0.35, 0.28, 0.20, 0.17),
+    ),
+    StrategyConfig(
+        name="league_expert",
+        bet_probability=0.28,
+        clv_bias=0.050,
+        clv_noise=0.025,
+        stake_mean=65.0,
+        stake_std=15.0,
+        market_weights=(0.48, 0.16, 0.14, 0.22),
+    ),
+    StrategyConfig(
+        name="high_volume",
+        bet_probability=0.50,
+        clv_bias=-0.018,
+        clv_noise=0.035,
+        stake_mean=95.0,
+        stake_std=28.0,
+        market_weights=(0.30, 0.28, 0.26, 0.16),
+    ),
+    StrategyConfig(
+        name="btts_hunter",
+        bet_probability=0.35,
         clv_bias=0.030,
+        clv_noise=0.030,
         stake_mean=80.0,
         stake_std=22.0,
-        market_weights=(0.45, 0.18, 0.15, 0.22),
-    ),
-    StrategyConfig(
-        name="Aggressive_Momentum",
-        bet_probability=0.45,
-        clv_bias=-0.010,
-        stake_mean=100.0,
-        stake_std=28.0,
-        market_weights=(0.34, 0.28, 0.24, 0.14),
+        market_weights=(0.10, 0.28, 0.46, 0.16),
     ),
 ]
 
@@ -115,7 +144,9 @@ def _load_real_match_reference() -> pd.DataFrame:
     return reference.sort_values("kickoff_ts").reset_index(drop=True)
 
 
-def _team_strength_from_reference(reference: pd.DataFrame, rng: np.random.Generator) -> dict[str, float]:
+def _team_strength_from_reference(
+    reference: pd.DataFrame, rng: np.random.Generator
+) -> dict[str, float]:
     home = reference[["home_team", "home_goals", "away_goals"]].rename(
         columns={"home_team": "team", "home_goals": "goals_for", "away_goals": "goals_against"}
     )
@@ -154,7 +185,9 @@ def _probabilities(diff: float, lambda_home: float, lambda_away: float) -> dict[
     }
 
 
-def generate_synthetic_data(num_matches: int = 280, seed: int = 42) -> tuple[pd.DataFrame, pd.DataFrame]:
+def generate_synthetic_data(
+    num_matches: int = 280, seed: int = 42
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     rng = np.random.default_rng(seed)
     start_date = datetime(2025, 1, 1, 15, 0, 0)
     reference_matches = _load_real_match_reference()
@@ -227,7 +260,9 @@ def generate_synthetic_data(num_matches: int = 280, seed: int = 42) -> tuple[pd.
             bookmaker = str(rng.choice(BOOKMAKERS))
             p_true = probs[market]
             closing_odds = _decimal_odds(p_true, margin=float(rng.uniform(0.03, 0.08)))
-            captured_odds = round(max(1.05, closing_odds * (1 + rng.normal(strategy.clv_bias, 0.03))), 2)
+            captured_odds = round(
+                max(1.05, closing_odds * (1 + rng.normal(strategy.clv_bias, strategy.clv_noise))), 2
+            )
             stake = round(max(10.0, rng.normal(strategy.stake_mean, strategy.stake_std)), 2)
             placed_ts = kickoff_ts - timedelta(hours=int(rng.integers(6, 96)))
             settled_ts = kickoff_ts + timedelta(hours=2)

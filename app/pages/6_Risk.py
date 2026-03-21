@@ -4,10 +4,10 @@ import plotly.express as px
 import streamlit as st
 
 from app.common import (
-    PROFILE_LABELS,
-    SEVERITY_ORDER,
-    SEVERITY_LABELS,
     ALERT_LABELS,
+    PROFILE_LABELS,
+    SEVERITY_LABELS,
+    SEVERITY_ORDER,
     apply_chart_style,
     apply_global_filters,
     build_global_filters,
@@ -39,8 +39,8 @@ if risk_scores.empty:
 
 profile_map = PROFILE_LABELS.get(lang, PROFILE_LABELS["en"])
 risk_plot = risk_scores.copy()
-risk_plot["risk_profile_label"] = risk_plot["risk_profile"].astype(str).map(
-    lambda value: profile_map.get(value, value)
+risk_plot["risk_profile_label"] = (
+    risk_plot["risk_profile"].astype(str).map(lambda value: profile_map.get(value, value))
 )
 
 c1, c2, c3 = st.columns(3)
@@ -118,11 +118,15 @@ if not alerts.empty:
     alerts_table = alerts.copy()
     alerts_table["severity_order"] = alerts_table["severity"].map(SEVERITY_ORDER).fillna(99)
     alerts_table = alerts_table.sort_values(["severity_order", "strategy", "alert_type"])
-    alerts_table["alert_type"] = alerts_table["alert_type"].astype(str).map(
-        lambda value: ALERT_LABELS.get(lang, ALERT_LABELS["en"]).get(value, value)
+    alerts_table["alert_type"] = (
+        alerts_table["alert_type"]
+        .astype(str)
+        .map(lambda value: ALERT_LABELS.get(lang, ALERT_LABELS["en"]).get(value, value))
     )
-    alerts_table["severity"] = alerts_table["severity"].astype(str).map(
-        lambda value: SEVERITY_LABELS.get(lang, SEVERITY_LABELS["en"]).get(value, value)
+    alerts_table["severity"] = (
+        alerts_table["severity"]
+        .astype(str)
+        .map(lambda value: SEVERITY_LABELS.get(lang, SEVERITY_LABELS["en"]).get(value, value))
     )
 
     alerts_table = compact_table(

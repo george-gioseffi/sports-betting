@@ -51,8 +51,10 @@ if "max_red_streak_risk" in joined.columns:
     joined["max_red_streak"] = joined["max_red_streak_risk"]
 
 plot_df = joined.copy()
-plot_df["risk_profile_label"] = plot_df["risk_profile"].astype(str).map(
-    lambda value: PROFILE_LABELS.get(lang, PROFILE_LABELS["en"]).get(value, value)
+plot_df["risk_profile_label"] = (
+    plot_df["risk_profile"]
+    .astype(str)
+    .map(lambda value: PROFILE_LABELS.get(lang, PROFILE_LABELS["en"]).get(value, value))
 )
 
 c1, c2, c3 = st.columns(3)

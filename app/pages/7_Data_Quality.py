@@ -44,9 +44,11 @@ status_map = DQ_STATUS.get(lang, DQ_STATUS["en"])
 severity_map = DQ_SEVERITY.get(lang, DQ_SEVERITY["en"])
 
 dq_plot = dq.copy()
-dq_plot["status_label"] = dq_plot["status"].astype(str).map(lambda value: status_map.get(value, value))
-dq_plot["severity_label"] = dq_plot["severity"].astype(str).map(
-    lambda value: severity_map.get(value, value)
+dq_plot["status_label"] = (
+    dq_plot["status"].astype(str).map(lambda value: status_map.get(value, value))
+)
+dq_plot["severity_label"] = (
+    dq_plot["severity"].astype(str).map(lambda value: severity_map.get(value, value))
 )
 
 summary = dq_plot.groupby(["status_label", "severity_label"], as_index=False)["check_name"].count()

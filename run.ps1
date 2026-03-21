@@ -2,7 +2,7 @@ param(
     [Parameter(Position = 0)]
     [ValidateSet("help", "setup", "install", "seed", "pipeline", "test", "lint", "qa", "app", "clean")]
     [string]$Task = "help",
-    [int]$Matches = 280,
+    [int]$Matches = 500,
     [int]$Seed = 42,
     [switch]$FailOnDqError
 )

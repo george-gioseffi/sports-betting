@@ -116,14 +116,24 @@ def compute_risk_scores(
         alerts = _strategy_alerts(item)
         if not alerts:
             alerts_rows.append(
-                {"strategy": item["strategy"], "alert_type": "no_critical_alerts", "severity": "info"}
+                {
+                    "strategy": item["strategy"],
+                    "alert_type": "no_critical_alerts",
+                    "severity": "info",
+                }
             )
         for alert in alerts:
-            severity = "high" if alert in {"drawdown_limit_breach", "elevated_volatility"} else "medium"
-            alerts_rows.append({"strategy": item["strategy"], "alert_type": alert, "severity": severity})
+            severity = (
+                "high" if alert in {"drawdown_limit_breach", "elevated_volatility"} else "medium"
+            )
+            alerts_rows.append(
+                {"strategy": item["strategy"], "alert_type": alert, "severity": severity}
+            )
 
     if not alerts_rows:
         return risk_df, pd.DataFrame(columns=ALERT_COLUMNS)
 
-    alerts_df = pd.DataFrame(alerts_rows).sort_values(["severity", "strategy"]).reset_index(drop=True)
+    alerts_df = (
+        pd.DataFrame(alerts_rows).sort_values(["severity", "strategy"]).reset_index(drop=True)
+    )
     return risk_df, alerts_df

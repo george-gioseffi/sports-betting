@@ -41,7 +41,7 @@ def sample_bets() -> pd.DataFrame:
             {
                 "bet_id": "B000001",
                 "match_id": "M00001",
-                "strategy": "Quant_Value",
+                "strategy": "sharp_value",
                 "bookmaker": "Pinnacle",
                 "market": "MONEYLINE_HOME",
                 "selection": "HOME",
@@ -60,7 +60,7 @@ def sample_bets() -> pd.DataFrame:
             {
                 "bet_id": "B000002",
                 "match_id": "M00002",
-                "strategy": "Aggressive_Momentum",
+                "strategy": "high_volume",
                 "bookmaker": "Bet365",
                 "market": "DNB_HOME",
                 "selection": "HOME",
@@ -79,7 +79,7 @@ def sample_bets() -> pd.DataFrame:
             {
                 "bet_id": "B000003",
                 "match_id": "M00002",
-                "strategy": "Aggressive_Momentum",
+                "strategy": "high_volume",
                 "bookmaker": "Betano",
                 "market": "OVER_2_5",
                 "selection": "YES",

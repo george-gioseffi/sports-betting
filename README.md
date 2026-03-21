@@ -1,148 +1,16 @@
 # Sports Betting Intelligence Engine
-### Analytics Platform for Strategy Performance, Risk Governance, and Capital Preservation
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![CI Ready](https://img.shields.io/badge/ci-github_actions-0a7f50)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Opening Hook
-Most discussions around sports strategies stop at profit. In practice, profit alone is noisy.
-This project focuses on **profit quality**: edge sustainability, CLV discipline, concentration risk, and drawdown behavior.
-The goal is simple: turn fragmented match/odds/pick records into a reliable analytics layer for better decisions.
+End-to-end analytics pipeline that evaluates sports betting strategy performance with a focus on **profit quality** — not just raw returns, but CLV discipline, drawdown behavior, concentration risk, and capital preservation.
 
-## Business Problem
-Organizations that analyze sports markets need to answer:
-- Do current strategies show statistically sustainable edge?
-- Is positive return driven by process quality or short-term variance?
-- Are exposure limits, drawdown rules, and volatility controls being respected?
-- Which strategies look profitable but violate governance standards?
+Built as a data product: ingestion, cleaning, validation, mart materialization, risk scoring, bankroll simulation, and a Streamlit dashboard — all running locally with reproducible sample data.
 
-Without a trusted analytics layer, decisions become noisy and reactive.
+## How to Run
 
-## Why This Project Matters
-- Covers the full lifecycle: ingestion, modeling, validation, simulation, and dashboarding.
-- Connects performance metrics to explicit governance rules.
-- Uses practical analytics engineering patterns (`raw -> staging -> marts`).
-- Keeps the narrative grounded in uncertainty and capital preservation.
-- Runs locally with sample data, so anyone can evaluate it quickly.
-
-## Data Credibility (Hybrid Demo Dataset)
-- Uses a local snapshot of real football match results in `data/samples/real_matches_reference.csv`.
-- Keeps odds, stake sizing, and picks generated in a controlled way for repeatable analytics tests.
-- Preserves offline execution while making match context more realistic for portfolio review.
-- Source details: [`docs/data_sources.md`](docs/data_sources.md)
-
-## Architecture
-```mermaid
-flowchart LR
-    A["Hybrid Sources (Real Results + Simulated Pricing)"] --> B["Ingestion Layer (raw)"]
-    B --> C["Cleaning + Standardization (staging)"]
-    C --> D["Data Quality Contracts"]
-    D --> E["Analytics Engine (facts, dims, marts)"]
-    E --> F["Risk Governance Engine"]
-    E --> G["Bankroll Simulation Engine"]
-    E --> H["DuckDB Warehouse + SQL"]
-    F --> I["Streamlit App"]
-    G --> I
-    H --> I
-```
-
-## Analytics Workflow
-```mermaid
-flowchart TD
-    A["Ingest events and odds"] --> B["Normalize entities and markets"]
-    B --> C["Validate integrity and semantics"]
-    C --> D["Compute KPIs and segmentation marts"]
-    D --> E["Run scenario simulation"]
-    D --> F["Compute risk score and alerts"]
-    E --> G["Executive and exploratory dashboards"]
-    F --> G
-```
-
-## Key Metrics Covered
-- Total bets analyzed
-- Win/loss/push rates
-- Net profit
-- ROI (capital-based)
-- Yield (stake efficiency)
-- Average stake and average odds
-- Profit factor
-- Expectancy
-- Closing Line Value (CLV)
-- Maximum drawdown
-- Max red/green streak
-- Bankroll volatility
-- Sharpe-like ratio
-- Segmentation by strategy, market, league, bookmaker, odds band, and period
-
-Formula details: [`docs/metrics.md`](docs/metrics.md)
-
-## Business Questions This Project Answers
-- Which strategy delivered the best risk-adjusted outcome?
-- Which market types behave with higher volatility?
-- Is average CLV positive and consistent?
-- Did higher odds bands increase drawdown risk?
-- Which strategies look profitable but operationally fragile?
-- Is exposure concentrated in specific leagues or market families?
-- How does bankroll behavior change under fixed stake vs Kelly?
-
-## Portfolio Highlights
-- End-to-end pipeline with modular Python code
-- Layered data model (`raw`, `staging`, `marts`) + DuckDB warehouse
-- Risk governance module with score, profile, and alerts
-- Bankroll simulation with multiple sizing rules
-- SQL assets for DDL, marts, and exploratory analysis
-- Multipage Streamlit app with global filters
-- Data quality checks and automated tests
-- CI workflows for lint and tests
-
-## Language Support
-- The Streamlit app supports **English** and **Português** with a sidebar selector.
-- Page titles, filter labels, KPI cards, chart titles, and main table headers adapt to the selected language.
-- Numeric formatting also follows locale style (`English`: `1,234.56` | `Português`: `1.234,56`).
-
-## Documentation Index
-- Architecture: [`docs/architecture.md`](docs/architecture.md)
-- Data sources: [`docs/data_sources.md`](docs/data_sources.md)
-- Metrics and formulas: [`docs/metrics.md`](docs/metrics.md)
-- Risk governance policy: [`docs/risk_governance.md`](docs/risk_governance.md)
-- Data dictionary: [`docs/data_dictionary.md`](docs/data_dictionary.md)
-- Case study narrative: [`docs/case_study.md`](docs/case_study.md)
-- Recruiter summary: [`docs/recruiter_summary.md`](docs/recruiter_summary.md)
-- LinkedIn ready posts: [`docs/linkedin_post_examples.md`](docs/linkedin_post_examples.md)
-- Publishing and release plan: [`docs/publishing_and_releases.md`](docs/publishing_and_releases.md)
-
-## Screenshots
-The screenshots below were captured using the **Português** interface mode.
-
-### Home hero
-![Home Hero](docs/screenshots/home-hero.png)
-
-### Overview dashboard
-![Overview Dashboard](docs/screenshots/overview-dashboard.png)
-
-### Strategy performance
-![Strategy Performance](docs/screenshots/strategy-performance.png)
-
-### CLV analysis
-![CLV Analysis](docs/screenshots/clv-analysis.png)
-
-### Risk governance
-![Risk Governance](docs/screenshots/risk-governance.png)
-
-### Bankroll scenarios
-![Bankroll Scenarios](docs/screenshots/bankroll-scenarios.png)
-
-### Additional views
-![Market Performance](docs/screenshots/market-performance.png)
-![Data Quality](docs/screenshots/data-quality.png)
-
-Capture guide: [`docs/screenshots/README.md`](docs/screenshots/README.md)
-
-## How To Run
-### Option A: Makefile
-Use this option when `make` is available (Linux/macOS or Windows with Make installed).
-
+### Makefile (Linux/macOS)
 ```bash
 make install
 make seed
@@ -151,25 +19,80 @@ make test
 make app
 ```
 
-### Option B: Plain commands
+### Plain commands
 ```bash
 python -m pip install -e ".[dev]"
-python -m src.main seed --matches 280 --seed 42
+python -m src.main seed --matches 500 --seed 42
 python -m src.main pipeline
 python -m pytest
 python -m streamlit run app/Home.py
 ```
 
-### Option C: Windows helper script
+### Windows (PowerShell)
 ```powershell
 .\run.ps1 setup
-.\run.ps1 seed -Matches 280 -Seed 42
+.\run.ps1 seed -Matches 500 -Seed 42
 .\run.ps1 pipeline
 .\run.ps1 test
 .\run.ps1 app
 ```
 
+## Architecture
+
+```mermaid
+flowchart LR
+    A["Hybrid Sources (Real Results + Simulated Pricing)"] --> B["Ingestion (raw)"]
+    B --> C["Cleaning + Standardization (staging)"]
+    C --> D["Data Quality Contracts"]
+    D --> E["Analytics Engine (facts, dims, marts)"]
+    E --> F["Risk Governance"]
+    E --> G["Bankroll Simulation"]
+    E --> H["DuckDB Warehouse"]
+    F --> I["Streamlit App"]
+    G --> I
+    H --> I
+```
+
+## Data
+
+Uses a hybrid demo dataset: real football match results (Premier League, La Liga, Serie A, Bundesliga — 2024/2025 season) combined with simulated odds, stakes, and picks. This keeps the pipeline reproducible and offline while grounding match context in real outcomes.
+
+Source details: [`docs/data_sources.md`](docs/data_sources.md)
+
+## Key Metrics
+
+ROI, yield, CLV, profit factor, expectancy, max drawdown, Sharpe-like ratio, win/loss streaks, bankroll volatility — segmented by strategy, market, league, bookmaker, odds band, and period.
+
+Formula details: [`docs/metrics.md`](docs/metrics.md)
+
+## Screenshots
+
+Captured using the **Português** interface mode.
+
+### Home
+![Home Hero](docs/screenshots/home-hero.png)
+
+### Overview
+![Overview Dashboard](docs/screenshots/overview-dashboard.png)
+
+### Strategy Analysis
+![Strategy Performance](docs/screenshots/strategy-performance.png)
+
+### CLV Analysis
+![CLV Analysis](docs/screenshots/clv-analysis.png)
+
+### Risk Governance
+![Risk Governance](docs/screenshots/risk-governance.png)
+
+### Bankroll Simulation
+![Bankroll Scenarios](docs/screenshots/bankroll-scenarios.png)
+
+### Market Performance & Data Quality
+![Market Performance](docs/screenshots/market-performance.png)
+![Data Quality](docs/screenshots/data-quality.png)
+
 ## Project Structure
+
 ```text
 sports-betting/
 |- data/                 # raw, staging, marts, samples
@@ -177,32 +100,31 @@ sports-betting/
 |- sql/                  # ddl, staging models, marts, exploratory queries
 |- src/                  # ingestion, cleaning, validation, analytics, risk, simulation
 |- app/                  # streamlit multipage interface
-|- tests/                # automated tests for critical logic
+|- tests/                # automated tests
 `- .github/workflows/    # ci and lint pipelines
 ```
 
-## What This Project Demonstrates
-For **Data Analyst / BI Analyst**:
-- KPI design, segmentation logic, and business storytelling
-- Dashboard clarity with executive and exploratory lenses
+## Language Support
 
-For **Analytics Engineer**:
-- Analytical modeling, data contracts, mart materialization, SQL assets
+The Streamlit app supports **English** and **Português** via a sidebar selector. Labels, KPI cards, chart titles, table headers, and numeric formatting adapt to the selected language.
 
-For **Junior Data Engineer**:
-- Reproducible pipelines, modular architecture, validation layer, CI discipline
+## Documentation
 
-For **Product/Data Analytics**:
-- Risk-aware metric interpretation and decision-oriented framing
+- [Architecture](docs/architecture.md)
+- [Data sources](docs/data_sources.md)
+- [Metrics and formulas](docs/metrics.md)
+- [Risk governance](docs/risk_governance.md)
+- [Data dictionary](docs/data_dictionary.md)
+- [Methodology](docs/methodology.md)
+- [Case study](docs/case_study.md)
+- [Assumptions and limitations](docs/assumptions_limitations.md)
 
 ## Roadmap
-- Add real API connectors for odds snapshots and match events
-- Add dbt models/tests and lineage docs
-- Add uncertainty intervals and bootstrap confidence bands
-- Add cross-strategy correlation-aware exposure limits
-- Publish cloud deployment profiles (Streamlit Cloud + containerized options)
 
-## Responsible Use Disclaimer
-This project is intended for analytical, educational, and portfolio purposes only.  
-It does not constitute financial advice, betting advice, or encouragement of gambling activity.  
-The risk governance layer exists precisely to highlight volatility, uncertainty, and capital preservation concerns.
+- Real API connectors for odds and match events
+- Uncertainty intervals and bootstrap confidence bands
+- Cross-strategy correlation-aware exposure limits
+
+## Disclaimer
+
+Analytical and educational project. Not financial or betting advice. The risk governance layer highlights volatility, uncertainty, and capital preservation concerns by design.

@@ -1,2 +1,2 @@
 total_bets,settled_bets,win_rate,loss_rate,push_rate,net_profit,total_stake,roi,yield_pct,avg_stake,avg_odds,profit_factor,expectancy,avg_clv,max_drawdown,max_green_streak,max_red_streak,bankroll_volatility,sharpe_like
-334,334,0.479,0.4611,0.0599,-5711.34,27580.41,-0.5711,-0.2071,82.58,1.8873,0.5519,-18.189,0.0197,0.5958,8,9,0.3284,-7.5566
+876,876,0.5068,0.4578,0.0354,-7949.56,64317.79,-0.795,-0.1236,73.42,1.885,0.7307,-9.4078,0.0415,0.8199,10,9,0.8079,-4.2751

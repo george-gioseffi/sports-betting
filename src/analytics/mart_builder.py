@@ -158,7 +158,9 @@ def build_analytics_marts(
 
     fact_results = bets_df[["bet_id", "match_id", "result", "stake", "pnl"]].copy()
 
-    overall_metrics = pd.DataFrame([calculate_core_metrics(bets_df, initial_bankroll=initial_bankroll)])
+    overall_metrics = pd.DataFrame(
+        [calculate_core_metrics(bets_df, initial_bankroll=initial_bankroll)]
+    )
     segment_cols = {
         "mart_strategy_performance": "strategy",
         "mart_market_performance": "market",

@@ -74,7 +74,15 @@ st.plotly_chart(apply_chart_style(fig_yield), width="stretch")
 
 market_table = compact_table(
     market_perf,
-    columns=["market", "total_bets", "net_profit", "yield_pct", "win_rate", "avg_clv", "max_drawdown"],
+    columns=[
+        "market",
+        "total_bets",
+        "net_profit",
+        "yield_pct",
+        "win_rate",
+        "avg_clv",
+        "max_drawdown",
+    ],
     rename={
         "market": col_label("col_market", lang),
         "total_bets": col_label("col_bets", lang),

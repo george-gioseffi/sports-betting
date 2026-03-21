@@ -5,7 +5,7 @@ install:
 	python -m pip install -e ".[dev]"
 
 seed:
-	python -m src.main seed --matches 280 --seed 42
+	python -m src.main seed --matches 500 --seed 42
 
 pipeline:
 	python -m src.main pipeline

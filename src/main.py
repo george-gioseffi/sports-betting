@@ -27,7 +27,7 @@ def run_pipeline(fail_on_dq_error: bool) -> None:
         raw_matches, raw_bets = load_raw_data()
     except FileNotFoundError:
         logger.info("Raw data not found, generating synthetic input first.")
-        raw_matches, raw_bets = seed_raw_data(num_matches=280, seed=DEFAULT_SEED)
+        raw_matches, raw_bets = seed_raw_data(num_matches=500, seed=DEFAULT_SEED)
 
     matches = clean_matches(raw_matches)
     bets = clean_bets(raw_bets, matches)
@@ -78,7 +78,7 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command")
 
     seed_cmd = subparsers.add_parser("seed", help="Generate synthetic raw data")
-    seed_cmd.add_argument("--matches", type=int, default=280, help="Number of matches to generate")
+    seed_cmd.add_argument("--matches", type=int, default=500, help="Number of matches to generate")
     seed_cmd.add_argument("--seed", type=int, default=DEFAULT_SEED, help="Random seed")
 
     pipeline_cmd = subparsers.add_parser("pipeline", help="Run full analytics pipeline")

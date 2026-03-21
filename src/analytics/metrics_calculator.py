@@ -3,7 +3,6 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-
 EMPTY_METRICS: dict[str, float | int] = {
     "total_bets": 0,
     "settled_bets": 0,
@@ -66,7 +65,9 @@ def calculate_sharpe_like(daily_returns: pd.Series) -> float:
     return float((daily_returns.mean() / std) * np.sqrt(252))
 
 
-def compute_bankroll_curve(bets_df: pd.DataFrame, initial_bankroll: float = 10_000.0) -> pd.DataFrame:
+def compute_bankroll_curve(
+    bets_df: pd.DataFrame, initial_bankroll: float = 10_000.0
+) -> pd.DataFrame:
     if bets_df.empty:
         return pd.DataFrame(columns=["settled_date", "daily_pnl", "bankroll", "drawdown"])
 
@@ -124,13 +125,19 @@ def calculate_core_metrics(
     expectancy = float(win_prob * avg_win - loss_prob * avg_loss)
 
     bankroll_curve = compute_bankroll_curve(bets, initial_bankroll=initial_bankroll)
-    max_drawdown = calculate_drawdown(bankroll_curve["bankroll"]) if not bankroll_curve.empty else 0.0
+    max_drawdown = (
+        calculate_drawdown(bankroll_curve["bankroll"]) if not bankroll_curve.empty else 0.0
+    )
 
     max_green_streak, max_red_streak = calculate_streaks(bets["result"])
     daily_returns = (
-        bankroll_curve["daily_pnl"] / initial_bankroll if not bankroll_curve.empty else pd.Series(dtype=float)
+        bankroll_curve["daily_pnl"] / initial_bankroll
+        if not bankroll_curve.empty
+        else pd.Series(dtype=float)
     )
-    bankroll_volatility = float(daily_returns.std(ddof=0) * np.sqrt(252)) if not daily_returns.empty else 0.0
+    bankroll_volatility = (
+        float(daily_returns.std(ddof=0) * np.sqrt(252)) if not daily_returns.empty else 0.0
+    )
     sharpe_like = calculate_sharpe_like(daily_returns)
 
     return {

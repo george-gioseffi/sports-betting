@@ -1,281 +1,501 @@
 match_id,season,league,home_team,away_team,kickoff_ts,home_goals,away_goals,total_goals
-M00001,2024/2025,La Liga,Ath Bilbao,Getafe,2024-08-15 18:00:00,1,1,2
-M00002,2024/2025,La Liga,Celta,Alaves,2024-08-16 18:00:00,2,1,3
-M00003,2024/2025,Premier League,Man United,Fulham,2024-08-16 20:00:00,1,0,1
-M00004,2024/2025,Premier League,Ipswich,Liverpool,2024-08-17 12:30:00,0,2,2
-M00005,2024/2025,Premier League,Arsenal,Wolves,2024-08-17 15:00:00,2,0,2
-M00006,2024/2025,Premier League,Nott'M Forest,Bournemouth,2024-08-17 15:00:00,1,1,2
-M00007,2024/2025,Premier League,Everton,Brighton,2024-08-17 15:00:00,0,3,3
-M00008,2024/2025,Premier League,West Ham,Aston Villa,2024-08-17 17:30:00,1,2,3
-M00009,2024/2025,Serie A,Genoa,Inter,2024-08-17 17:30:00,2,2,4
-M00010,2024/2025,Serie A,Milan,Torino,2024-08-17 19:45:00,2,2,4
-M00011,2024/2025,La Liga,Valencia,Barcelona,2024-08-17 20:30:00,1,2,3
-M00012,2024/2025,Premier League,Brentford,Crystal Palace,2024-08-18 14:00:00,2,1,3
-M00013,2024/2025,Premier League,Chelsea,Man City,2024-08-18 16:30:00,0,2,2
-M00014,2024/2025,Serie A,Bologna,Udinese,2024-08-18 17:30:00,1,1,2
-M00015,2024/2025,Serie A,Cagliari,Roma,2024-08-18 19:45:00,0,0,0
-M00016,2024/2025,Serie A,Lazio,Venezia,2024-08-18 19:45:00,3,1,4
-M00017,2024/2025,La Liga,Mallorca,Real Madrid,2024-08-18 20:30:00,1,1,2
-M00018,2024/2025,Serie A,Lecce,Atalanta,2024-08-19 17:30:00,0,4,4
-M00019,2024/2025,La Liga,Valladolid,Espanol,2024-08-19 18:00:00,1,0,1
-M00020,2024/2025,La Liga,Villarreal,Ath Madrid,2024-08-19 20:30:00,2,2,4
-M00021,2024/2025,La Liga,Celta,Valencia,2024-08-23 18:00:00,3,1,4
-M00022,2024/2025,Bundesliga,M'Gladbach,Leverkusen,2024-08-23 19:30:00,2,3,5
-M00023,2024/2025,Premier League,Brighton,Man United,2024-08-24 12:30:00,2,1,3
+M00001,2024/2025,La Liga,Betis,Girona,2024-08-15 20:30:00,1,1,2
+M00002,2024/2025,La Liga,Betis,Girona,2024-08-15 20:30:00,1,1,2
+M00003,2024/2025,La Liga,Betis,Girona,2024-08-15 20:30:00,1,1,2
+M00004,2024/2025,Premier League,Man United,Fulham,2024-08-16 20:00:00,1,0,1
+M00005,2024/2025,La Liga,Las Palmas,Sevilla,2024-08-16 20:30:00,2,2,4
+M00006,2024/2025,Premier League,Ipswich,Liverpool,2024-08-17 12:30:00,0,2,2
+M00007,2024/2025,Premier League,Newcastle,Southampton,2024-08-17 15:00:00,1,0,1
+M00008,2024/2025,Premier League,Newcastle,Southampton,2024-08-17 15:00:00,1,0,1
+M00009,2024/2025,Serie A,Parma,Fiorentina,2024-08-17 17:30:00,1,1,2
+M00010,2024/2025,La Liga,Osasuna,Leganes,2024-08-17 18:00:00,1,1,2
+M00011,2024/2025,Serie A,Empoli,Monza,2024-08-17 19:45:00,0,0,0
+M00012,2024/2025,Serie A,Empoli,Monza,2024-08-17 19:45:00,0,0,0
+M00013,2024/2025,La Liga,Valencia,Barcelona,2024-08-17 20:30:00,1,2,3
+M00014,2024/2025,Premier League,Brentford,Crystal Palace,2024-08-18 14:00:00,2,1,3
+M00015,2024/2025,Serie A,Verona,Napoli,2024-08-18 17:30:00,3,0,3
+M00016,2024/2025,Serie A,Verona,Napoli,2024-08-18 17:30:00,3,0,3
+M00017,2024/2025,La Liga,Sociedad,Vallecano,2024-08-18 18:00:00,1,2,3
+M00018,2024/2025,La Liga,Sociedad,Vallecano,2024-08-18 18:00:00,1,2,3
+M00019,2024/2025,Serie A,Lecce,Atalanta,2024-08-19 17:30:00,0,4,4
+M00020,2024/2025,La Liga,Valladolid,Espanol,2024-08-19 18:00:00,1,0,1
+M00021,2024/2025,Serie A,Juventus,Como,2024-08-19 19:45:00,3,0,3
+M00022,2024/2025,Serie A,Juventus,Como,2024-08-19 19:45:00,3,0,3
+M00023,2024/2025,Premier League,Leicester,Tottenham,2024-08-19 20:00:00,1,1,2
+M00024,2024/2025,La Liga,Sevilla,Villarreal,2024-08-23 20:30:00,1,2,3
+M00025,2024/2025,La Liga,Sevilla,Villarreal,2024-08-23 20:30:00,1,2,3
+M00029,2024/2025,Bundesliga,Hoffenheim,Holstein Kiel,2024-08-24 14:30:00,3,2,5
 M00026,2024/2025,Bundesliga,Rb Leipzig,Bochum,2024-08-24 14:30:00,1,0,1
-M00024,2024/2025,Bundesliga,Mainz,Union Berlin,2024-08-24 14:30:00,1,1,2
-M00025,2024/2025,Bundesliga,Hoffenheim,Holstein Kiel,2024-08-24 14:30:00,3,2,5
-M00027,2024/2025,Premier League,Tottenham,Everton,2024-08-24 15:00:00,4,0,4
-M00028,2024/2025,Premier League,Fulham,Leicester,2024-08-24 15:00:00,2,1,3
-M00029,2024/2025,Premier League,Aston Villa,Arsenal,2024-08-24 17:30:00,0,2,2
-M00030,2024/2025,Bundesliga,Dortmund,Ein Frankfurt,2024-08-24 17:30:00,2,0,2
-M00031,2024/2025,Premier League,Wolves,Chelsea,2024-08-25 14:00:00,2,6,8
-M00032,2024/2025,Bundesliga,Wolfsburg,Bayern Munich,2024-08-25 14:30:00,2,3,5
-M00033,2024/2025,La Liga,Real Madrid,Valladolid,2024-08-25 16:00:00,3,0,3
-M00034,2024/2025,Bundesliga,St Pauli,Heidenheim,2024-08-25 16:30:00,0,2,2
-M00035,2024/2025,Serie A,Fiorentina,Venezia,2024-08-25 17:30:00,0,0,0
-M00036,2024/2025,La Liga,Alaves,Betis,2024-08-25 18:15:00,0,0,0
-M00037,2024/2025,La Liga,Ath Madrid,Girona,2024-08-25 20:30:00,3,0,3
-M00038,2024/2025,Serie A,Cagliari,Como,2024-08-26 17:30:00,1,1,2
-M00039,2024/2025,Serie A,Verona,Juventus,2024-08-26 19:45:00,0,3,3
-M00040,2024/2025,La Liga,Villarreal,Celta,2024-08-26 20:30:00,4,3,7
-M00041,2024/2025,La Liga,Mallorca,Sevilla,2024-08-27 18:00:00,0,0,0
-M00042,2024/2025,La Liga,Ath Bilbao,Valencia,2024-08-28 18:00:00,1,0,1
-M00043,2024/2025,La Liga,Valladolid,Leganes,2024-08-28 18:00:00,0,0,0
-M00044,2024/2025,La Liga,Sociedad,Alaves,2024-08-28 20:30:00,1,2,3
-M00045,2024/2025,La Liga,Ath Madrid,Espanol,2024-08-28 20:30:00,0,0,0
-M00046,2024/2025,La Liga,Girona,Osasuna,2024-08-29 18:00:00,4,0,4
-M00047,2024/2025,La Liga,Las Palmas,Real Madrid,2024-08-29 20:30:00,1,1,2
-M00048,2024/2025,Serie A,Venezia,Torino,2024-08-30 17:30:00,0,1,1
-M00049,2024/2025,Bundesliga,Union Berlin,St Pauli,2024-08-30 19:30:00,1,0,1
-M00050,2024/2025,Premier League,Arsenal,Brighton,2024-08-31 12:30:00,1,1,2
-M00051,2024/2025,Bundesliga,Bochum,M'Gladbach,2024-08-31 14:30:00,0,2,2
-M00052,2024/2025,Bundesliga,Holstein Kiel,Wolfsburg,2024-08-31 14:30:00,0,2,2
-M00053,2024/2025,Bundesliga,Stuttgart,Mainz,2024-08-31 14:30:00,3,3,6
-M00054,2024/2025,Bundesliga,Werder Bremen,Dortmund,2024-08-31 14:30:00,0,0,0
-M00055,2024/2025,Premier League,Nott'M Forest,Wolves,2024-08-31 15:00:00,1,1,2
-M00056,2024/2025,Premier League,Everton,Bournemouth,2024-08-31 15:00:00,2,3,5
-M00057,2024/2025,La Liga,Barcelona,Valladolid,2024-08-31 16:00:00,7,0,7
-M00058,2024/2025,Bundesliga,Leverkusen,Rb Leipzig,2024-08-31 17:30:00,2,3,5
-M00059,2024/2025,Serie A,Bologna,Empoli,2024-08-31 17:30:00,1,1,2
-M00060,2024/2025,Premier League,West Ham,Man City,2024-08-31 17:30:00,1,3,4
-M00061,2024/2025,La Liga,Ath Bilbao,Ath Madrid,2024-08-31 18:00:00,0,1,1
-M00062,2024/2025,La Liga,Valencia,Villarreal,2024-08-31 20:30:00,1,1,2
-M00063,2024/2025,Premier League,Newcastle,Tottenham,2024-09-01 13:30:00,2,1,3
-M00064,2024/2025,Premier League,Chelsea,Crystal Palace,2024-09-01 13:30:00,1,1,2
-M00065,2024/2025,Premier League,Man United,Liverpool,2024-09-01 16:00:00,0,3,3
-M00066,2024/2025,Bundesliga,Bayern Munich,Freiburg,2024-09-01 16:30:00,2,0,2
-M00067,2024/2025,Serie A,Fiorentina,Monza,2024-09-01 17:30:00,2,2,4
-M00068,2024/2025,Serie A,Genoa,Verona,2024-09-01 17:30:00,0,2,2
-M00069,2024/2025,La Liga,Getafe,Sociedad,2024-09-01 18:15:00,0,0,0
-M00070,2024/2025,Serie A,Udinese,Como,2024-09-01 19:45:00,1,0,1
-M00071,2024/2025,La Liga,Real Madrid,Betis,2024-09-01 20:30:00,2,0,2
-M00072,2024/2025,Bundesliga,Dortmund,Heidenheim,2024-09-13 19:30:00,4,2,6
-M00073,2024/2025,La Liga,Betis,Leganes,2024-09-13 20:00:00,2,0,2
-M00074,2024/2025,Premier League,Southampton,Man United,2024-09-14 12:30:00,0,3,3
-M00075,2024/2025,Bundesliga,Rb Leipzig,Union Berlin,2024-09-14 14:30:00,0,0,0
-M00079,2024/2025,Bundesliga,Wolfsburg,Ein Frankfurt,2024-09-14 14:30:00,1,2,3
-M00076,2024/2025,Bundesliga,Hoffenheim,Leverkusen,2024-09-14 14:30:00,1,4,5
-M00078,2024/2025,Bundesliga,Freiburg,Bochum,2024-09-14 14:30:00,2,1,3
-M00077,2024/2025,Bundesliga,M'Gladbach,Stuttgart,2024-09-14 14:30:00,1,3,4
-M00080,2024/2025,Premier League,Fulham,West Ham,2024-09-14 15:00:00,1,1,2
-M00081,2024/2025,Premier League,Crystal Palace,Leicester,2024-09-14 15:00:00,2,2,4
-M00082,2024/2025,La Liga,Espanol,Alaves,2024-09-14 15:15:00,3,2,5
-M00083,2024/2025,Serie A,Milan,Venezia,2024-09-14 19:45:00,4,0,4
-M00084,2024/2025,Premier League,Bournemouth,Chelsea,2024-09-14 20:00:00,0,1,1
-M00085,2024/2025,Serie A,Genoa,Roma,2024-09-15 11:30:00,1,1,2
-M00086,2024/2025,La Liga,Celta,Valladolid,2024-09-15 13:00:00,3,1,4
-M00087,2024/2025,Serie A,Torino,Lecce,2024-09-15 14:00:00,0,0,0
-M00088,2024/2025,Serie A,Atalanta,Fiorentina,2024-09-15 14:00:00,3,2,5
-M00089,2024/2025,Bundesliga,Augsburg,St Pauli,2024-09-15 14:30:00,3,1,4
-M00090,2024/2025,La Liga,Girona,Barcelona,2024-09-15 15:15:00,1,4,5
-M00091,2024/2025,Premier League,Wolves,Newcastle,2024-09-15 16:30:00,1,2,3
-M00092,2024/2025,Bundesliga,Mainz,Werder Bremen,2024-09-15 16:30:00,1,2,3
-M00093,2024/2025,La Liga,Las Palmas,Ath Bilbao,2024-09-15 17:30:00,2,3,5
-M00094,2024/2025,La Liga,Ath Madrid,Valencia,2024-09-15 20:00:00,3,0,3
-M00095,2024/2025,Serie A,Parma,Udinese,2024-09-16 17:30:00,2,3,5
-M00096,2024/2025,Serie A,Lazio,Verona,2024-09-16 19:45:00,2,1,3
-M00097,2024/2025,La Liga,Vallecano,Osasuna,2024-09-16 20:00:00,3,1,4
-M00098,2024/2025,La Liga,Betis,Getafe,2024-09-18 18:00:00,2,1,3
-M00099,2024/2025,La Liga,Leganes,Ath Bilbao,2024-09-19 18:00:00,0,2,2
-M00100,2024/2025,Premier League,West Ham,Chelsea,2024-09-21 12:30:00,0,3,3
-M00101,2024/2025,Serie A,Venezia,Genoa,2024-09-21 14:00:00,2,0,2
-M00102,2024/2025,Bundesliga,Bochum,Holstein Kiel,2024-09-21 14:30:00,2,2,4
-M00103,2024/2025,Bundesliga,Union Berlin,Hoffenheim,2024-09-21 14:30:00,2,1,3
-M00104,2024/2025,Premier League,Leicester,Everton,2024-09-21 15:00:00,1,1,2
-M00105,2024/2025,Premier League,Fulham,Newcastle,2024-09-21 15:00:00,3,1,4
-M00106,2024/2025,Premier League,Tottenham,Brentford,2024-09-21 15:00:00,3,1,4
-M00107,2024/2025,La Liga,Osasuna,Las Palmas,2024-09-21 15:15:00,2,1,3
-M00108,2024/2025,Serie A,Juventus,Napoli,2024-09-21 17:00:00,0,0,0
-M00109,2024/2025,Bundesliga,Ein Frankfurt,M'Gladbach,2024-09-21 17:30:00,2,0,2
-M00110,2024/2025,Serie A,Lecce,Parma,2024-09-21 19:45:00,2,2,4
-M00111,2024/2025,La Liga,Real Madrid,Espanol,2024-09-21 20:00:00,4,1,5
-M00112,2024/2025,Serie A,Fiorentina,Lazio,2024-09-22 11:30:00,2,1,3
-M00113,2024/2025,La Liga,Getafe,Leganes,2024-09-22 13:00:00,1,1,2
-M00114,2024/2025,Premier League,Brighton,Nott'M Forest,2024-09-22 14:00:00,2,2,4
-M00115,2024/2025,La Liga,Villarreal,Barcelona,2024-09-22 17:30:00,1,5,6
-M00116,2024/2025,Bundesliga,St Pauli,Rb Leipzig,2024-09-22 18:30:00,0,0,0
-M00117,2024/2025,Serie A,Inter,Milan,2024-09-22 19:45:00,1,2,3
-M00118,2024/2025,La Liga,Vallecano,Ath Madrid,2024-09-22 20:00:00,1,1,2
-M00119,2024/2025,La Liga,Betis,Mallorca,2024-09-23 20:00:00,1,2,3
-M00120,2024/2025,La Liga,Valencia,Osasuna,2024-09-24 18:00:00,0,0,0
-M00121,2024/2025,Serie A,Atalanta,Como,2024-09-24 19:45:00,2,3,5
-M00122,2024/2025,La Liga,Barcelona,Getafe,2024-09-25 20:00:00,1,0,1
-M00123,2024/2025,La Liga,Espanol,Villarreal,2024-09-26 18:00:00,1,2,3
-M00124,2024/2025,La Liga,Las Palmas,Betis,2024-09-26 18:00:00,1,1,2
-M00125,2024/2025,La Liga,Valladolid,Mallorca,2024-09-27 20:00:00,1,2,3
-M00126,2024/2025,Premier League,Newcastle,Man City,2024-09-28 12:30:00,1,1,2
-M00127,2024/2025,La Liga,Getafe,Alaves,2024-09-28 13:00:00,2,0,2
-M00128,2024/2025,Serie A,Udinese,Inter,2024-09-28 14:00:00,2,3,5
-M00131,2024/2025,Premier League,Chelsea,Brighton,2024-09-28 15:00:00,4,2,6
-M00129,2024/2025,Premier League,Arsenal,Leicester,2024-09-28 15:00:00,4,2,6
-M00130,2024/2025,Premier League,Nott'M Forest,Fulham,2024-09-28 15:00:00,0,1,1
-M00132,2024/2025,La Liga,Vallecano,Leganes,2024-09-28 15:15:00,1,1,2
-M00133,2024/2025,Serie A,Genoa,Juventus,2024-09-28 17:00:00,0,3,3
-M00134,2024/2025,Bundesliga,Bayern Munich,Leverkusen,2024-09-28 17:30:00,1,1,2
-M00135,2024/2025,Serie A,Bologna,Atalanta,2024-09-28 19:45:00,1,1,2
-M00136,2024/2025,La Liga,Osasuna,Barcelona,2024-09-28 20:00:00,4,2,6
-M00137,2024/2025,Serie A,Torino,Lazio,2024-09-29 11:30:00,2,3,5
-M00138,2024/2025,Premier League,Ipswich,Aston Villa,2024-09-29 14:00:00,2,2,4
-M00139,2024/2025,Bundesliga,Holstein Kiel,Ein Frankfurt,2024-09-29 14:30:00,2,4,6
-M00140,2024/2025,Bundesliga,Hoffenheim,Werder Bremen,2024-09-29 16:30:00,3,4,7
-M00141,2024/2025,Serie A,Empoli,Fiorentina,2024-09-29 17:00:00,0,0,0
-M00142,2024/2025,La Liga,Betis,Espanol,2024-09-29 17:30:00,1,0,1
-M00143,2024/2025,Premier League,Bournemouth,Southampton,2024-09-30 20:00:00,3,1,4
-M00144,2024/2025,Serie A,Napoli,Como,2024-10-04 17:30:00,3,1,4
-M00145,2024/2025,Bundesliga,Augsburg,M'Gladbach,2024-10-04 19:30:00,2,1,3
-M00146,2024/2025,Serie A,Verona,Venezia,2024-10-04 19:45:00,2,1,3
-M00147,2024/2025,La Liga,Leganes,Valencia,2024-10-04 20:00:00,0,0,0
-M00148,2024/2025,Premier League,Crystal Palace,Liverpool,2024-10-05 12:30:00,0,1,1
-M00149,2024/2025,La Liga,Espanol,Mallorca,2024-10-05 13:00:00,2,1,3
-M00150,2024/2025,Bundesliga,Werder Bremen,Freiburg,2024-10-05 14:30:00,0,1,1
-M00151,2024/2025,Bundesliga,Bochum,Wolfsburg,2024-10-05 14:30:00,1,3,4
-M00152,2024/2025,La Liga,Getafe,Osasuna,2024-10-05 15:15:00,1,1,2
-M00153,2024/2025,Serie A,Atalanta,Genoa,2024-10-05 17:00:00,5,1,6
-M00154,2024/2025,La Liga,Valladolid,Vallecano,2024-10-05 17:30:00,1,2,3
-M00155,2024/2025,Premier League,Everton,Newcastle,2024-10-05 17:30:00,0,0,0
-M00156,2024/2025,La Liga,Real Madrid,Villarreal,2024-10-05 20:00:00,2,0,2
-M00158,2024/2025,Premier League,Chelsea,Nott'M Forest,2024-10-06 14:00:00,1,1,2
-M00159,2024/2025,Serie A,Lazio,Empoli,2024-10-06 14:00:00,2,1,3
-M00157,2024/2025,Premier League,Aston Villa,Man United,2024-10-06 14:00:00,0,0,0
-M00160,2024/2025,Bundesliga,Heidenheim,Rb Leipzig,2024-10-06 14:30:00,0,1,1
-M00161,2024/2025,Premier League,Brighton,Tottenham,2024-10-06 16:30:00,3,2,5
-M00162,2024/2025,Bundesliga,Ein Frankfurt,Bayern Munich,2024-10-06 16:30:00,3,3,6
-M00163,2024/2025,La Liga,Sevilla,Betis,2024-10-06 17:30:00,1,0,1
-M00164,2024/2025,Bundesliga,Stuttgart,Hoffenheim,2024-10-06 18:30:00,1,1,2
-M00165,2024/2025,Bundesliga,Dortmund,St Pauli,2024-10-18 19:30:00,2,1,3
-M00166,2024/2025,Premier League,Tottenham,West Ham,2024-10-19 12:30:00,4,1,5
-M00167,2024/2025,La Liga,Ath Bilbao,Espanol,2024-10-19 13:00:00,4,1,5
-M00168,2024/2025,Serie A,Como,Parma,2024-10-19 14:00:00,1,1,2
-M00169,2024/2025,Bundesliga,Mainz,Rb Leipzig,2024-10-19 14:30:00,0,2,2
-M00170,2024/2025,Bundesliga,M'Gladbach,Heidenheim,2024-10-19 14:30:00,3,2,5
-M00171,2024/2025,Bundesliga,Hoffenheim,Bochum,2024-10-19 14:30:00,3,1,4
-M00172,2024/2025,Premier League,Ipswich,Everton,2024-10-19 15:00:00,0,2,2
-M00173,2024/2025,Premier League,Southampton,Leicester,2024-10-19 15:00:00,2,3,5
-M00174,2024/2025,Premier League,Fulham,Aston Villa,2024-10-19 15:00:00,1,3,4
-M00175,2024/2025,Serie A,Milan,Udinese,2024-10-19 17:00:00,1,0,1
-M00176,2024/2025,Bundesliga,Bayern Munich,Stuttgart,2024-10-19 17:30:00,4,0,4
-M00177,2024/2025,Premier League,Bournemouth,Arsenal,2024-10-19 17:30:00,2,0,2
-M00178,2024/2025,Serie A,Juventus,Lazio,2024-10-19 19:45:00,1,0,1
-M00179,2024/2025,Serie A,Empoli,Napoli,2024-10-20 11:30:00,0,1,1
-M00180,2024/2025,Serie A,Venezia,Atalanta,2024-10-20 14:00:00,0,2,2
-M00181,2024/2025,Serie A,Lecce,Fiorentina,2024-10-20 14:00:00,0,6,6
-M00182,2024/2025,Bundesliga,Holstein Kiel,Union Berlin,2024-10-20 14:30:00,0,2,2
-M00183,2024/2025,Serie A,Cagliari,Torino,2024-10-20 17:00:00,3,2,5
-M00184,2024/2025,La Liga,Villarreal,Getafe,2024-10-20 17:30:00,1,1,2
-M00185,2024/2025,Serie A,Verona,Monza,2024-10-21 19:45:00,0,3,3
-M00186,2024/2025,La Liga,Valencia,Las Palmas,2024-10-21 20:00:00,2,3,5
-M00187,2024/2025,Premier League,Nott'M Forest,Crystal Palace,2024-10-21 20:00:00,1,0,1
-M00188,2024/2025,Serie A,Udinese,Cagliari,2024-10-25 17:30:00,2,0,2
-M00189,2024/2025,Bundesliga,Mainz,M'Gladbach,2024-10-25 19:30:00,1,1,2
-M00190,2024/2025,Serie A,Napoli,Lecce,2024-10-26 14:00:00,1,0,1
-M00191,2024/2025,Bundesliga,Augsburg,Dortmund,2024-10-26 14:30:00,2,1,3
-M00192,2024/2025,Bundesliga,Rb Leipzig,Freiburg,2024-10-26 14:30:00,3,1,4
-M00193,2024/2025,Bundesliga,St Pauli,Wolfsburg,2024-10-26 14:30:00,0,0,0
-M00194,2024/2025,Premier League,Aston Villa,Bournemouth,2024-10-26 15:00:00,1,1,2
-M00195,2024/2025,Premier League,Brentford,Ipswich,2024-10-26 15:00:00,4,3,7
-M00196,2024/2025,La Liga,Vallecano,Alaves,2024-10-26 15:15:00,1,0,1
-M00197,2024/2025,Premier League,Everton,Fulham,2024-10-26 17:30:00,1,1,2
-M00198,2024/2025,La Liga,Las Palmas,Girona,2024-10-26 17:30:00,1,0,1
-M00199,2024/2025,Serie A,Atalanta,Verona,2024-10-26 19:45:00,6,1,7
-M00200,2024/2025,Serie A,Lazio,Genoa,2024-10-27 14:00:00,3,0,3
-M00201,2024/2025,Premier League,Crystal Palace,Tottenham,2024-10-27 14:00:00,1,0,1
-M00202,2024/2025,Bundesliga,Bochum,Bayern Munich,2024-10-27 14:30:00,0,5,5
-M00203,2024/2025,La Liga,Getafe,Valencia,2024-10-27 15:15:00,1,1,2
-M00204,2024/2025,Serie A,Inter,Juventus,2024-10-27 17:00:00,4,4,8
-M00205,2024/2025,La Liga,Betis,Ath Madrid,2024-10-27 17:30:00,1,0,1
-M00206,2024/2025,Serie A,Fiorentina,Roma,2024-10-27 19:45:00,5,1,6
-M00207,2024/2025,La Liga,Mallorca,Ath Bilbao,2024-10-28 20:00:00,0,0,0
-M00208,2024/2025,Serie A,Lecce,Verona,2024-10-29 17:30:00,1,0,1
-M00209,2024/2025,Serie A,Cagliari,Bologna,2024-10-29 17:30:00,0,2,2
-M00210,2024/2025,Serie A,Venezia,Udinese,2024-10-30 17:30:00,3,2,5
-M00211,2024/2025,Serie A,Atalanta,Monza,2024-10-30 19:45:00,2,0,2
-M00212,2024/2025,Serie A,Genoa,Fiorentina,2024-10-31 17:30:00,0,1,1
-M00213,2024/2025,Serie A,Roma,Torino,2024-10-31 19:45:00,1,0,1
-M00214,2024/2025,Serie A,Como,Lazio,2024-10-31 19:45:00,1,5,6
-M00215,2024/2025,Bundesliga,Leverkusen,Stuttgart,2024-11-01 19:30:00,0,0,0
-M00216,2024/2025,Serie A,Bologna,Lecce,2024-11-02 14:00:00,1,0,1
-M00218,2024/2025,Bundesliga,Bayern Munich,Union Berlin,2024-11-02 14:30:00,3,0,3
-M00217,2024/2025,Bundesliga,Ein Frankfurt,Bochum,2024-11-02 14:30:00,7,2,9
-M00220,2024/2025,Bundesliga,Holstein Kiel,Heidenheim,2024-11-02 14:30:00,1,0,1
-M00219,2024/2025,Bundesliga,Hoffenheim,St Pauli,2024-11-02 14:30:00,0,2,2
-M00221,2024/2025,Premier League,Southampton,Everton,2024-11-02 15:00:00,1,0,1
-M00222,2024/2025,Premier League,Liverpool,Brighton,2024-11-02 15:00:00,2,1,3
-M00223,2024/2025,Premier League,Nott'M Forest,West Ham,2024-11-02 15:00:00,3,0,3
-M00224,2024/2025,La Liga,Girona,Leganes,2024-11-02 15:15:00,4,3,7
-M00225,2024/2025,Serie A,Monza,Milan,2024-11-02 19:45:00,0,1,1
-M00226,2024/2025,Serie A,Napoli,Atalanta,2024-11-03 11:30:00,0,3,3
-M00227,2024/2025,La Liga,Ath Madrid,Las Palmas,2024-11-03 13:00:00,2,0,2
-M00228,2024/2025,Serie A,Torino,Fiorentina,2024-11-03 14:00:00,0,1,1
-M00229,2024/2025,Bundesliga,Freiburg,Mainz,2024-11-03 14:30:00,0,0,0
-M00230,2024/2025,La Liga,Barcelona,Espanol,2024-11-03 15:15:00,3,1,4
-M00231,2024/2025,Serie A,Verona,Roma,2024-11-03 17:00:00,3,2,5
-M00232,2024/2025,La Liga,Sevilla,Sociedad,2024-11-03 17:30:00,0,2,2
-M00233,2024/2025,Serie A,Inter,Venezia,2024-11-03 19:45:00,1,0,1
-M00234,2024/2025,La Liga,Ath Bilbao,Betis,2024-11-03 20:00:00,1,1,2
-M00235,2024/2025,Serie A,Empoli,Como,2024-11-04 17:30:00,1,0,1
-M00236,2024/2025,Serie A,Lazio,Cagliari,2024-11-04 19:45:00,2,1,3
-M00237,2024/2025,La Liga,Celta,Getafe,2024-11-04 20:00:00,1,0,1
-M00238,2024/2025,Serie A,Genoa,Como,2024-11-07 19:45:00,1,1,2
-M00239,2024/2025,Serie A,Lecce,Empoli,2024-11-08 19:45:00,1,1,2
-M00240,2024/2025,La Liga,Real Madrid,Osasuna,2024-11-09 13:00:00,4,0,4
-M00241,2024/2025,Bundesliga,St Pauli,Bayern Munich,2024-11-09 14:30:00,0,1,1
-M00242,2024/2025,Bundesliga,Werder Bremen,Holstein Kiel,2024-11-09 14:30:00,2,1,3
-M00243,2024/2025,Bundesliga,Bochum,Leverkusen,2024-11-09 14:30:00,1,1,2
-M00244,2024/2025,Premier League,Wolves,Southampton,2024-11-09 15:00:00,2,0,2
-M00245,2024/2025,Premier League,Brentford,Bournemouth,2024-11-09 15:00:00,3,2,5
-M00246,2024/2025,Premier League,Crystal Palace,Fulham,2024-11-09 15:00:00,0,2,2
-M00247,2024/2025,Premier League,West Ham,Everton,2024-11-09 15:00:00,0,0,0
-M00248,2024/2025,Serie A,Cagliari,Milan,2024-11-09 17:00:00,3,3,6
-M00249,2024/2025,Bundesliga,Rb Leipzig,M'Gladbach,2024-11-09 17:30:00,0,0,0
-M00250,2024/2025,Serie A,Juventus,Torino,2024-11-09 19:45:00,2,0,2
-M00251,2024/2025,Premier League,Liverpool,Aston Villa,2024-11-09 20:00:00,2,0,2
-M00252,2024/2025,Premier League,Tottenham,Ipswich,2024-11-10 14:00:00,1,2,3
-M00253,2024/2025,Premier League,Man United,Leicester,2024-11-10 14:00:00,3,0,3
-M00254,2024/2025,Serie A,Roma,Bologna,2024-11-10 14:00:00,2,3,5
-M00255,2024/2025,Bundesliga,Augsburg,Hoffenheim,2024-11-10 14:30:00,0,0,0
-M00256,2024/2025,Premier League,Chelsea,Arsenal,2024-11-10 16:30:00,1,1,2
-M00257,2024/2025,Serie A,Monza,Lazio,2024-11-10 17:00:00,0,1,1
-M00258,2024/2025,Bundesliga,Heidenheim,Wolfsburg,2024-11-10 18:30:00,1,3,4
-M00259,2024/2025,Bundesliga,Hoffenheim,Rb Leipzig,2024-11-23 14:30:00,4,3,7
-M00260,2024/2025,Bundesliga,Dortmund,Freiburg,2024-11-23 14:30:00,4,0,4
-M00261,2024/2025,Bundesliga,Wolfsburg,Union Berlin,2024-11-23 14:30:00,1,0,1
-M00264,2024/2025,Premier League,Bournemouth,Brighton,2024-11-23 15:00:00,1,2,3
-M00262,2024/2025,Premier League,Arsenal,Nott'M Forest,2024-11-23 15:00:00,3,0,3
-M00265,2024/2025,Premier League,Fulham,Wolves,2024-11-23 15:00:00,1,4,5
-M00266,2024/2025,Premier League,Everton,Brentford,2024-11-23 15:00:00,0,0,0
-M00263,2024/2025,Premier League,Aston Villa,Crystal Palace,2024-11-23 15:00:00,2,2,4
-M00267,2024/2025,Bundesliga,Ein Frankfurt,Werder Bremen,2024-11-23 17:30:00,1,0,1
-M00268,2024/2025,Premier League,Southampton,Liverpool,2024-11-24 14:00:00,2,3,5
-M00269,2024/2025,Premier League,Ipswich,Man United,2024-11-24 16:30:00,1,1,2
-M00270,2024/2025,Bundesliga,St Pauli,Holstein Kiel,2024-11-29 19:30:00,3,1,4
-M00271,2024/2025,Bundesliga,Union Berlin,Leverkusen,2024-11-30 14:30:00,1,2,3
-M00272,2024/2025,Bundesliga,Werder Bremen,Stuttgart,2024-11-30 14:30:00,2,2,4
-M00273,2024/2025,Bundesliga,Dortmund,Bayern Munich,2024-11-30 17:30:00,1,1,2
-M00274,2024/2025,Bundesliga,Ein Frankfurt,Augsburg,2024-12-07 14:30:00,2,2,4
-M00275,2024/2025,Bundesliga,Bayern Munich,Heidenheim,2024-12-07 14:30:00,4,2,6
-M00276,2024/2025,Bundesliga,Holstein Kiel,Rb Leipzig,2024-12-07 14:30:00,0,2,2
-M00277,2024/2025,Bundesliga,M'Gladbach,Dortmund,2024-12-07 17:30:00,1,1,2
-M00278,2024/2025,Bundesliga,Wolfsburg,Mainz,2024-12-08 14:30:00,4,3,7
-M00279,2024/2025,Bundesliga,Freiburg,Wolfsburg,2024-12-13 19:30:00,3,2,5
-M00280,2024/2025,Bundesliga,Union Berlin,Bochum,2024-12-14 14:30:00,0,2,2
+M00027,2024/2025,Bundesliga,Hoffenheim,Holstein Kiel,2024-08-24 14:30:00,3,2,5
+M00031,2024/2025,Bundesliga,Freiburg,Stuttgart,2024-08-24 14:30:00,3,1,4
+M00028,2024/2025,Bundesliga,Augsburg,Werder Bremen,2024-08-24 14:30:00,2,2,4
+M00032,2024/2025,Bundesliga,Mainz,Union Berlin,2024-08-24 14:30:00,1,1,2
+M00033,2024/2025,Bundesliga,Augsburg,Werder Bremen,2024-08-24 14:30:00,2,2,4
+M00034,2024/2025,Bundesliga,Rb Leipzig,Bochum,2024-08-24 14:30:00,1,0,1
+M00030,2024/2025,Bundesliga,Augsburg,Werder Bremen,2024-08-24 14:30:00,2,2,4
+M00038,2024/2025,Premier League,Crystal Palace,West Ham,2024-08-24 15:00:00,0,2,2
+M00039,2024/2025,Premier League,Southampton,Nott'M Forest,2024-08-24 15:00:00,0,1,1
+M00035,2024/2025,Premier League,Man City,Ipswich,2024-08-24 15:00:00,4,1,5
+M00036,2024/2025,Premier League,Crystal Palace,West Ham,2024-08-24 15:00:00,0,2,2
+M00037,2024/2025,Premier League,Southampton,Nott'M Forest,2024-08-24 15:00:00,0,1,1
+M00040,2024/2025,La Liga,Osasuna,Mallorca,2024-08-24 16:00:00,1,0,1
+M00041,2024/2025,Serie A,Parma,Milan,2024-08-24 17:30:00,2,1,3
+M00042,2024/2025,Serie A,Udinese,Lazio,2024-08-24 17:30:00,2,1,3
+M00043,2024/2025,Serie A,Parma,Milan,2024-08-24 17:30:00,2,1,3
+M00044,2024/2025,Bundesliga,Dortmund,Ein Frankfurt,2024-08-24 17:30:00,2,0,2
+M00045,2024/2025,La Liga,Barcelona,Ath Bilbao,2024-08-24 18:00:00,2,1,3
+M00047,2024/2025,Serie A,Inter,Lecce,2024-08-24 19:45:00,2,0,2
+M00046,2024/2025,Serie A,Monza,Genoa,2024-08-24 19:45:00,0,1,1
+M00049,2024/2025,Serie A,Monza,Genoa,2024-08-24 19:45:00,0,1,1
+M00048,2024/2025,Serie A,Inter,Lecce,2024-08-24 19:45:00,2,0,2
+M00050,2024/2025,La Liga,Espanol,Sociedad,2024-08-24 20:30:00,0,1,1
+M00051,2024/2025,La Liga,Getafe,Vallecano,2024-08-24 20:30:00,0,0,0
+M00052,2024/2025,La Liga,Espanol,Sociedad,2024-08-24 20:30:00,0,1,1
+M00053,2024/2025,La Liga,Getafe,Vallecano,2024-08-24 20:30:00,0,0,0
+M00054,2024/2025,La Liga,Espanol,Sociedad,2024-08-24 20:30:00,0,1,1
+M00055,2024/2025,La Liga,Getafe,Vallecano,2024-08-24 20:30:00,0,0,0
+M00056,2024/2025,La Liga,Getafe,Vallecano,2024-08-24 20:30:00,0,0,0
+M00057,2024/2025,Premier League,Bournemouth,Newcastle,2024-08-25 14:00:00,1,1,2
+M00058,2024/2025,La Liga,Real Madrid,Valladolid,2024-08-25 16:00:00,3,0,3
+M00059,2024/2025,Premier League,Liverpool,Brentford,2024-08-25 16:30:00,2,0,2
+M00060,2024/2025,Bundesliga,St Pauli,Heidenheim,2024-08-25 16:30:00,0,2,2
+M00061,2024/2025,Serie A,Torino,Atalanta,2024-08-25 17:30:00,2,1,3
+M00062,2024/2025,Serie A,Torino,Atalanta,2024-08-25 17:30:00,2,1,3
+M00063,2024/2025,La Liga,Leganes,Las Palmas,2024-08-25 18:00:00,2,1,3
+M00064,2024/2025,La Liga,Leganes,Las Palmas,2024-08-25 18:00:00,2,1,3
+M00065,2024/2025,Serie A,Roma,Empoli,2024-08-25 19:45:00,1,2,3
+M00066,2024/2025,Serie A,Napoli,Bologna,2024-08-25 19:45:00,3,0,3
+M00067,2024/2025,Serie A,Cagliari,Como,2024-08-26 17:30:00,1,1,2
+M00068,2024/2025,La Liga,Vallecano,Barcelona,2024-08-27 20:30:00,1,2,3
+M00069,2024/2025,La Liga,Sociedad,Alaves,2024-08-28 20:30:00,1,2,3
+M00070,2024/2025,Serie A,Inter,Atalanta,2024-08-30 19:45:00,4,0,4
+M00071,2024/2025,Serie A,Inter,Atalanta,2024-08-30 19:45:00,4,0,4
+M00072,2024/2025,Serie A,Inter,Atalanta,2024-08-30 19:45:00,4,0,4
+M00073,2024/2025,Bundesliga,Ein Frankfurt,Hoffenheim,2024-08-31 14:30:00,3,1,4
+M00074,2024/2025,Premier League,Ipswich,Fulham,2024-08-31 15:00:00,1,1,2
+M00075,2024/2025,Premier League,Brentford,Southampton,2024-08-31 15:00:00,3,1,4
+M00076,2024/2025,Premier League,Leicester,Aston Villa,2024-08-31 15:00:00,1,2,3
+M00079,2024/2025,Serie A,Lecce,Cagliari,2024-08-31 17:30:00,1,0,1
+M00078,2024/2025,Premier League,West Ham,Man City,2024-08-31 17:30:00,1,3,4
+M00081,2024/2025,Serie A,Lecce,Cagliari,2024-08-31 17:30:00,1,0,1
+M00080,2024/2025,Serie A,Bologna,Empoli,2024-08-31 17:30:00,1,1,2
+M00077,2024/2025,Serie A,Bologna,Empoli,2024-08-31 17:30:00,1,1,2
+M00082,2024/2025,La Liga,Ath Bilbao,Ath Madrid,2024-08-31 18:00:00,0,1,1
+M00083,2024/2025,La Liga,Espanol,Vallecano,2024-08-31 18:15:00,2,1,3
+M00084,2024/2025,La Liga,Espanol,Vallecano,2024-08-31 18:15:00,2,1,3
+M00085,2024/2025,La Liga,Espanol,Vallecano,2024-08-31 18:15:00,2,1,3
+M00086,2024/2025,La Liga,Espanol,Vallecano,2024-08-31 18:15:00,2,1,3
+M00087,2024/2025,La Liga,Espanol,Vallecano,2024-08-31 18:15:00,2,1,3
+M00088,2024/2025,La Liga,Espanol,Vallecano,2024-08-31 18:15:00,2,1,3
+M00090,2024/2025,Serie A,Napoli,Parma,2024-08-31 19:45:00,2,1,3
+M00091,2024/2025,Serie A,Napoli,Parma,2024-08-31 19:45:00,2,1,3
+M00089,2024/2025,Serie A,Lazio,Milan,2024-08-31 19:45:00,2,2,4
+M00092,2024/2025,La Liga,Leganes,Mallorca,2024-08-31 20:30:00,0,1,1
+M00093,2024/2025,La Liga,Leganes,Mallorca,2024-08-31 20:30:00,0,1,1
+M00094,2024/2025,Premier League,Newcastle,Tottenham,2024-09-01 13:30:00,2,1,3
+M00095,2024/2025,Premier League,Newcastle,Tottenham,2024-09-01 13:30:00,2,1,3
+M00096,2024/2025,Bundesliga,Heidenheim,Augsburg,2024-09-01 14:30:00,4,0,4
+M00097,2024/2025,La Liga,Alaves,Las Palmas,2024-09-01 16:00:00,2,0,2
+M00098,2024/2025,La Liga,Osasuna,Celta,2024-09-01 16:00:00,3,2,5
+M00099,2024/2025,Serie A,Genoa,Verona,2024-09-01 17:30:00,0,2,2
+M00100,2024/2025,Serie A,Genoa,Verona,2024-09-01 17:30:00,0,2,2
+M00101,2024/2025,La Liga,Sevilla,Girona,2024-09-01 18:00:00,0,2,2
+M00102,2024/2025,La Liga,Sevilla,Girona,2024-09-01 18:00:00,0,2,2
+M00103,2024/2025,La Liga,Sevilla,Girona,2024-09-01 18:00:00,0,2,2
+M00104,2024/2025,La Liga,Sevilla,Girona,2024-09-01 18:00:00,0,2,2
+M00105,2024/2025,La Liga,Sevilla,Girona,2024-09-01 18:00:00,0,2,2
+M00106,2024/2025,La Liga,Getafe,Sociedad,2024-09-01 18:15:00,0,0,0
+M00108,2024/2025,Serie A,Juventus,Roma,2024-09-01 19:45:00,0,0,0
+M00109,2024/2025,Serie A,Juventus,Roma,2024-09-01 19:45:00,0,0,0
+M00107,2024/2025,Serie A,Juventus,Roma,2024-09-01 19:45:00,0,0,0
+M00110,2024/2025,Premier League,Southampton,Man United,2024-09-14 12:30:00,0,3,3
+M00111,2024/2025,La Liga,Mallorca,Villarreal,2024-09-14 13:00:00,1,2,3
+M00112,2024/2025,Serie A,Como,Bologna,2024-09-14 14:00:00,2,2,4
+M00113,2024/2025,Bundesliga,Hoffenheim,Leverkusen,2024-09-14 14:30:00,1,4,5
+M00114,2024/2025,Bundesliga,M'Gladbach,Stuttgart,2024-09-14 14:30:00,1,3,4
+M00115,2024/2025,Bundesliga,Wolfsburg,Ein Frankfurt,2024-09-14 14:30:00,1,2,3
+M00116,2024/2025,Bundesliga,Rb Leipzig,Union Berlin,2024-09-14 14:30:00,0,0,0
+M00117,2024/2025,Premier League,Brighton,Ipswich,2024-09-14 15:00:00,0,0,0
+M00119,2024/2025,Premier League,Man City,Brentford,2024-09-14 15:00:00,2,1,3
+M00120,2024/2025,Premier League,Man City,Brentford,2024-09-14 15:00:00,2,1,3
+M00122,2024/2025,Premier League,Fulham,West Ham,2024-09-14 15:00:00,1,1,2
+M00121,2024/2025,Premier League,Brighton,Ipswich,2024-09-14 15:00:00,0,0,0
+M00118,2024/2025,Premier League,Man City,Brentford,2024-09-14 15:00:00,2,1,3
+M00123,2024/2025,Premier League,Brighton,Ipswich,2024-09-14 15:00:00,0,0,0
+M00124,2024/2025,Premier League,Liverpool,Nott'M Forest,2024-09-14 15:00:00,0,1,1
+M00128,2024/2025,Premier League,Fulham,West Ham,2024-09-14 15:00:00,1,1,2
+M00125,2024/2025,Premier League,Liverpool,Nott'M Forest,2024-09-14 15:00:00,0,1,1
+M00126,2024/2025,Premier League,Brighton,Ipswich,2024-09-14 15:00:00,0,0,0
+M00127,2024/2025,Premier League,Man City,Brentford,2024-09-14 15:00:00,2,1,3
+M00129,2024/2025,Serie A,Empoli,Juventus,2024-09-14 17:00:00,0,0,0
+M00130,2024/2025,Bundesliga,Holstein Kiel,Bayern Munich,2024-09-14 17:30:00,1,6,7
+M00131,2024/2025,Premier League,Aston Villa,Everton,2024-09-14 17:30:00,3,2,5
+M00132,2024/2025,La Liga,Sevilla,Getafe,2024-09-14 17:30:00,1,0,1
+M00133,2024/2025,Premier League,Aston Villa,Everton,2024-09-14 17:30:00,3,2,5
+M00134,2024/2025,Premier League,Aston Villa,Everton,2024-09-14 17:30:00,3,2,5
+M00135,2024/2025,La Liga,Sociedad,Real Madrid,2024-09-14 20:00:00,0,2,2
+M00136,2024/2025,Premier League,Bournemouth,Chelsea,2024-09-14 20:00:00,0,1,1
+M00137,2024/2025,Serie A,Torino,Lecce,2024-09-15 14:00:00,0,0,0
+M00138,2024/2025,Premier League,Tottenham,Arsenal,2024-09-15 14:00:00,0,1,1
+M00139,2024/2025,Serie A,Torino,Lecce,2024-09-15 14:00:00,0,0,0
+M00141,2024/2025,La Liga,Girona,Barcelona,2024-09-15 15:15:00,1,4,5
+M00142,2024/2025,La Liga,Girona,Barcelona,2024-09-15 15:15:00,1,4,5
+M00140,2024/2025,La Liga,Girona,Barcelona,2024-09-15 15:15:00,1,4,5
+M00143,2024/2025,Bundesliga,Mainz,Werder Bremen,2024-09-15 16:30:00,1,2,3
+M00144,2024/2025,Bundesliga,Mainz,Werder Bremen,2024-09-15 16:30:00,1,2,3
+M00145,2024/2025,Serie A,Cagliari,Napoli,2024-09-15 17:00:00,0,4,4
+M00146,2024/2025,La Liga,Las Palmas,Ath Bilbao,2024-09-15 17:30:00,2,3,5
+M00147,2024/2025,La Liga,Las Palmas,Ath Bilbao,2024-09-15 17:30:00,2,3,5
+M00148,2024/2025,Serie A,Monza,Inter,2024-09-15 19:45:00,1,1,2
+M00149,2024/2025,Serie A,Monza,Inter,2024-09-15 19:45:00,1,1,2
+M00150,2024/2025,Serie A,Monza,Inter,2024-09-15 19:45:00,1,1,2
+M00151,2024/2025,La Liga,Ath Madrid,Valencia,2024-09-15 20:00:00,3,0,3
+M00152,2024/2025,Serie A,Lazio,Verona,2024-09-16 19:45:00,2,1,3
+M00153,2024/2025,La Liga,Mallorca,Sociedad,2024-09-17 18:00:00,1,0,1
+M00154,2024/2025,La Liga,Betis,Getafe,2024-09-18 18:00:00,2,1,3
+M00155,2024/2025,La Liga,Betis,Getafe,2024-09-18 18:00:00,2,1,3
+M00157,2024/2025,Serie A,Cagliari,Empoli,2024-09-20 17:30:00,0,2,2
+M00156,2024/2025,Serie A,Cagliari,Empoli,2024-09-20 17:30:00,0,2,2
+M00159,2024/2025,Serie A,Cagliari,Empoli,2024-09-20 17:30:00,0,2,2
+M00158,2024/2025,Serie A,Cagliari,Empoli,2024-09-20 17:30:00,0,2,2
+M00160,2024/2025,Bundesliga,Augsburg,Mainz,2024-09-20 19:30:00,2,3,5
+M00161,2024/2025,Bundesliga,Augsburg,Mainz,2024-09-20 19:30:00,2,3,5
+M00162,2024/2025,Bundesliga,Augsburg,Mainz,2024-09-20 19:30:00,2,3,5
+M00163,2024/2025,Bundesliga,Augsburg,Mainz,2024-09-20 19:30:00,2,3,5
+M00164,2024/2025,Serie A,Verona,Torino,2024-09-20 19:45:00,2,3,5
+M00165,2024/2025,La Liga,Alaves,Sevilla,2024-09-20 20:00:00,2,1,3
+M00166,2024/2025,La Liga,Alaves,Sevilla,2024-09-20 20:00:00,2,1,3
+M00167,2024/2025,La Liga,Valladolid,Sociedad,2024-09-21 13:00:00,0,0,0
+M00169,2024/2025,Bundesliga,Heidenheim,Freiburg,2024-09-21 14:30:00,0,3,3
+M00171,2024/2025,Bundesliga,Heidenheim,Freiburg,2024-09-21 14:30:00,0,3,3
+M00168,2024/2025,Bundesliga,Werder Bremen,Bayern Munich,2024-09-21 14:30:00,0,5,5
+M00172,2024/2025,Bundesliga,Bochum,Holstein Kiel,2024-09-21 14:30:00,2,2,4
+M00170,2024/2025,Bundesliga,Heidenheim,Freiburg,2024-09-21 14:30:00,0,3,3
+M00173,2024/2025,Premier League,Liverpool,Bournemouth,2024-09-21 15:00:00,3,0,3
+M00174,2024/2025,Premier League,Leicester,Everton,2024-09-21 15:00:00,1,1,2
+M00175,2024/2025,Premier League,Leicester,Everton,2024-09-21 15:00:00,1,1,2
+M00176,2024/2025,Premier League,Southampton,Ipswich,2024-09-21 15:00:00,1,1,2
+M00177,2024/2025,Premier League,Aston Villa,Wolves,2024-09-21 15:00:00,3,1,4
+M00178,2024/2025,Premier League,Liverpool,Bournemouth,2024-09-21 15:00:00,3,0,3
+M00179,2024/2025,Premier League,Liverpool,Bournemouth,2024-09-21 15:00:00,3,0,3
+M00180,2024/2025,Premier League,Liverpool,Bournemouth,2024-09-21 15:00:00,3,0,3
+M00181,2024/2025,Premier League,Fulham,Newcastle,2024-09-21 15:00:00,3,1,4
+M00182,2024/2025,Premier League,Crystal Palace,Man United,2024-09-21 17:30:00,0,0,0
+M00183,2024/2025,Bundesliga,Ein Frankfurt,M'Gladbach,2024-09-21 17:30:00,2,0,2
+M00184,2024/2025,La Liga,Valencia,Girona,2024-09-21 17:30:00,2,0,2
+M00185,2024/2025,Serie A,Fiorentina,Lazio,2024-09-22 11:30:00,2,1,3
+M00187,2024/2025,Serie A,Monza,Bologna,2024-09-22 14:00:00,1,2,3
+M00188,2024/2025,Serie A,Monza,Bologna,2024-09-22 14:00:00,1,2,3
+M00186,2024/2025,Serie A,Monza,Bologna,2024-09-22 14:00:00,1,2,3
+M00189,2024/2025,Bundesliga,Leverkusen,Wolfsburg,2024-09-22 14:30:00,4,3,7
+M00190,2024/2025,Bundesliga,Leverkusen,Wolfsburg,2024-09-22 14:30:00,4,3,7
+M00191,2024/2025,Bundesliga,Leverkusen,Wolfsburg,2024-09-22 14:30:00,4,3,7
+M00192,2024/2025,La Liga,Ath Bilbao,Celta,2024-09-22 15:15:00,3,1,4
+M00193,2024/2025,Bundesliga,Stuttgart,Dortmund,2024-09-22 16:30:00,5,1,6
+M00194,2024/2025,Premier League,Man City,Arsenal,2024-09-22 16:30:00,2,2,4
+M00195,2024/2025,Bundesliga,Stuttgart,Dortmund,2024-09-22 16:30:00,5,1,6
+M00196,2024/2025,Premier League,Man City,Arsenal,2024-09-22 16:30:00,2,2,4
+M00197,2024/2025,Bundesliga,Stuttgart,Dortmund,2024-09-22 16:30:00,5,1,6
+M00198,2024/2025,Serie A,Roma,Udinese,2024-09-22 17:00:00,3,0,3
+M00199,2024/2025,Serie A,Roma,Udinese,2024-09-22 17:00:00,3,0,3
+M00200,2024/2025,Bundesliga,St Pauli,Rb Leipzig,2024-09-22 18:30:00,0,0,0
+M00201,2024/2025,Serie A,Inter,Milan,2024-09-22 19:45:00,1,2,3
+M00203,2024/2025,La Liga,Sevilla,Valladolid,2024-09-24 18:00:00,2,1,3
+M00202,2024/2025,La Liga,Sevilla,Valladolid,2024-09-24 18:00:00,2,1,3
+M00205,2024/2025,La Liga,Sevilla,Valladolid,2024-09-24 18:00:00,2,1,3
+M00204,2024/2025,La Liga,Valencia,Osasuna,2024-09-24 18:00:00,0,0,0
+M00206,2024/2025,La Liga,Real Madrid,Alaves,2024-09-24 20:00:00,3,2,5
+M00207,2024/2025,La Liga,Real Madrid,Alaves,2024-09-24 20:00:00,3,2,5
+M00208,2024/2025,La Liga,Girona,Vallecano,2024-09-25 18:00:00,0,0,0
+M00209,2024/2025,La Liga,Barcelona,Getafe,2024-09-25 20:00:00,1,0,1
+M00210,2024/2025,La Liga,Celta,Ath Madrid,2024-09-26 20:00:00,0,1,1
+M00211,2024/2025,Bundesliga,Dortmund,Bochum,2024-09-27 19:30:00,4,2,6
+M00212,2024/2025,Serie A,Milan,Lecce,2024-09-27 19:45:00,3,0,3
+M00213,2024/2025,Serie A,Milan,Lecce,2024-09-27 19:45:00,3,0,3
+M00214,2024/2025,Serie A,Milan,Lecce,2024-09-27 19:45:00,3,0,3
+M00216,2024/2025,Bundesliga,M'Gladbach,Union Berlin,2024-09-28 14:30:00,1,0,1
+M00215,2024/2025,Bundesliga,Wolfsburg,Stuttgart,2024-09-28 14:30:00,2,2,4
+M00217,2024/2025,Bundesliga,Freiburg,St Pauli,2024-09-28 14:30:00,0,3,3
+M00218,2024/2025,Bundesliga,Rb Leipzig,Augsburg,2024-09-28 14:30:00,4,0,4
+M00220,2024/2025,Bundesliga,Mainz,Heidenheim,2024-09-28 14:30:00,0,2,2
+M00219,2024/2025,Bundesliga,Freiburg,St Pauli,2024-09-28 14:30:00,0,3,3
+M00221,2024/2025,Premier League,Everton,Crystal Palace,2024-09-28 15:00:00,2,1,3
+M00222,2024/2025,Premier League,Nott'M Forest,Fulham,2024-09-28 15:00:00,0,1,1
+M00223,2024/2025,Premier League,Everton,Crystal Palace,2024-09-28 15:00:00,2,1,3
+M00224,2024/2025,Premier League,Brentford,West Ham,2024-09-28 15:00:00,1,1,2
+M00225,2024/2025,Premier League,Everton,Crystal Palace,2024-09-28 15:00:00,2,1,3
+M00226,2024/2025,Premier League,Nott'M Forest,Fulham,2024-09-28 15:00:00,0,1,1
+M00227,2024/2025,La Liga,Vallecano,Leganes,2024-09-28 15:15:00,1,1,2
+M00228,2024/2025,Serie A,Genoa,Juventus,2024-09-28 17:00:00,0,3,3
+M00231,2024/2025,Premier League,Wolves,Liverpool,2024-09-28 17:30:00,1,2,3
+M00229,2024/2025,La Liga,Sociedad,Valencia,2024-09-28 17:30:00,3,0,3
+M00230,2024/2025,Premier League,Wolves,Liverpool,2024-09-28 17:30:00,1,2,3
+M00233,2024/2025,La Liga,Sociedad,Valencia,2024-09-28 17:30:00,3,0,3
+M00234,2024/2025,Premier League,Wolves,Liverpool,2024-09-28 17:30:00,1,2,3
+M00232,2024/2025,Bundesliga,Bayern Munich,Leverkusen,2024-09-28 17:30:00,1,1,2
+M00235,2024/2025,Serie A,Torino,Lazio,2024-09-29 11:30:00,2,3,5
+M00236,2024/2025,La Liga,Celta,Girona,2024-09-29 13:00:00,1,1,2
+M00237,2024/2025,La Liga,Celta,Girona,2024-09-29 13:00:00,1,1,2
+M00238,2024/2025,La Liga,Celta,Girona,2024-09-29 13:00:00,1,1,2
+M00239,2024/2025,La Liga,Celta,Girona,2024-09-29 13:00:00,1,1,2
+M00240,2024/2025,Serie A,Como,Verona,2024-09-29 14:00:00,3,2,5
+M00241,2024/2025,Serie A,Como,Verona,2024-09-29 14:00:00,3,2,5
+M00242,2024/2025,Serie A,Como,Verona,2024-09-29 14:00:00,3,2,5
+M00243,2024/2025,Serie A,Roma,Venezia,2024-09-29 14:00:00,2,1,3
+M00244,2024/2025,Serie A,Como,Verona,2024-09-29 14:00:00,3,2,5
+M00245,2024/2025,La Liga,Ath Bilbao,Sevilla,2024-09-29 15:15:00,1,1,2
+M00248,2024/2025,Premier League,Man United,Tottenham,2024-09-29 16:30:00,0,3,3
+M00246,2024/2025,Bundesliga,Hoffenheim,Werder Bremen,2024-09-29 16:30:00,3,4,7
+M00247,2024/2025,Premier League,Man United,Tottenham,2024-09-29 16:30:00,0,3,3
+M00249,2024/2025,La Liga,Betis,Espanol,2024-09-29 17:30:00,1,0,1
+M00250,2024/2025,Serie A,Napoli,Monza,2024-09-29 19:45:00,2,0,2
+M00251,2024/2025,La Liga,Ath Madrid,Real Madrid,2024-09-29 20:00:00,1,1,2
+M00252,2024/2025,Serie A,Parma,Cagliari,2024-09-30 19:45:00,2,3,5
+M00253,2024/2025,La Liga,Villarreal,Las Palmas,2024-09-30 20:00:00,3,1,4
+M00254,2024/2025,Serie A,Napoli,Como,2024-10-04 17:30:00,3,1,4
+M00255,2024/2025,Bundesliga,Augsburg,M'Gladbach,2024-10-04 19:30:00,2,1,3
+M00256,2024/2025,Bundesliga,Augsburg,M'Gladbach,2024-10-04 19:30:00,2,1,3
+M00257,2024/2025,Serie A,Udinese,Lecce,2024-10-05 14:00:00,1,0,1
+M00258,2024/2025,Serie A,Udinese,Lecce,2024-10-05 14:00:00,1,0,1
+M00259,2024/2025,Serie A,Udinese,Lecce,2024-10-05 14:00:00,1,0,1
+M00260,2024/2025,Serie A,Udinese,Lecce,2024-10-05 14:00:00,1,0,1
+M00261,2024/2025,Bundesliga,Bochum,Wolfsburg,2024-10-05 14:30:00,1,3,4
+M00262,2024/2025,Bundesliga,Union Berlin,Dortmund,2024-10-05 14:30:00,2,1,3
+M00263,2024/2025,Bundesliga,Leverkusen,Holstein Kiel,2024-10-05 14:30:00,2,2,4
+M00264,2024/2025,Bundesliga,Union Berlin,Dortmund,2024-10-05 14:30:00,2,1,3
+M00265,2024/2025,Bundesliga,Werder Bremen,Freiburg,2024-10-05 14:30:00,0,1,1
+M00266,2024/2025,Bundesliga,Leverkusen,Holstein Kiel,2024-10-05 14:30:00,2,2,4
+M00267,2024/2025,Bundesliga,Werder Bremen,Freiburg,2024-10-05 14:30:00,0,1,1
+M00268,2024/2025,Premier League,Arsenal,Southampton,2024-10-05 15:00:00,3,1,4
+M00269,2024/2025,Premier League,Brentford,Wolves,2024-10-05 15:00:00,5,3,8
+M00270,2024/2025,Premier League,West Ham,Ipswich,2024-10-05 15:00:00,4,1,5
+M00271,2024/2025,Premier League,Leicester,Bournemouth,2024-10-05 15:00:00,1,0,1
+M00272,2024/2025,Premier League,Brentford,Wolves,2024-10-05 15:00:00,5,3,8
+M00273,2024/2025,Premier League,Man City,Fulham,2024-10-05 15:00:00,3,2,5
+M00274,2024/2025,Serie A,Atalanta,Genoa,2024-10-05 17:00:00,5,1,6
+M00275,2024/2025,La Liga,Las Palmas,Celta,2024-10-05 17:30:00,0,1,1
+M00276,2024/2025,Bundesliga,St Pauli,Mainz,2024-10-05 17:30:00,0,3,3
+M00277,2024/2025,Bundesliga,St Pauli,Mainz,2024-10-05 17:30:00,0,3,3
+M00278,2024/2025,Premier League,Everton,Newcastle,2024-10-05 17:30:00,0,0,0
+M00279,2024/2025,Serie A,Inter,Torino,2024-10-05 19:45:00,3,2,5
+M00280,2024/2025,Serie A,Inter,Torino,2024-10-05 19:45:00,3,2,5
+M00281,2024/2025,Serie A,Juventus,Cagliari,2024-10-06 11:30:00,1,1,2
+M00282,2024/2025,La Liga,Girona,Ath Bilbao,2024-10-06 13:00:00,2,1,3
+M00283,2024/2025,La Liga,Girona,Ath Bilbao,2024-10-06 13:00:00,2,1,3
+M00284,2024/2025,La Liga,Girona,Ath Bilbao,2024-10-06 13:00:00,2,1,3
+M00285,2024/2025,Serie A,Bologna,Parma,2024-10-06 14:00:00,0,0,0
+M00286,2024/2025,Premier League,Aston Villa,Man United,2024-10-06 14:00:00,0,0,0
+M00287,2024/2025,La Liga,Alaves,Barcelona,2024-10-06 15:15:00,0,3,3
+M00288,2024/2025,La Liga,Alaves,Barcelona,2024-10-06 15:15:00,0,3,3
+M00289,2024/2025,La Liga,Alaves,Barcelona,2024-10-06 15:15:00,0,3,3
+M00292,2024/2025,Serie A,Monza,Roma,2024-10-06 17:00:00,1,1,2
+M00293,2024/2025,Serie A,Monza,Roma,2024-10-06 17:00:00,1,1,2
+M00290,2024/2025,Serie A,Monza,Roma,2024-10-06 17:00:00,1,1,2
+M00291,2024/2025,Serie A,Monza,Roma,2024-10-06 17:00:00,1,1,2
+M00294,2024/2025,La Liga,Sevilla,Betis,2024-10-06 17:30:00,1,0,1
+M00296,2024/2025,Serie A,Fiorentina,Milan,2024-10-06 19:45:00,2,1,3
+M00297,2024/2025,Serie A,Fiorentina,Milan,2024-10-06 19:45:00,2,1,3
+M00295,2024/2025,Serie A,Fiorentina,Milan,2024-10-06 19:45:00,2,1,3
+M00298,2024/2025,La Liga,Sociedad,Ath Madrid,2024-10-06 20:00:00,1,1,2
+M00299,2024/2025,La Liga,Sociedad,Ath Madrid,2024-10-06 20:00:00,1,1,2
+M00300,2024/2025,La Liga,Sociedad,Ath Madrid,2024-10-06 20:00:00,1,1,2
+M00301,2024/2025,La Liga,Alaves,Valladolid,2024-10-18 20:00:00,2,3,5
+M00302,2024/2025,La Liga,Alaves,Valladolid,2024-10-18 20:00:00,2,3,5
+M00303,2024/2025,La Liga,Ath Bilbao,Espanol,2024-10-19 13:00:00,4,1,5
+M00304,2024/2025,Serie A,Genoa,Bologna,2024-10-19 14:00:00,2,2,4
+M00305,2024/2025,Serie A,Genoa,Bologna,2024-10-19 14:00:00,2,2,4
+M00306,2024/2025,Bundesliga,Leverkusen,Ein Frankfurt,2024-10-19 14:30:00,2,1,3
+M00307,2024/2025,Bundesliga,Hoffenheim,Bochum,2024-10-19 14:30:00,3,1,4
+M00308,2024/2025,Bundesliga,Freiburg,Augsburg,2024-10-19 14:30:00,3,1,4
+M00309,2024/2025,Bundesliga,Freiburg,Augsburg,2024-10-19 14:30:00,3,1,4
+M00312,2024/2025,Premier League,Southampton,Leicester,2024-10-19 15:00:00,2,3,5
+M00310,2024/2025,Premier League,Newcastle,Brighton,2024-10-19 15:00:00,0,1,1
+M00311,2024/2025,Premier League,Fulham,Aston Villa,2024-10-19 15:00:00,1,3,4
+M00313,2024/2025,La Liga,Osasuna,Betis,2024-10-19 15:15:00,1,2,3
+M00314,2024/2025,Serie A,Milan,Udinese,2024-10-19 17:00:00,1,0,1
+M00315,2024/2025,La Liga,Girona,Sociedad,2024-10-19 17:30:00,0,1,1
+M00316,2024/2025,La Liga,Girona,Sociedad,2024-10-19 17:30:00,0,1,1
+M00317,2024/2025,La Liga,Girona,Sociedad,2024-10-19 17:30:00,0,1,1
+M00318,2024/2025,La Liga,Girona,Sociedad,2024-10-19 17:30:00,0,1,1
+M00319,2024/2025,La Liga,Girona,Sociedad,2024-10-19 17:30:00,0,1,1
+M00320,2024/2025,La Liga,Celta,Real Madrid,2024-10-19 20:00:00,1,2,3
+M00321,2024/2025,La Liga,Celta,Real Madrid,2024-10-19 20:00:00,1,2,3
+M00322,2024/2025,Serie A,Empoli,Napoli,2024-10-20 11:30:00,0,1,1
+M00323,2024/2025,La Liga,Mallorca,Vallecano,2024-10-20 13:00:00,1,0,1
+M00324,2024/2025,Premier League,Wolves,Man City,2024-10-20 14:00:00,1,2,3
+M00325,2024/2025,Premier League,Wolves,Man City,2024-10-20 14:00:00,1,2,3
+M00326,2024/2025,La Liga,Ath Madrid,Leganes,2024-10-20 15:15:00,3,1,4
+M00327,2024/2025,Premier League,Liverpool,Chelsea,2024-10-20 16:30:00,2,1,3
+M00328,2024/2025,Bundesliga,Wolfsburg,Werder Bremen,2024-10-20 16:30:00,2,4,6
+M00329,2024/2025,Serie A,Cagliari,Torino,2024-10-20 17:00:00,3,2,5
+M00330,2024/2025,La Liga,Villarreal,Getafe,2024-10-20 17:30:00,1,1,2
+M00331,2024/2025,La Liga,Villarreal,Getafe,2024-10-20 17:30:00,1,1,2
+M00332,2024/2025,La Liga,Barcelona,Sevilla,2024-10-20 20:00:00,5,1,6
+M00333,2024/2025,Premier League,Nott'M Forest,Crystal Palace,2024-10-21 20:00:00,1,0,1
+M00334,2024/2025,Premier League,Nott'M Forest,Crystal Palace,2024-10-21 20:00:00,1,0,1
+M00335,2024/2025,Serie A,Udinese,Cagliari,2024-10-25 17:30:00,2,0,2
+M00336,2024/2025,Bundesliga,Mainz,M'Gladbach,2024-10-25 19:30:00,1,1,2
+M00337,2024/2025,Serie A,Torino,Como,2024-10-25 19:45:00,1,0,1
+M00338,2024/2025,La Liga,Espanol,Sevilla,2024-10-25 20:00:00,0,2,2
+M00339,2024/2025,Premier League,Leicester,Nott'M Forest,2024-10-25 20:00:00,1,3,4
+M00340,2024/2025,La Liga,Espanol,Sevilla,2024-10-25 20:00:00,0,2,2
+M00341,2024/2025,La Liga,Valladolid,Villarreal,2024-10-26 13:00:00,1,2,3
+M00342,2024/2025,Bundesliga,Stuttgart,Holstein Kiel,2024-10-26 14:30:00,2,1,3
+M00343,2024/2025,Bundesliga,Stuttgart,Holstein Kiel,2024-10-26 14:30:00,2,1,3
+M00344,2024/2025,Premier League,Man City,Southampton,2024-10-26 15:00:00,1,0,1
+M00345,2024/2025,Premier League,Man City,Southampton,2024-10-26 15:00:00,1,0,1
+M00346,2024/2025,Premier League,Man City,Southampton,2024-10-26 15:00:00,1,0,1
+M00347,2024/2025,Bundesliga,Werder Bremen,Leverkusen,2024-10-26 17:30:00,2,2,4
+M00348,2024/2025,Premier League,Everton,Fulham,2024-10-26 17:30:00,1,1,2
+M00349,2024/2025,Bundesliga,Werder Bremen,Leverkusen,2024-10-26 17:30:00,2,2,4
+M00350,2024/2025,Bundesliga,Werder Bremen,Leverkusen,2024-10-26 17:30:00,2,2,4
+M00351,2024/2025,Serie A,Atalanta,Verona,2024-10-26 19:45:00,6,1,7
+M00352,2024/2025,La Liga,Real Madrid,Barcelona,2024-10-26 20:00:00,0,4,4
+M00353,2024/2025,La Liga,Real Madrid,Barcelona,2024-10-26 20:00:00,0,4,4
+M00354,2024/2025,Serie A,Parma,Empoli,2024-10-27 11:30:00,1,1,2
+M00355,2024/2025,Serie A,Parma,Empoli,2024-10-27 11:30:00,1,1,2
+M00357,2024/2025,La Liga,Leganes,Celta,2024-10-27 13:00:00,3,0,3
+M00356,2024/2025,La Liga,Leganes,Celta,2024-10-27 13:00:00,3,0,3
+M00359,2024/2025,La Liga,Leganes,Celta,2024-10-27 13:00:00,3,0,3
+M00358,2024/2025,La Liga,Leganes,Celta,2024-10-27 13:00:00,3,0,3
+M00360,2024/2025,Premier League,West Ham,Man United,2024-10-27 14:00:00,2,1,3
+M00361,2024/2025,Serie A,Monza,Venezia,2024-10-27 14:00:00,2,2,4
+M00362,2024/2025,Premier League,West Ham,Man United,2024-10-27 14:00:00,2,1,3
+M00363,2024/2025,Premier League,West Ham,Man United,2024-10-27 14:00:00,2,1,3
+M00364,2024/2025,Premier League,Crystal Palace,Tottenham,2024-10-27 14:00:00,1,0,1
+M00365,2024/2025,Premier League,West Ham,Man United,2024-10-27 14:00:00,2,1,3
+M00366,2024/2025,Bundesliga,Bochum,Bayern Munich,2024-10-27 14:30:00,0,5,5
+M00367,2024/2025,Bundesliga,Bochum,Bayern Munich,2024-10-27 14:30:00,0,5,5
+M00368,2024/2025,Serie A,Fiorentina,Roma,2024-10-27 19:45:00,5,1,6
+M00369,2024/2025,Serie A,Fiorentina,Roma,2024-10-27 19:45:00,5,1,6
+M00370,2024/2025,La Liga,Sociedad,Osasuna,2024-10-27 20:00:00,0,2,2
+M00371,2024/2025,La Liga,Sociedad,Osasuna,2024-10-27 20:00:00,0,2,2
+M00372,2024/2025,La Liga,Sociedad,Osasuna,2024-10-27 20:00:00,0,2,2
+M00373,2024/2025,La Liga,Sociedad,Osasuna,2024-10-27 20:00:00,0,2,2
+M00374,2024/2025,La Liga,Sociedad,Osasuna,2024-10-27 20:00:00,0,2,2
+M00375,2024/2025,Serie A,Milan,Napoli,2024-10-29 19:45:00,0,2,2
+M00376,2024/2025,Serie A,Empoli,Inter,2024-10-30 17:30:00,0,3,3
+M00377,2024/2025,Serie A,Venezia,Udinese,2024-10-30 17:30:00,3,2,5
+M00378,2024/2025,Serie A,Juventus,Parma,2024-10-30 19:45:00,2,2,4
+M00379,2024/2025,Serie A,Juventus,Parma,2024-10-30 19:45:00,2,2,4
+M00380,2024/2025,Serie A,Juventus,Parma,2024-10-30 19:45:00,2,2,4
+M00381,2024/2025,Serie A,Genoa,Fiorentina,2024-10-31 17:30:00,0,1,1
+M00382,2024/2025,Serie A,Roma,Torino,2024-10-31 19:45:00,1,0,1
+M00383,2024/2025,Bundesliga,Leverkusen,Stuttgart,2024-11-01 19:30:00,0,0,0
+M00384,2024/2025,La Liga,Alaves,Mallorca,2024-11-01 20:00:00,1,0,1
+M00385,2024/2025,La Liga,Alaves,Mallorca,2024-11-01 20:00:00,1,0,1
+M00386,2024/2025,Premier League,Newcastle,Arsenal,2024-11-02 12:30:00,1,0,1
+M00387,2024/2025,La Liga,Osasuna,Valladolid,2024-11-02 13:00:00,1,0,1
+M00390,2024/2025,Bundesliga,Wolfsburg,Augsburg,2024-11-02 14:30:00,1,1,2
+M00388,2024/2025,Bundesliga,Hoffenheim,St Pauli,2024-11-02 14:30:00,0,2,2
+M00391,2024/2025,Bundesliga,Hoffenheim,St Pauli,2024-11-02 14:30:00,0,2,2
+M00392,2024/2025,Bundesliga,Hoffenheim,St Pauli,2024-11-02 14:30:00,0,2,2
+M00389,2024/2025,Bundesliga,Ein Frankfurt,Bochum,2024-11-02 14:30:00,7,2,9
+M00393,2024/2025,Premier League,Ipswich,Leicester,2024-11-02 15:00:00,1,1,2
+M00394,2024/2025,Premier League,Bournemouth,Man City,2024-11-02 15:00:00,2,1,3
+M00395,2024/2025,Premier League,Bournemouth,Man City,2024-11-02 15:00:00,2,1,3
+M00396,2024/2025,Premier League,Ipswich,Leicester,2024-11-02 15:00:00,1,1,2
+M00397,2024/2025,Premier League,Ipswich,Leicester,2024-11-02 15:00:00,1,1,2
+M00398,2024/2025,Premier League,Bournemouth,Man City,2024-11-02 15:00:00,2,1,3
+M00399,2024/2025,Premier League,Nott'M Forest,West Ham,2024-11-02 15:00:00,3,0,3
+M00400,2024/2025,Premier League,Bournemouth,Man City,2024-11-02 15:00:00,2,1,3
+M00401,2024/2025,Premier League,Nott'M Forest,West Ham,2024-11-02 15:00:00,3,0,3
+M00402,2024/2025,La Liga,Girona,Leganes,2024-11-02 15:15:00,4,3,7
+M00405,2024/2025,Serie A,Udinese,Juventus,2024-11-02 17:00:00,0,2,2
+M00403,2024/2025,Serie A,Udinese,Juventus,2024-11-02 17:00:00,0,2,2
+M00404,2024/2025,Serie A,Udinese,Juventus,2024-11-02 17:00:00,0,2,2
+M00406,2024/2025,Bundesliga,Dortmund,Rb Leipzig,2024-11-02 17:30:00,2,1,3
+M00407,2024/2025,Serie A,Napoli,Atalanta,2024-11-03 11:30:00,0,3,3
+M00408,2024/2025,Serie A,Napoli,Atalanta,2024-11-03 11:30:00,0,3,3
+M00409,2024/2025,La Liga,Ath Madrid,Las Palmas,2024-11-03 13:00:00,2,0,2
+M00410,2024/2025,La Liga,Ath Madrid,Las Palmas,2024-11-03 13:00:00,2,0,2
+M00411,2024/2025,Serie A,Torino,Fiorentina,2024-11-03 14:00:00,0,1,1
+M00412,2024/2025,Bundesliga,M'Gladbach,Werder Bremen,2024-11-03 16:30:00,4,1,5
+M00413,2024/2025,Bundesliga,M'Gladbach,Werder Bremen,2024-11-03 16:30:00,4,1,5
+M00414,2024/2025,La Liga,Sevilla,Sociedad,2024-11-03 17:30:00,0,2,2
+M00415,2024/2025,La Liga,Sevilla,Sociedad,2024-11-03 17:30:00,0,2,2
+M00416,2024/2025,Serie A,Inter,Venezia,2024-11-03 19:45:00,1,0,1
+M00417,2024/2025,Serie A,Inter,Venezia,2024-11-03 19:45:00,1,0,1
+M00418,2024/2025,La Liga,Ath Bilbao,Betis,2024-11-03 20:00:00,1,1,2
+M00419,2024/2025,La Liga,Ath Bilbao,Betis,2024-11-03 20:00:00,1,1,2
+M00420,2024/2025,Serie A,Empoli,Como,2024-11-04 17:30:00,1,0,1
+M00421,2024/2025,Serie A,Empoli,Como,2024-11-04 17:30:00,1,0,1
+M00422,2024/2025,Premier League,Fulham,Brentford,2024-11-04 20:00:00,2,1,3
+M00423,2024/2025,La Liga,Celta,Getafe,2024-11-04 20:00:00,1,0,1
+M00424,2024/2025,La Liga,Celta,Getafe,2024-11-04 20:00:00,1,0,1
+M00425,2024/2025,Bundesliga,Union Berlin,Freiburg,2024-11-08 19:30:00,0,0,0
+M00426,2024/2025,Serie A,Lecce,Empoli,2024-11-08 19:45:00,1,1,2
+M00427,2024/2025,Serie A,Venezia,Parma,2024-11-09 14:00:00,1,2,3
+M00428,2024/2025,Bundesliga,St Pauli,Bayern Munich,2024-11-09 14:30:00,0,1,1
+M00429,2024/2025,Bundesliga,Bochum,Leverkusen,2024-11-09 14:30:00,1,1,2
+M00430,2024/2025,Bundesliga,Mainz,Dortmund,2024-11-09 14:30:00,3,1,4
+M00431,2024/2025,Bundesliga,Werder Bremen,Holstein Kiel,2024-11-09 14:30:00,2,1,3
+M00432,2024/2025,Bundesliga,Bochum,Leverkusen,2024-11-09 14:30:00,1,1,2
+M00433,2024/2025,Bundesliga,St Pauli,Bayern Munich,2024-11-09 14:30:00,0,1,1
+M00434,2024/2025,Premier League,West Ham,Everton,2024-11-09 15:00:00,0,0,0
+M00438,2024/2025,Premier League,Wolves,Southampton,2024-11-09 15:00:00,2,0,2
+M00435,2024/2025,Premier League,Brentford,Bournemouth,2024-11-09 15:00:00,3,2,5
+M00437,2024/2025,Premier League,West Ham,Everton,2024-11-09 15:00:00,0,0,0
+M00436,2024/2025,Premier League,West Ham,Everton,2024-11-09 15:00:00,0,0,0
+M00439,2024/2025,Bundesliga,Rb Leipzig,M'Gladbach,2024-11-09 17:30:00,0,0,0
+M00440,2024/2025,Serie A,Atalanta,Udinese,2024-11-10 11:30:00,2,1,3
+M00441,2024/2025,Premier League,Tottenham,Ipswich,2024-11-10 14:00:00,1,2,3
+M00442,2024/2025,Premier League,Tottenham,Ipswich,2024-11-10 14:00:00,1,2,3
+M00443,2024/2025,Premier League,Tottenham,Ipswich,2024-11-10 14:00:00,1,2,3
+M00444,2024/2025,Bundesliga,Augsburg,Hoffenheim,2024-11-10 14:30:00,0,0,0
+M00445,2024/2025,Bundesliga,Stuttgart,Ein Frankfurt,2024-11-10 16:30:00,2,3,5
+M00446,2024/2025,Bundesliga,Heidenheim,Wolfsburg,2024-11-10 18:30:00,1,3,4
+M00447,2024/2025,Serie A,Inter,Napoli,2024-11-10 19:45:00,1,1,2
+M00448,2024/2025,Bundesliga,Bayern Munich,Augsburg,2024-11-22 19:30:00,3,0,3
+M00449,2024/2025,Premier League,Leicester,Chelsea,2024-11-23 12:30:00,1,2,3
+M00450,2024/2025,Premier League,Leicester,Chelsea,2024-11-23 12:30:00,1,2,3
+M00451,2024/2025,Serie A,Verona,Inter,2024-11-23 14:00:00,0,5,5
+M00456,2024/2025,Bundesliga,Stuttgart,Bochum,2024-11-23 14:30:00,2,0,2
+M00453,2024/2025,Bundesliga,Hoffenheim,Rb Leipzig,2024-11-23 14:30:00,4,3,7
+M00454,2024/2025,Bundesliga,Hoffenheim,Rb Leipzig,2024-11-23 14:30:00,4,3,7
+M00455,2024/2025,Bundesliga,Stuttgart,Bochum,2024-11-23 14:30:00,2,0,2
+M00452,2024/2025,Bundesliga,Hoffenheim,Rb Leipzig,2024-11-23 14:30:00,4,3,7
+M00461,2024/2025,Bundesliga,Hoffenheim,Rb Leipzig,2024-11-23 14:30:00,4,3,7
+M00458,2024/2025,Bundesliga,Hoffenheim,Rb Leipzig,2024-11-23 14:30:00,4,3,7
+M00459,2024/2025,Bundesliga,Wolfsburg,Union Berlin,2024-11-23 14:30:00,1,0,1
+M00460,2024/2025,Bundesliga,Leverkusen,Heidenheim,2024-11-23 14:30:00,5,2,7
+M00457,2024/2025,Bundesliga,Wolfsburg,Union Berlin,2024-11-23 14:30:00,1,0,1
+M00462,2024/2025,Premier League,Everton,Brentford,2024-11-23 15:00:00,0,0,0
+M00463,2024/2025,Premier League,Bournemouth,Brighton,2024-11-23 15:00:00,1,2,3
+M00464,2024/2025,Premier League,Fulham,Wolves,2024-11-23 15:00:00,1,4,5
+M00465,2024/2025,Premier League,Arsenal,Nott'M Forest,2024-11-23 15:00:00,3,0,3
+M00466,2024/2025,Bundesliga,Ein Frankfurt,Werder Bremen,2024-11-23 17:30:00,1,0,1
+M00467,2024/2025,Bundesliga,Ein Frankfurt,Werder Bremen,2024-11-23 17:30:00,1,0,1
+M00468,2024/2025,Premier League,Southampton,Liverpool,2024-11-24 14:00:00,2,3,5
+M00469,2024/2025,Bundesliga,Holstein Kiel,Mainz,2024-11-24 14:30:00,0,3,3
+M00470,2024/2025,Bundesliga,Holstein Kiel,Mainz,2024-11-24 14:30:00,0,3,3
+M00471,2024/2025,Bundesliga,Holstein Kiel,Mainz,2024-11-24 14:30:00,0,3,3
+M00472,2024/2025,Premier League,Newcastle,West Ham,2024-11-25 20:00:00,0,2,2
+M00473,2024/2025,Bundesliga,St Pauli,Holstein Kiel,2024-11-29 19:30:00,3,1,4
+M00474,2024/2025,Bundesliga,St Pauli,Holstein Kiel,2024-11-29 19:30:00,3,1,4
+M00475,2024/2025,Bundesliga,Werder Bremen,Stuttgart,2024-11-30 14:30:00,2,2,4
+M00476,2024/2025,Bundesliga,Freiburg,M'Gladbach,2024-11-30 14:30:00,3,1,4
+M00477,2024/2025,Bundesliga,Werder Bremen,Stuttgart,2024-11-30 14:30:00,2,2,4
+M00478,2024/2025,Bundesliga,Augsburg,Bochum,2024-11-30 14:30:00,1,0,1
+M00479,2024/2025,Bundesliga,Rb Leipzig,Wolfsburg,2024-11-30 14:30:00,1,5,6
+M00480,2024/2025,Bundesliga,Rb Leipzig,Wolfsburg,2024-11-30 14:30:00,1,5,6
+M00481,2024/2025,Bundesliga,Augsburg,Bochum,2024-11-30 14:30:00,1,0,1
+M00482,2024/2025,Bundesliga,Mainz,Hoffenheim,2024-12-01 14:30:00,2,0,2
+M00483,2024/2025,Bundesliga,Stuttgart,Union Berlin,2024-12-06 19:30:00,3,2,5
+M00488,2024/2025,Bundesliga,Holstein Kiel,Rb Leipzig,2024-12-07 14:30:00,0,2,2
+M00485,2024/2025,Bundesliga,Ein Frankfurt,Augsburg,2024-12-07 14:30:00,2,2,4
+M00486,2024/2025,Bundesliga,Leverkusen,St Pauli,2024-12-07 14:30:00,2,1,3
+M00487,2024/2025,Bundesliga,Leverkusen,St Pauli,2024-12-07 14:30:00,2,1,3
+M00492,2024/2025,Bundesliga,Bayern Munich,Heidenheim,2024-12-07 14:30:00,4,2,6
+M00489,2024/2025,Bundesliga,Bochum,Werder Bremen,2024-12-07 14:30:00,0,1,1
+M00490,2024/2025,Bundesliga,Bochum,Werder Bremen,2024-12-07 14:30:00,0,1,1
+M00491,2024/2025,Bundesliga,Bochum,Werder Bremen,2024-12-07 14:30:00,0,1,1
+M00484,2024/2025,Bundesliga,Ein Frankfurt,Augsburg,2024-12-07 14:30:00,2,2,4
+M00493,2024/2025,Bundesliga,M'Gladbach,Dortmund,2024-12-07 17:30:00,1,1,2
+M00494,2024/2025,Bundesliga,M'Gladbach,Dortmund,2024-12-07 17:30:00,1,1,2
+M00495,2024/2025,Bundesliga,Wolfsburg,Mainz,2024-12-08 14:30:00,4,3,7
+M00496,2024/2025,Bundesliga,Wolfsburg,Mainz,2024-12-08 14:30:00,4,3,7
+M00498,2024/2025,Bundesliga,Hoffenheim,Freiburg,2024-12-08 16:30:00,1,1,2
+M00499,2024/2025,Bundesliga,Hoffenheim,Freiburg,2024-12-08 16:30:00,1,1,2
+M00497,2024/2025,Bundesliga,Hoffenheim,Freiburg,2024-12-08 16:30:00,1,1,2
+M00500,2024/2025,Bundesliga,Freiburg,Wolfsburg,2024-12-13 19:30:00,3,2,5

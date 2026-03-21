@@ -99,16 +99,17 @@ def simulate_bankroll(bets_df: pd.DataFrame, config: SimulationConfig) -> pd.Dat
         breaches = [
             (
                 "market_exposure_limit",
-                market_exposure.get(key_market, 0.0) + executed_stake > bankroll * config.max_exposure_market,
+                market_exposure.get(key_market, 0.0) + executed_stake
+                > bankroll * config.max_exposure_market,
             ),
             (
                 "league_exposure_limit",
-                league_exposure.get(key_league, 0.0) + executed_stake > bankroll * config.max_exposure_league,
+                league_exposure.get(key_league, 0.0) + executed_stake
+                > bankroll * config.max_exposure_league,
             ),
             (
                 "bookmaker_exposure_limit",
-                bookmaker_exposure.get(key_bookmaker, 0.0)
-                + executed_stake
+                bookmaker_exposure.get(key_bookmaker, 0.0) + executed_stake
                 > bankroll * config.max_exposure_bookmaker,
             ),
         ]
@@ -123,7 +124,9 @@ def simulate_bankroll(bets_df: pd.DataFrame, config: SimulationConfig) -> pd.Dat
             daily_realized_pnl[bet_date] = daily_realized_pnl.get(bet_date, 0.0) + pnl
             market_exposure[key_market] = market_exposure.get(key_market, 0.0) + executed_stake
             league_exposure[key_league] = league_exposure.get(key_league, 0.0) + executed_stake
-            bookmaker_exposure[key_bookmaker] = bookmaker_exposure.get(key_bookmaker, 0.0) + executed_stake
+            bookmaker_exposure[key_bookmaker] = (
+                bookmaker_exposure.get(key_bookmaker, 0.0) + executed_stake
+            )
             result = str(row["result"])
         else:
             pnl = 0.0
@@ -152,7 +155,9 @@ def simulate_bankroll(bets_df: pd.DataFrame, config: SimulationConfig) -> pd.Dat
     simulation_df = pd.DataFrame(rows)
     if not simulation_df.empty:
         simulation_df["equity_peak"] = simulation_df["bankroll_after"].cummax()
-        simulation_df["drawdown"] = (simulation_df["bankroll_after"] / simulation_df["equity_peak"]) - 1.0
+        simulation_df["drawdown"] = (
+            simulation_df["bankroll_after"] / simulation_df["equity_peak"]
+        ) - 1.0
     return simulation_df
 
 
@@ -170,7 +175,11 @@ def summarize_simulation(sim_df: pd.DataFrame, initial_bankroll: float = 10_000.
     final_bankroll = float(sim_df["bankroll_after"].iloc[-1])
     net_profit = final_bankroll - initial_bankroll
     executed_mask = sim_df["executed_stake"] > 0
-    max_drawdown = calculate_drawdown(sim_df.loc[executed_mask, "bankroll_after"]) if executed_mask.any() else 0.0
+    max_drawdown = (
+        calculate_drawdown(sim_df.loc[executed_mask, "bankroll_after"])
+        if executed_mask.any()
+        else 0.0
+    )
 
     return {
         "method": str(sim_df["method"].iloc[0]),

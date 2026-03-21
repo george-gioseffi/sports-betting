@@ -1,4 +1,6 @@
 strategy_id,strategy
-1,Aggressive_Momentum
-2,League_Specialist
-3,Quant_Value
+1,btts_hunter
+2,high_volume
+3,league_expert
+4,momentum
+5,sharp_value

@@ -49,11 +49,11 @@ if scenario_runs.empty or scenario_summary.empty:
 method_map = METHOD_LABELS.get(lang, METHOD_LABELS["en"])
 plot_runs = scenario_runs.copy()
 plot_summary = scenario_summary.copy()
-plot_runs["method_label"] = plot_runs["method"].astype(str).map(
-    lambda value: method_map.get(value, value)
+plot_runs["method_label"] = (
+    plot_runs["method"].astype(str).map(lambda value: method_map.get(value, value))
 )
-plot_summary["method_label"] = plot_summary["method"].astype(str).map(
-    lambda value: method_map.get(value, value)
+plot_summary["method_label"] = (
+    plot_summary["method"].astype(str).map(lambda value: method_map.get(value, value))
 )
 
 c1, c2, c3 = st.columns(3)

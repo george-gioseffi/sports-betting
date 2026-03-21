@@ -107,7 +107,9 @@ def run_data_quality_checks(matches_df: pd.DataFrame, bets_df: pd.DataFrame) -> 
 
 
 def assert_critical_quality(report_df: pd.DataFrame) -> None:
-    failed_critical = report_df[(report_df["status"] == "failed") & (report_df["severity"] == "error")]
+    failed_critical = report_df[
+        (report_df["status"] == "failed") & (report_df["severity"] == "error")
+    ]
     if not failed_critical.empty:
         formatted = failed_critical[["check_name", "failed_rows"]].to_dict("records")
         raise ValueError(f"Critical data quality checks failed: {formatted}")
