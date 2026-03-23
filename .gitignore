@@ -38,3 +38,9 @@ dist/
 logs/
 tmp/
 data/warehouse.duckdb
+
+# Audit outputs and user data
+outputs/
+
+# Claude Code local settings
+.claude/
