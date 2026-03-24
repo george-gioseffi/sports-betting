@@ -41,6 +41,7 @@ data/warehouse.duckdb
 
 # Audit outputs and user data
 outputs/
+output/
 
 # Claude Code local settings
 .claude/

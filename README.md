@@ -91,6 +91,61 @@ Captured using the **Português** interface mode.
 ![Market Performance](docs/screenshots/market-performance.png)
 ![Data Quality](docs/screenshots/data-quality.png)
 
+## bet_audit — Betting History Auditor
+
+Standalone module that audits betting spreadsheets by cross-referencing results with external data, deterministic rules, and optional AI classification.
+
+### Quick start
+
+```bash
+# Without AI (rules + external CSV only)
+python -m bet_audit.cli \
+  --input my_bets.xlsx \
+  --output outputs/audit_run \
+  --search-provider csv \
+  --search-data-file external_results.csv
+
+# With AI classification (requires OPENAI_API_KEY env var)
+python -m bet_audit.cli \
+  --input my_bets.xlsx \
+  --output outputs/audit_run \
+  --search-provider csv \
+  --search-data-file external_results.csv \
+  --use-ai --llm-provider openai
+```
+
+### How it works
+
+1. **Load & normalize** — reads Excel, detects columns, normalizes bookmaker names and result status
+2. **Search phase** — matches bet descriptions to external results via CSV provider (team aliases, fuzzy matching, flexible date window)
+3. **Market detection** — classifies market type from description (over/under, BTTS, 1X2, handicap, HT/FT, corners, cards, player props, etc.)
+4. **Outcome resolution** — resolves green/red/void from external score + detected market
+5. **AI phase** (optional) — sends ambiguous cases to OpenAI/Anthropic for classification
+6. **Consolidation** — applies priority chain (external > rule > AI > manual) to produce final verdict
+7. **Export** — generates Excel with multiple sheets, filtered CSVs, and JSON summary
+
+### AI integration
+
+The AI layer is **optional** and uses the standard OpenAI/Anthropic APIs via environment variables — not chat subscriptions:
+
+```bash
+# Set your API key (never commit this)
+export OPENAI_API_KEY=sk-...
+
+# Or for Anthropic
+export ANTHROPIC_API_KEY=sk-ant-...
+```
+
+Install AI dependencies: `pip install -e ".[ai]"`
+
+The pipeline works fully without AI. When AI is unavailable, it falls back to deterministic rules with no errors.
+
+### Limitations
+
+- External results depend on a user-provided CSV (no live API yet)
+- Market parser covers common markets but exotic/composite bets may be classified as "unknown"
+- AI classification requires an API key and incurs per-call costs
+
 ## Project Structure
 
 ```text
@@ -99,6 +154,7 @@ sports-betting/
 |- docs/                 # architecture, metrics, governance, case study
 |- sql/                  # ddl, staging models, marts, exploratory queries
 |- src/                  # ingestion, cleaning, validation, analytics, risk, simulation
+|- bet_audit/            # betting history auditor module
 |- app/                  # streamlit multipage interface
 |- tests/                # automated tests
 `- .github/workflows/    # ci and lint pipelines
@@ -122,6 +178,7 @@ The Streamlit app supports **English** and **Português** via a sidebar selector
 ## Roadmap
 
 - Real API connectors for odds and match events
+- Live results API for bet_audit (replace manual CSV)
 - Uncertainty intervals and bootstrap confidence bands
 - Cross-strategy correlation-aware exposure limits
 
