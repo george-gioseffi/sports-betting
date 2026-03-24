@@ -8,6 +8,7 @@ from pathlib import Path
 import pandas as pd
 
 from bet_audit.search.base import BaseSearchProvider
+from bet_audit.search.matcher import _expand_team_names, _normalise as _match_normalise
 from bet_audit.search.models import ExternalResult
 
 
@@ -40,6 +41,7 @@ class CSVSearchProvider(BaseSearchProvider):
     def __init__(self, csv_path: str | Path) -> None:
         self._path = Path(csv_path)
         self._df = self._load()
+        self._build_alias_index()
 
     def _resolve_col(self, df_cols: list[str], synonyms: list[str]) -> str | None:
         normed = {_normalise(c): c for c in df_cols}
@@ -65,24 +67,45 @@ class CSVSearchProvider(BaseSearchProvider):
         df["_away_norm"] = df["away_team"].apply(_normalise)
         return df
 
+    def _build_alias_index(self) -> None:
+        """Pre-compute all alias forms for each team in the CSV."""
+        self._home_aliases: list[list[str]] = []
+        self._away_aliases: list[list[str]] = []
+        for _, row in self._df.iterrows():
+            self._home_aliases.append(_expand_team_names(str(row.get("home_team", ""))))
+            self._away_aliases.append(_expand_team_names(str(row.get("away_team", ""))))
+
     def name(self) -> str:
         return f"csv:{self._path.name}"
+
+    def _any_alias_in_query(self, aliases: list[str], q: str) -> bool:
+        """Check if any alias form appears in the normalised query."""
+        for alias in aliases:
+            if alias and len(alias) >= 3 and alias in q:
+                return True
+        return False
 
     def search(self, query: str, event_date: str | None = None) -> list[ExternalResult]:
         q = _normalise(query)
         if not q:
             return []
 
-        candidates = self._df[
-            self._df["_home_norm"].apply(lambda h: h in q or q in h if h else False)
-            | self._df["_away_norm"].apply(lambda a: a in q or q in a if a else False)
-        ]
+        # Match using aliases — any alias of home/away team in the query
+        match_mask = []
+        for i in range(len(self._df)):
+            home_hit = self._any_alias_in_query(self._home_aliases[i], q)
+            away_hit = self._any_alias_in_query(self._away_aliases[i], q)
+            # Also original direct containment check
+            h_norm = self._df.iloc[i]["_home_norm"]
+            a_norm = self._df.iloc[i]["_away_norm"]
+            home_hit = home_hit or (bool(h_norm) and h_norm in q)
+            away_hit = away_hit or (bool(a_norm) and a_norm in q)
+            match_mask.append(home_hit or away_hit)
 
-        if event_date and not candidates.empty:
-            date_str = str(event_date)[:10]
-            date_match = candidates[candidates["event_date"].str[:10] == date_str]
-            if not date_match.empty:
-                candidates = date_match
+        candidates = self._df[match_mask]
+
+        # Don't filter by exact date — let the matcher score handle date proximity
+        # This allows bets placed weeks before an event to still match
 
         results: list[ExternalResult] = []
         for _, row in candidates.iterrows():
