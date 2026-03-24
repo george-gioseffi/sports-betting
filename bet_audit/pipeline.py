@@ -7,9 +7,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from bet_audit.ai.anthropic_provider import AnthropicProvider
 from bet_audit.ai.classifier import AIClassifier
-from bet_audit.ai.openai_provider import OpenAIProvider
 from bet_audit.config import AuditConfig
 from bet_audit.consolidation.consolidator import consolidate
 from bet_audit.export.exporter import export_audit
@@ -46,10 +44,13 @@ def _build_search_provider(config: AuditConfig) -> BaseSearchProvider | None:
 
 def _build_ai_classifier(config: AuditConfig) -> AIClassifier:
     providers = []
-    if config.llm_provider in ("openai", "dual"):
-        providers.append(OpenAIProvider(api_key=config.openai_api_key))
-    if config.llm_provider in ("anthropic", "dual"):
-        providers.append(AnthropicProvider(api_key=config.anthropic_api_key))
+    if config.llm_enabled:
+        if config.llm_provider in ("openai", "dual"):
+            from bet_audit.ai.openai_provider import OpenAIProvider
+            providers.append(OpenAIProvider(api_key=config.openai_api_key))
+        if config.llm_provider in ("anthropic", "dual"):
+            from bet_audit.ai.anthropic_provider import AnthropicProvider
+            providers.append(AnthropicProvider(api_key=config.anthropic_api_key))
     return AIClassifier(config, providers)
 
 
